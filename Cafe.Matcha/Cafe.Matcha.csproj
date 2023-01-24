@@ -56,21 +56,22 @@
       <HintPath Condition="Exists('..\thirdparty\ACT\Advanced Combat Tracker.dll')">..\thirdparty\ACT\Advanced Combat Tracker.dll</HintPath>
       <HintPath Condition="Exists('..\thirdparty\ACT\Advanced Combat Tracker.exe')">..\thirdparty\ACT\Advanced Combat Tracker.exe</HintPath>
       <Private>False</Private>
+      <HintPath>E:\ACTv3\Advanced Combat Tracker.exe</HintPath>
     </Reference>
     <Reference Include="FFXIV_ACT_Plugin">
-      <HintPath>..\thirdparty\FFXIV_ACT_Plugin\FFXIV_ACT_Plugin.dll</HintPath>
+      <HintPath>..\..\..\FFXIV_ACT_Plugin_SDK_2.6.7.7\FFXIV_ACT_Plugin.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="FFXIV_ACT_Plugin.Common">
-      <HintPath>..\thirdparty\FFXIV_ACT_Plugin\SDK\FFXIV_ACT_Plugin.Common.dll</HintPath>
+      <HintPath>..\..\..\FFXIV_ACT_Plugin_SDK_2.6.7.7\SDK\FFXIV_ACT_Plugin.Common.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="FFXIV_ACT_Plugin.Memory">
-      <HintPath>..\thirdparty\FFXIV_ACT_Plugin\SDK\FFXIV_ACT_Plugin.Memory.dll</HintPath>
+      <HintPath>..\..\..\FFXIV_ACT_Plugin_SDK_2.6.7.7\SDK\FFXIV_ACT_Plugin.Memory.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="FFXIV_ACT_Plugin.Network">
-      <HintPath>..\thirdparty\FFXIV_ACT_Plugin\SDK\FFXIV_ACT_Plugin.Network.dll</HintPath>
+      <HintPath>..\..\..\FFXIV_ACT_Plugin_SDK_2.6.7.7\SDK\FFXIV_ACT_Plugin.Network.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
@@ -91,6 +92,7 @@
       <HintPath Condition="Exists('C:\Program Files (x86)\Windows Kits\10\References\10.0.18362.0\Windows.Foundation.UniversalApiContract\8.0.0.0\Windows.Foundation.UniversalApiContract.winmd')">C:\Program Files (x86)\Windows Kits\10\References\10.0.18362.0\Windows.Foundation.UniversalApiContract\8.0.0.0\Windows.Foundation.UniversalApiContract.winmd</HintPath>
       <HintPath Condition="Exists('C:\Program Files (x86)\Windows Kits\10\References\10.0.17763.0\Windows.Foundation.UniversalApiContract\7.0.0.0\Windows.Foundation.UniversalApiContract.winmd')">C:\Program Files (x86)\Windows Kits\10\References\10.0.17763.0\Windows.Foundation.UniversalApiContract\7.0.0.0\Windows.Foundation.UniversalApiContract.winmd</HintPath>
       <Private>False</Private>
+      <HintPath>D:\Windows Kits\10\References\10.0.19041.0\Windows.Foundation.UniversalApiContract\10.0.0.0\Windows.Foundation.UniversalApiContract.winmd</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="WindowsFormsIntegration" />

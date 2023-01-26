@@ -9479,21 +9479,6 @@
     "itemSync": 620,
     "memberType": 1
   },
-  "875": {
-    "name": {
-      "chs": "萨菲洛特幻巧战",
-      "en": "Containment Bay S1T7 (Unreal)",
-      "ja": "幻魔神セフィロト討滅戦",
-      "de": "Traumprüfung - Sephirot",
-      "fr": "Unité de contention S1P7 (irréel)"
-    },
-    "type": 4,
-    "level": 90,
-    "levelSync": 90,
-    "item": 560,
-    "itemSync": 565,
-    "memberType": 3
-  },
   "876": {
     "name": {
       "chs": "万魔殿 炼净之狱3",
@@ -9628,5 +9613,95 @@
     "item": 0,
     "itemSync": 110,
     "memberType": 1
+  },
+  "886": {
+    "name": {
+      "chs": "Mount Ordeals",
+      "de": "Prophetie - Rubicante",
+      "en": "Mount Ordeals",
+      "fr": "Le Mont du Supplice",
+      "ja": "ルビカンテ討滅戦"
+    },
+    "type": 4,
+    "level": 90,
+    "levelSync": 90,
+    "item": 595,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "887": {
+    "name": {
+      "chs": "",
+      "de": "Eschatos - Rubicante",
+      "en": "Mount Ordeals (Extreme)",
+      "fr": "Le Mont du Supplice (extrême)",
+      "ja": "極ルビカンテ討滅戦"
+    },
+    "type": 4,
+    "level": 90,
+    "levelSync": 90,
+    "item": 610,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "890": {
+    "name": {
+      "chs": "索菲娅幻巧战",
+      "de": "Traumprüfung - Sophia",
+      "en": "Containment Bay P1T6 (Unreal)",
+      "fr": "Unité de contention P1P6 (irréel)",
+      "ja": "幻女神ソフィア討滅戦"
+    },
+    "type": 4,
+    "level": 90,
+    "levelSync": 90,
+    "item": 560,
+    "itemSync": 565,
+    "memberType": 3
+  },
+  "896": {
+    "name": {
+      "chs": "Lapis Manalis", // Zone 1097
+      "en": "Lapis Manalis",
+      "ja": "雪山冥洞 ラピス・マナリス",
+      "de": "Lapis Manalis",
+      "fr": "Lapis Manalis"
+    },
+    "type": 2,
+    "level": 90,
+    "levelSync": 90,
+    "item": 590,
+    "itemSync": 0,
+    "memberType": 2
+  },
+  "909": {
+    "name": {
+      "chs": "The Shifting Gymnasion Agonon",
+      "de": "Gymnasion Agonon",
+      "en": "The Shifting Gymnasion Agonon",
+      "fr": "Elpis Gymnasion",
+      "ja": "宝物庫 エルピス・ギュムナシオン祭殿"
+    },
+    "type": 9,
+    "level": 1,
+    "levelSync": 90,
+    "item": 0,
+    "itemSync": 630,
+    "memberType": 3
+  },
+  "911": {
+    "name": {
+      "chs": "Euphrosyne", // Zone 1118
+      "en": "Euphrosyne",
+      "ja": "喜びの神域 エウプロシュネ",
+      "de": "Euphrosyne",
+      "fr": "Domaine divin - Euphrosyne"
+    },
+    "type": 5,
+    "level": 90,
+    "levelSync": 90,
+    "item": 595,
+    "itemSync": 0,
+    "memberType": 4
   }
 }

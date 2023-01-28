@@ -34,14 +34,14 @@ namespace Cafe.Matcha.Constant
         {
             { 0x0363, MatchaOpcode.ActorControl },
             { 0x0267, MatchaOpcode.ActorControlSelf },
-            { 0x018c, MatchaOpcode.CEDirector }, // Unknown Opcode
+            { 0x0113, MatchaOpcode.CEDirector },
             { 0x028B, MatchaOpcode.CompanyAirshipStatus },
             { 0x030C, MatchaOpcode.CompanySubmersibleStatus },
             { 0x03A0, MatchaOpcode.ContentFinderNotifyPop },
             { 0x01A1, MatchaOpcode.DirectorStart }, // Unknown Opcode
             { 0x01F5, MatchaOpcode.EventPlay },
             { 0x0121, MatchaOpcode.Examine },
-            { 0xf009, MatchaOpcode.FateInfo }, // Unknown Opcode
+            { 0x01D4, MatchaOpcode.FateInfo },
             { 0x0094, MatchaOpcode.InitZone },
             { 0x00D3, MatchaOpcode.InventoryTransaction },
             { 0x0335, MatchaOpcode.ItemInfo },

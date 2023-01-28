@@ -9703,5 +9703,20 @@
     "item": 595,
     "itemSync": 0,
     "memberType": 4
+  },
+  "933": {
+    "name": {
+      "chs": "虚景跳跳乐大挑战",
+      "en": "Leap of Faith",
+      "ja": "挑戦！ ジャンピングアスレチック",
+      "de": "Kaktor-Kletterwand",
+      "fr": "Haute voltige"
+    },
+    "type": 19,
+    "level": 1,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 19
   }
 }

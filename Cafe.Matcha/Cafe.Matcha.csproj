@@ -59,19 +59,19 @@
       <HintPath>E:\ACTv3\Advanced Combat Tracker.exe</HintPath>
     </Reference>
     <Reference Include="FFXIV_ACT_Plugin">
-      <HintPath>..\..\..\FFXIV_ACT_Plugin_SDK_2.6.7.7\FFXIV_ACT_Plugin.dll</HintPath>
+      <HintPath>..\..\..\FFXIV_ACT_Plugin_SDK\FFXIV_ACT_Plugin.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="FFXIV_ACT_Plugin.Common">
-      <HintPath>..\..\..\FFXIV_ACT_Plugin_SDK_2.6.7.7\SDK\FFXIV_ACT_Plugin.Common.dll</HintPath>
+      <HintPath>..\..\..\FFXIV_ACT_Plugin_SDK\SDK\FFXIV_ACT_Plugin.Common.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="FFXIV_ACT_Plugin.Memory">
-      <HintPath>..\..\..\FFXIV_ACT_Plugin_SDK_2.6.7.7\SDK\FFXIV_ACT_Plugin.Memory.dll</HintPath>
+      <HintPath>..\..\..\FFXIV_ACT_Plugin_SDK\SDK\FFXIV_ACT_Plugin.Memory.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="FFXIV_ACT_Plugin.Network">
-      <HintPath>..\..\..\FFXIV_ACT_Plugin_SDK_2.6.7.7\SDK\FFXIV_ACT_Plugin.Network.dll</HintPath>
+      <HintPath>..\..\..\FFXIV_ACT_Plugin_SDK\SDK\FFXIV_ACT_Plugin.Network.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />

@@ -9632,10 +9632,10 @@
   "886": {
     "name": {
       "chs": "Mount Ordeals",
-      "de": "Prophetie - Rubicante",
       "en": "Mount Ordeals",
-      "fr": "Le Mont du Supplice",
-      "ja": "ルビカンテ討滅戦"
+      "ja": "ルビカンテ討滅戦",
+      "de": "Prophetie - Rubicante",
+      "fr": "Le Mont du Supplice"
     },
     "type": 4,
     "level": 90,
@@ -9644,39 +9644,9 @@
     "itemSync": 0,
     "memberType": 3
   },
-  "887": {
-    "name": {
-      "chs": "",
-      "de": "Eschatos - Rubicante",
-      "en": "Mount Ordeals (Extreme)",
-      "fr": "Le Mont du Supplice (extrême)",
-      "ja": "極ルビカンテ討滅戦"
-    },
-    "type": 4,
-    "level": 90,
-    "levelSync": 90,
-    "item": 610,
-    "itemSync": 0,
-    "memberType": 3
-  },
-  "890": {
-    "name": {
-      "chs": "索菲娅幻巧战",
-      "de": "Traumprüfung - Sophia",
-      "en": "Containment Bay P1T6 (Unreal)",
-      "fr": "Unité de contention P1P6 (irréel)",
-      "ja": "幻女神ソフィア討滅戦"
-    },
-    "type": 4,
-    "level": 90,
-    "levelSync": 90,
-    "item": 560,
-    "itemSync": 565,
-    "memberType": 3
-  },
   "896": {
     "name": {
-      "chs": "Lapis Manalis", // Zone 1097
+      "chs": "Lapis Manalis",
       "en": "Lapis Manalis",
       "ja": "雪山冥洞 ラピス・マナリス",
       "de": "Lapis Manalis",
@@ -9689,24 +9659,54 @@
     "itemSync": 0,
     "memberType": 2
   },
+  "908": {
+    "name": {
+      "chs": "The Omega Protocol (Ultimate)",
+      "en": "The Omega Protocol (Ultimate)",
+      "ja": "絶オメガ検証戦",
+      "de": "Omega (fatal)",
+      "fr": "le Protocole Oméga (fatal)"
+    },
+    "type": 28,
+    "level": 90,
+    "levelSync": 90,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 3
+  },
   "909": {
     "name": {
       "chs": "The Shifting Gymnasion Agonon",
-      "de": "Gymnasion Agonon",
       "en": "The Shifting Gymnasion Agonon",
-      "fr": "Elpis Gymnasion",
-      "ja": "宝物庫 エルピス・ギュムナシオン祭殿"
+      "ja": "宝物庫 エルピス・ギュムナシオン祭殿",
+      "de": "Gymnasion Agonon",
+      "fr": "Elpis Gymnasion"
     },
     "type": 9,
     "level": 1,
     "levelSync": 90,
     "item": 0,
-    "itemSync": 630,
+    "itemSync": 0,
     "memberType": 3
+  },
+  "910": {
+    "name": {
+      "chs": "An Unforeseen Bargain",
+      "en": "An Unforeseen Bargain",
+      "ja": "パンひとつと引き換えに",
+      "de": "Der Wert einer Buuds",
+      "fr": "Pour une bouchée de pain"
+    },
+    "type": 7,
+    "level": 90,
+    "levelSync": 90,
+    "item": 0,
+    "itemSync": 630,
+    "memberType": 1
   },
   "911": {
     "name": {
-      "chs": "Euphrosyne", // Zone 1118
+      "chs": "Euphrosyne",
       "en": "Euphrosyne",
       "ja": "喜びの神域 エウプロシュネ",
       "de": "Euphrosyne",
@@ -9719,7 +9719,337 @@
     "itemSync": 0,
     "memberType": 4
   },
+  "912": {
+    "name": {
+      "chs": "The Clockwork Castletown",
+      "en": "The Clockwork Castletown",
+      "ja": "東方絡繰御殿",
+      "de": "Die Mechanische Menagerie",
+      "fr": "Le Traquenard oriental"
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "913": {
+    "name": {
+      "chs": "The Clockwork Castletown",
+      "en": "The Clockwork Castletown",
+      "ja": "東方絡繰御殿",
+      "de": "Die Mechanische Menagerie",
+      "fr": "Le Traquenard oriental"
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "914": {
+    "name": {
+      "chs": "The Clockwork Castletown",
+      "en": "The Clockwork Castletown",
+      "ja": "東方絡繰御殿",
+      "de": "Die Mechanische Menagerie",
+      "fr": "Le Traquenard oriental"
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "915": {
+    "name": {
+      "chs": "The Clockwork Castletown",
+      "en": "The Clockwork Castletown",
+      "ja": "東方絡繰御殿",
+      "de": "Die Mechanische Menagerie",
+      "fr": "Le Traquenard oriental"
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "916": {
+    "name": {
+      "chs": "The Clockwork Castletown",
+      "en": "The Clockwork Castletown",
+      "ja": "東方絡繰御殿",
+      "de": "Die Mechanische Menagerie",
+      "fr": "Le Traquenard oriental"
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "917": {
+    "name": {
+      "chs": "The Clockwork Castletown",
+      "en": "The Clockwork Castletown",
+      "ja": "東方絡繰御殿",
+      "de": "Die Mechanische Menagerie",
+      "fr": "Le Traquenard oriental"
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "918": {
+    "name": {
+      "chs": "The Clockwork Castletown",
+      "en": "The Clockwork Castletown",
+      "ja": "東方絡繰御殿",
+      "de": "Die Mechanische Menagerie",
+      "fr": "Le Traquenard oriental"
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "919": {
+    "name": {
+      "chs": "The Clockwork Castletown",
+      "en": "The Clockwork Castletown",
+      "ja": "東方絡繰御殿",
+      "de": "Die Mechanische Menagerie",
+      "fr": "Le Traquenard oriental"
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "920": {
+    "name": {
+      "chs": "The Clockwork Castletown",
+      "en": "The Clockwork Castletown",
+      "ja": "東方絡繰御殿",
+      "de": "Die Mechanische Menagerie",
+      "fr": "Le Traquenard oriental"
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "921": {
+    "name": {
+      "chs": "The Clockwork Castletown",
+      "en": "The Clockwork Castletown",
+      "ja": "東方絡繰御殿",
+      "de": "Die Mechanische Menagerie",
+      "fr": "Le Traquenard oriental"
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "922": {
+    "name": {
+      "chs": "The Clockwork Castletown",
+      "en": "The Clockwork Castletown",
+      "ja": "東方絡繰御殿",
+      "de": "Die Mechanische Menagerie",
+      "fr": "Le Traquenard oriental"
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "923": {
+    "name": {
+      "chs": "Crystalline Conflict (Custom Match - The Clockwork Castletown)",
+      "en": "Crystalline Conflict (Custom Match - The Clockwork Castletown)",
+      "ja": "クリスタルコンフリクト(東方絡繰御殿：カスタムマッチ)",
+      "de": "Crystalline Conflict: Die Mechanische Menagerie (Schaukampf)",
+      "fr": "Crystalline Conflict (partie personnalisée - Le Traquenard oriental)"
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 30
+  },
+  "924": {
+    "name": {
+      "chs": "Mount Ordeals (Extreme)",
+      "en": "Mount Ordeals (Extreme)",
+      "ja": "極ルビカンテ討滅戦",
+      "de": "Eschatos - Rubicante",
+      "fr": "Le Mont du Supplice (extrême)"
+    },
+    "type": 4,
+    "level": 90,
+    "levelSync": 90,
+    "item": 610,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "926": {
+    "name": {
+      "chs": "索菲娅幻巧战",
+      "en": "Containment Bay P1T6 (Unreal)",
+      "ja": "幻女神ソフィア討滅戦",
+      "de": "Traumprüfung - Sophia",
+      "fr": "Unité de contention P1P6 (irréel)"
+    },
+    "type": 4,
+    "level": 90,
+    "levelSync": 90,
+    "item": 560,
+    "itemSync": 565,
+    "memberType": 3
+  },
+  "927": {
+    "name": {
+      "chs": "虚景跳跳乐大挑战",
+      "en": "Leap of Faith",
+      "ja": "挑戦！ ジャンピングアスレチック",
+      "de": "Kaktor-Kletterwand",
+      "fr": "Haute voltige"
+    },
+    "type": 19,
+    "level": 1,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 19
+  },
+  "928": {
+    "name": {
+      "chs": "虚景跳跳乐大挑战",
+      "en": "Leap of Faith",
+      "ja": "挑戦！ ジャンピングアスレチック",
+      "de": "Kaktor-Kletterwand",
+      "fr": "Haute voltige"
+    },
+    "type": 19,
+    "level": 1,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 19
+  },
+  "929": {
+    "name": {
+      "chs": "虚景跳跳乐大挑战",
+      "en": "Leap of Faith",
+      "ja": "挑戦！ ジャンピングアスレチック",
+      "de": "Kaktor-Kletterwand",
+      "fr": "Haute voltige"
+    },
+    "type": 19,
+    "level": 1,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 19
+  },
+  "930": {
+    "name": {
+      "chs": "虚景跳跳乐大挑战",
+      "en": "Leap of Faith",
+      "ja": "挑戦！ ジャンピングアスレチック",
+      "de": "Kaktor-Kletterwand",
+      "fr": "Haute voltige"
+    },
+    "type": 19,
+    "level": 1,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 19
+  },
+  "931": {
+    "name": {
+      "chs": "虚景跳跳乐大挑战",
+      "en": "Leap of Faith",
+      "ja": "挑戦！ ジャンピングアスレチック",
+      "de": "Kaktor-Kletterwand",
+      "fr": "Haute voltige"
+    },
+    "type": 19,
+    "level": 1,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 19
+  },
+  "932": {
+    "name": {
+      "chs": "虚景跳跳乐大挑战",
+      "en": "Leap of Faith",
+      "ja": "挑戦！ ジャンピングアスレチック",
+      "de": "Kaktor-Kletterwand",
+      "fr": "Haute voltige"
+    },
+    "type": 19,
+    "level": 1,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 19
+  },
   "933": {
+    "name": {
+      "chs": "虚景跳跳乐大挑战",
+      "en": "Leap of Faith",
+      "ja": "挑戦！ ジャンピングアスレチック",
+      "de": "Kaktor-Kletterwand",
+      "fr": "Haute voltige"
+    },
+    "type": 19,
+    "level": 1,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 19
+  },
+  "934": {
+    "name": {
+      "chs": "虚景跳跳乐大挑战",
+      "en": "Leap of Faith",
+      "ja": "挑戦！ ジャンピングアスレチック",
+      "de": "Kaktor-Kletterwand",
+      "fr": "Haute voltige"
+    },
+    "type": 19,
+    "level": 1,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 19
+  },
+  "935": {
     "name": {
       "chs": "虚景跳跳乐大挑战",
       "en": "Leap of Faith",

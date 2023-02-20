@@ -23,8 +23,6 @@
         public ulong LocalContentId { get; set; }
 
         public EventHandler<string> Log;
-        public EventHandler<ulong> LocalContentIdUpdated;
-        public EventHandler RequestContentIdUpdate;
 
         public PacketProcessor(string apiKey)
         {
@@ -81,14 +79,20 @@
                 LocalContentId = BitConverter.ToUInt64(message, 0x20) & 0xffffffff00000000;
                 LocalContentId = LocalContentId | GetClientIdentifier();
                 Log?.Invoke(this, $"New CID: {LocalContentId.ToString("X")}");
-                LocalContentIdUpdated?.Invoke(this, LocalContentId);
                 return null;
             }
 
             if (opcode == MatchaOpcode.MarketBoardItemListingCount)
             {
                 var catalogId = (uint)BitConverter.ToInt32(message, 0x20);
+                var status = BitConverter.ToInt32(message, 0x24);
                 var amount = message[0x2B];
+
+                if (status != 0)
+                {
+                    Log?.Invoke(this, $"MB Query Failed: item#{catalogId} status#{status}");
+                    return null;
+                }
 
                 var request = _marketBoardRequests.LastOrDefault(r => r.CatalogId == catalogId);
                 if (request == null)
@@ -163,25 +167,7 @@
 
                 if (request.IsDone)
                 {
-                    if (CurrentWorldId == 0)
-                    {
-                        Log?.Invoke(this, "[ERROR] Not sure about your current world. Please move your character between zones once to start uploading.");
-                        _marketBoardRequests.Remove(request);
-                        return null;
-                    }
-
-                    RequestContentIdUpdate?.Invoke(this, null);
-
-                    if (LocalContentId == 0)
-                    {
-                        Log?.Invoke(this, "Not sure about your character information. Please log in once with your character while having the program open to verify it.");
-                    }
-
-                    LocalContentIdUpdated?.Invoke(this, LocalContentId);
-
-                    Log?.Invoke(this,
-                        $"Market Board request finished, starting upload: request#{request.ListingsRequestId} item#{request.CatalogId} amount#{request.AmountToArrive}");
-                    return request;
+                    return Commit(request);
                 }
 
                 return null;
@@ -209,25 +195,7 @@
 
                 if (request.IsDone)
                 {
-                    if (CurrentWorldId == 0)
-                    {
-                        Log?.Invoke(this, "[ERROR] Not sure about your current world. Please move your character between zones once to start uploading.");
-                        _marketBoardRequests.Remove(request);
-                        return null;
-                    }
-
-                    RequestContentIdUpdate?.Invoke(this, null);
-
-                    if (LocalContentId == 0)
-                    {
-                        Log?.Invoke(this, "Not sure about your character information. Please log in once with your character while having the program open to verify it.");
-                    }
-
-                    LocalContentIdUpdated?.Invoke(this, LocalContentId);
-
-                    Log?.Invoke(this,
-                        $"Market Board request finished, starting upload: request#{request.ListingsRequestId} item#{request.CatalogId} amount#{request.AmountToArrive}");
-                    return request;
+                    return Commit(request);
                 }
 
                 Log?.Invoke(this, $"Added history for item#{listing.CatalogId}");
@@ -235,6 +203,25 @@
             }
 
             return null;
+        }
+
+        private MarketBoardItemRequest Commit(MarketBoardItemRequest request)
+        {
+            if (CurrentWorldId == 0)
+            {
+                Log?.Invoke(this, "[ERROR] Not sure about your current world. Please move your character between zones once to start uploading.");
+                _marketBoardRequests.Remove(request);
+                return null;
+            }
+
+            if (LocalContentId == 0)
+            {
+                Log?.Invoke(this, "Not sure about your character information. Please log in once with your character while having the program open to verify it.");
+            }
+
+            Log?.Invoke(this,
+                $"Market Board request finished, starting upload: request#{request.ListingsRequestId} item#{request.CatalogId} amount#{request.AmountToArrive}");
+            return request;
         }
 
         private uint GetClientIdentifier()

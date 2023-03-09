@@ -38,7 +38,7 @@ namespace Cafe.Matcha.Constant
             { 0x01E5, MatchaOpcode.CompanyAirshipStatus },
             { 0x00A5, MatchaOpcode.CompanySubmersibleStatus },
             { 0x03C6, MatchaOpcode.ContentFinderNotifyPop },
-            { 0x0256, MatchaOpcode.DirectorStart }, // missing
+            { 0x0112, MatchaOpcode.DirectorStart },
             { 0x017F, MatchaOpcode.EventPlay },
             { 0x03DC, MatchaOpcode.Examine },
             { 0x0355, MatchaOpcode.FateInfo },

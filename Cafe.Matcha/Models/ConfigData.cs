@@ -229,5 +229,7 @@ namespace Cafe.Matcha.Models
         public bool Compat { get; set; }
         [JsonProperty("debug")]
         public bool Debug { get; set; }
+        [JsonProperty("deucalion")]
+        public bool Deucalion { get; set; }
     }
 }

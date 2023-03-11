@@ -1,8 +1,7 @@
 ﻿// Copyright (c) FFCafe. All rights reserved.
 // Licensed under the AGPL-3.0 license. See LICENSE file in the project root for full license information.
 
-namespace Cafe.Matcha.Network
-{
+namespace Cafe.Matcha.Network {
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -10,21 +9,18 @@ namespace Cafe.Matcha.Network
     using System.Threading;
     using Cafe.Matcha.Constant;
     using Cafe.Matcha.DTO;
+    using Cafe.Matcha.Models;
     using Cafe.Matcha.Utils;
 
-    internal interface INetworkMonitor
-    {
+    internal interface INetworkMonitor {
         void HandleMessageReceived(string connection, long epoch, byte[] message);
         void HandleMessageSent(string connection, long epoch, byte[] message);
     }
 
-    internal class NetworkMonitor : INetworkMonitor
-    {
-        private bool ToMatchaOpcode(ushort opcode, out MatchaOpcode matchaOpcode)
-        {
+    internal class NetworkMonitor : INetworkMonitor {
+        private bool ToMatchaOpcode(ushort opcode, out MatchaOpcode matchaOpcode) {
             var region = Config.Instance.Region;
-            switch (region)
-            {
+            switch (region) {
                 case Region.Global:
                     return OpcodeStorage.Global.TryGetValue(opcode, out matchaOpcode);
 
@@ -37,35 +33,31 @@ namespace Cafe.Matcha.Network
             }
         }
 
-        public void HandleMessageReceived(string connection, long epoch, byte[] message)
-        {
-            try
-            {
+        public void HandleMessageReceived(string connection, long epoch, byte[] message) {
+            try {
                 HandleMessage(message);
             }
-            catch (Exception e)
-            {
-                try
-                {
+            catch (Exception e) {
+                try {
                     FireException(e);
                 }
                 catch { }
             }
         }
 
-        private void HandleMessage(byte[] message)
-        {
-            if (message.Length < 32 || message[12] != 3)
-            {
-                return;
+        private void HandleMessage(byte[] message) {
+
+            // 检查是否开启内存模式
+            if (!Config.Instance.Logger.Deucalion) {
+                if (message.Length < 32 || message[12] != 3) {
+                    return;
+                }
             }
 
             var processed = HandleMessageByOpcode(message);
-            if (!processed)
-            {
+            if (!processed) {
 #if DEBUG
-                if (ToMatchaOpcode(BitConverter.ToUInt16(message, 18), out var opcode))
-                {
+                if (ToMatchaOpcode(BitConverter.ToUInt16(message, 18), out var opcode)) {
                     logIncorrectPacketSize(opcode, message.Length);
                 }
 #endif
@@ -74,67 +66,54 @@ namespace Cafe.Matcha.Network
             }
         }
 
-        private void TryHandleMessage(byte[] message)
-        {
+        private void TryHandleMessage(byte[] message) {
             var data = message.Skip(32).ToArray();
             // Treasure Shifting Wheel Result
-            if (message.Length == 88)
-            {
+            if (message.Length == 88) {
                 var level = BitConverter.ToUInt32(data, 24);
                 if (
                     level == 7636061 || // G10 运河宝物库神殿
                     level == 8508181 // G12 梦羽宝殿
-                )
-                {
+                ) {
                     var result = (TreasureShiftingWheelResultType)data[40];
-                    switch (result)
-                    {
+                    switch (result) {
                         case TreasureShiftingWheelResultType.Low:
-                            FireEvent(new TreasureResultDTO()
-                            {
+                            FireEvent(new TreasureResultDTO() {
                                 Value = "wheel-low"
                             });
                             break;
                         case TreasureShiftingWheelResultType.Medium:
-                            FireEvent(new TreasureResultDTO()
-                            {
+                            FireEvent(new TreasureResultDTO() {
                                 Value = "wheel-medium"
                             });
                             break;
                         case TreasureShiftingWheelResultType.High:
-                            FireEvent(new TreasureResultDTO()
-                            {
+                            FireEvent(new TreasureResultDTO() {
                                 Value = "wheel-high"
                             });
                             break;
                         case TreasureShiftingWheelResultType.Shift:
-                            FireEvent(new TreasureResultDTO()
-                            {
+                            FireEvent(new TreasureResultDTO() {
                                 Value = "wheel-shift"
                             });
                             break;
                         case TreasureShiftingWheelResultType.Special:
-                            FireEvent(new TreasureResultDTO()
-                            {
+                            FireEvent(new TreasureResultDTO() {
                                 Value = "wheel-special"
                             });
                             break;
                         case TreasureShiftingWheelResultType.End:
-                            FireEvent(new TreasureResultDTO()
-                            {
+                            FireEvent(new TreasureResultDTO() {
                                 Value = "wheel-end"
                             });
                             break;
                     }
                 }
             }
-            else if (message.Length == 96)
-            {
+            else if (message.Length == 96) {
                 var flag = BitConverter.ToUInt32(data, 16);
-                if (flag == 0x04482c03)
-                {
-                    FireEvent(new TreasureResultDTO()
-                    {
+                if (flag == 0x04482c03) {
+                    FireEvent(new TreasureResultDTO() {
                         Round = data[32] + 1,
                         Value = data[40] == 1 ? "gate-open" : "gate-fail"
                     });
@@ -142,10 +121,8 @@ namespace Cafe.Matcha.Network
             }
         }
 
-        private bool HandleMessageByOpcode(byte[] message)
-        {
-            if (!ToMatchaOpcode(BitConverter.ToUInt16(message, 18), out var opcode))
-            {
+        private bool HandleMessageByOpcode(byte[] message) {
+            if (!ToMatchaOpcode(BitConverter.ToUInt16(message, 18), out var opcode)) {
                 return false;
             }
 
@@ -155,18 +132,14 @@ namespace Cafe.Matcha.Network
             var target = BitConverter.ToUInt32(message, 8);
             var data = message.Skip(32).ToArray();
 
-            if (opcode == MatchaOpcode.DirectorStart)
-            {
-                if (message.Length != 168)
-                {
+            if (opcode == MatchaOpcode.DirectorStart) {
+                if (!MessageLengthCheck(message, 168)) {
                     return false;
                 }
 
                 var category = BitConverter.ToUInt32(data, 0);
-                if (category == 0x250000)
-                {
-                    FireEvent(new MiniCactpotDTO()
-                    {
+                if (category == 0x250000) {
+                    FireEvent(new MiniCactpotDTO() {
                         IsNewGame = true,
                         X = (int)BitConverter.ToUInt32(data, 12),
                         Y = (int)BitConverter.ToUInt32(data, 16),
@@ -174,10 +147,8 @@ namespace Cafe.Matcha.Network
                     });
                 }
             }
-            else if (opcode == MatchaOpcode.NpcSpawn)
-            {
-                if (message.Length != 672)
-                {
+            else if (opcode == MatchaOpcode.NpcSpawn) {
+                if (!MessageLengthCheck(message, 672)) {
                     return false;
                 }
 
@@ -188,18 +159,15 @@ namespace Cafe.Matcha.Network
                 var fateId = BitConverter.ToUInt16(data, 104);
                 var level = data[127];
 
-                if (fateId != 0 || IsSpecialNpcName(bNpcName))
-                {
+                if (fateId != 0 || IsSpecialNpcName(bNpcName)) {
                     const int posOffset = 508;
                     var pos = new Vector3(
                         BitConverter.ToSingle(data, posOffset),
                         BitConverter.ToSingle(data, posOffset + 4),
                         BitConverter.ToSingle(data, posOffset + 8));
 
-                    State.Instance.Npc.Update(source, (npc) =>
-                    {
-                        if (npc.BNpcName != bNpcName)
-                        {
+                    State.Instance.Npc.Update(source, (npc) => {
+                        if (npc.BNpcName != bNpcName) {
                             npc.BNpcName = bNpcName;
                             npc.Location = location;
                             npc.Fate = fateId;
@@ -214,21 +182,16 @@ namespace Cafe.Matcha.Network
                     });
                 }
             }
-            else if (opcode == MatchaOpcode.ActorControl)
-            {
-                if (message.Length != 56)
-                {
+            else if (opcode == MatchaOpcode.ActorControl) {
+                if (!MessageLengthCheck(message, 56)) {
                     return false;
                 }
 
                 var type = (ActorControlType)BitConverter.ToUInt16(data, 0);
-                switch (type)
-                {
-                    case ActorControlType.SetStatus:
-                        {
+                switch (type) {
+                    case ActorControlType.SetStatus: {
                             var status = BitConverter.ToUInt32(data, 4);
-                            if (status == 2)
-                            {
+                            if (status == 2) {
                                 State.Instance.Npc.Remove(source);
                             }
 
@@ -236,10 +199,8 @@ namespace Cafe.Matcha.Network
                         }
                 }
             }
-            else if (opcode == MatchaOpcode.FateInfo)
-            {
-                if (message.Length != 56)
-                {
+            else if (opcode == MatchaOpcode.FateInfo) {
+                if (!MessageLengthCheck(message, 56)) {
                     return false;
                 }
 
@@ -247,17 +208,14 @@ namespace Cafe.Matcha.Network
                 var startTime = BitConverter.ToUInt32(data, 8);
                 var duration = BitConverter.ToUInt32(data, 16);
 
-                State.Instance.Fate.Update(fateId, (state) =>
-                {
+                State.Instance.Fate.Update(fateId, (state) => {
                     bool updated = false;
-                    if (state.StartTime != startTime)
-                    {
+                    if (state.StartTime != startTime) {
                         state.StartTime = startTime;
                         updated = true;
                     }
 
-                    if (state.Duration != duration)
-                    {
+                    if (state.Duration != duration) {
                         state.Duration = duration;
                         updated = true;
                     }
@@ -265,38 +223,30 @@ namespace Cafe.Matcha.Network
                     return updated;
                 });
             }
-            else if (opcode == MatchaOpcode.ActorControlSelf)
-            {
-                if (message.Length != 64)
-                {
+            else if (opcode == MatchaOpcode.ActorControlSelf) {
+                if (!MessageLengthCheck(message, 64)) {
                     return false;
                 }
 
                 var type = (ActorControlType)BitConverter.ToUInt16(data, 0);
 
-                switch (type)
-                {
-                    case ActorControlType.FateProgress:
-                        {
+                switch (type) {
+                    case ActorControlType.FateProgress: {
                             var fateId = BitConverter.ToUInt16(data, 4);
                             var progress = data[8];
 
-                            State.Instance.Fate.Update(fateId, (fate) =>
-                            {
-                                if (fate.Progress != progress)
-                                {
+                            State.Instance.Fate.Update(fateId, (fate) => {
+                                if (fate.Progress != progress) {
                                     fate.Progress = progress;
 
-                                    if (progress == 100)
-                                    {
+                                    if (progress == 100) {
                                         return true;
                                     }
                                 }
 
                                 return false;
                             });
-                            FireEvent(new FateDTO()
-                            {
+                            FireEvent(new FateDTO() {
                                 Type = "progress",
                                 Fate = fateId,
                                 Progress = progress
@@ -304,13 +254,11 @@ namespace Cafe.Matcha.Network
                             break;
                         }
 
-                    case ActorControlType.FateEnd:
-                        {
+                    case ActorControlType.FateEnd: {
                             var fateId = BitConverter.ToUInt16(data, 4);
 
                             State.Instance.Fate.Remove(fateId);
-                            FireEvent(new FateDTO()
-                            {
+                            FireEvent(new FateDTO() {
                                 Type = "end",
                                 Fate = fateId,
                                 Extra = BitConverter.ToUInt16(data, 28)
@@ -318,27 +266,22 @@ namespace Cafe.Matcha.Network
                             break;
                         }
 
-                    case ActorControlType.FateStart:
-                        {
+                    case ActorControlType.FateStart: {
                             var fateId = BitConverter.ToUInt16(data, 4);
 
                             State.Instance.Fate.Update(fateId, (fate) => false);
-                            FireEvent(new FateDTO()
-                            {
+                            FireEvent(new FateDTO() {
                                 Type = "start",
                                 Fate = fateId
                             });
                             break;
                         }
 
-                    case ActorControlType.DirectorUpdate:
-                        {
+                    case ActorControlType.DirectorUpdate: {
                             var category = BitConverter.ToUInt32(data, 4);
                             var subCategory = BitConverter.ToUInt32(data, 8);
-                            if (category == 0x250000 && subCategory == 2)
-                            {
-                                FireEvent(new MiniCactpotDTO()
-                                {
+                            if (category == 0x250000 && subCategory == 2) {
+                                FireEvent(new MiniCactpotDTO() {
                                     IsNewGame = false,
                                     X = (int)BitConverter.ToUInt32(data, 12),
                                     Y = (int)BitConverter.ToUInt32(data, 16),
@@ -349,10 +292,8 @@ namespace Cafe.Matcha.Network
                             break;
                         }
 
-                    case ActorControlType.TreasureSpot:
-                        {
-                            FireEvent(new TreasureSpotDTO()
-                            {
+                    case ActorControlType.TreasureSpot: {
+                            FireEvent(new TreasureSpotDTO() {
                                 Item = (int)BitConverter.ToUInt32(data, 4),
                                 Location = (int)BitConverter.ToUInt32(data, 8),
                                 IsNew = BitConverter.ToUInt32(data, 12) != 0
@@ -361,9 +302,8 @@ namespace Cafe.Matcha.Network
                         }
                 }
             }
-            else if (opcode == MatchaOpcode.ContentFinderNotifyPop)
-            {
-                if (message.Length != 72)
+            else if (opcode == MatchaOpcode.ContentFinderNotifyPop) {
+                if (!MessageLengthCheck(message, 72))
                 {
                     return false;
                 }
@@ -371,24 +311,19 @@ namespace Cafe.Matcha.Network
                 var roulette = BitConverter.ToUInt16(data, 2);
                 var instance = roulette == 0 ? BitConverter.ToUInt16(data, 0x1c) : 0;
 
-                FireEvent(new MatchAlertDTO()
-                {
+                FireEvent(new MatchAlertDTO() {
                     Roulette = roulette,
                     Instance = instance
                 });
             }
-            else if (opcode == MatchaOpcode.CompanyAirshipStatus)
-            {
-                if (message.Length != 176)
-                {
+            else if (opcode == MatchaOpcode.CompanyAirshipStatus) {
+                if (!MessageLengthCheck(message, 176)) {
                     return false;
                 }
 
                 var list = new List<CompanyVoyageStatusItem>();
-                for (int i = 0; i < 4; ++i)
-                {
-                    list.Add(new CompanyVoyageStatusItem
-                    {
+                for (int i = 0; i < 4; ++i) {
+                    list.Add(new CompanyVoyageStatusItem {
                         ReturnTime = BitConverter.ToUInt32(data, i * 36),
                         MaxDistance = BitConverter.ToUInt16(data, i * 36 + 4),
                         Name = Helper.ReadString(data, i * 36 + 6, 22),
@@ -403,24 +338,19 @@ namespace Cafe.Matcha.Network
                     });
                 }
 
-                FireEvent(new CompanyVoyageStatusDTO()
-                {
+                FireEvent(new CompanyVoyageStatusDTO() {
                     Type = "airship",
                     List = list
                 });
             }
-            else if (opcode == MatchaOpcode.CompanySubmersibleStatus)
-            {
-                if (message.Length != 176)
-                {
+            else if (opcode == MatchaOpcode.CompanySubmersibleStatus) {
+                if (!MessageLengthCheck(message, 176)) {
                     return false;
                 }
 
                 var list = new List<CompanyVoyageStatusItem>();
-                for (int i = 0; i < 4; ++i)
-                {
-                    list.Add(new CompanyVoyageStatusItem
-                    {
+                for (int i = 0; i < 4; ++i) {
+                    list.Add(new CompanyVoyageStatusItem {
                         ReturnTime = BitConverter.ToUInt32(data, i * 36),
                         MaxDistance = BitConverter.ToUInt16(data, i * 36 + 4),
                         Name = Helper.ReadString(data, i * 36 + 8, 22),
@@ -435,16 +365,13 @@ namespace Cafe.Matcha.Network
                     });
                 }
 
-                FireEvent(new CompanyVoyageStatusDTO()
-                {
+                FireEvent(new CompanyVoyageStatusDTO() {
                     Type = "submersible",
                     List = list
                 });
             }
-            else if (opcode == MatchaOpcode.InitZone)
-            {
-                if (message.Length != 136)
-                {
+            else if (opcode == MatchaOpcode.InitZone) {
+                if (!MessageLengthCheck(message, 136)) {
                     return false;
                 }
 
@@ -454,79 +381,65 @@ namespace Cafe.Matcha.Network
                 var contentId = BitConverter.ToUInt16(data, 6);
 
                 State.Instance.HandleInitZone(serverId, zoneId, instanceId, contentId);
-                FireEvent(new InitZoneDTO()
-                {
+                FireEvent(new InitZoneDTO() {
                     Zone = zoneId,
                     Instance = contentId
                 });
             }
-            else if (opcode == MatchaOpcode.EventPlay)
-            {
-                if (message.Length != 72)
-                {
+            else if (opcode == MatchaOpcode.EventPlay) {
+                if (!MessageLengthCheck(message, 72)) {
                     return false;
                 }
 
                 var targetActorId = BitConverter.ToUInt32(message, 8);
                 var fishActorId = BitConverter.ToUInt32(data, 0);
 
-                if (targetActorId != fishActorId)
-                {
+                if (targetActorId != fishActorId) {
                     return true;
                 }
 
                 var type = (FishEventType)BitConverter.ToUInt16(data, 12);
                 var biteType = BitConverter.ToUInt16(data, 28);
 
-                if (type != FishEventType.Bite)
-                {
+                if (type != FishEventType.Bite) {
                     return true;
                 }
 
-                switch ((FishEventBiteType)biteType)
-                {
+                switch ((FishEventBiteType)biteType) {
                     case FishEventBiteType.Big:
-                        FireEvent(new FishBiteDTO()
-                        {
+                        FireEvent(new FishBiteDTO() {
                             Type = 3
                         });
                         break;
                     case FishEventBiteType.Light:
-                        FireEvent(new FishBiteDTO()
-                        {
+                        FireEvent(new FishBiteDTO() {
                             Type = 1
                         });
                         break;
                     case FishEventBiteType.Medium:
-                        FireEvent(new FishBiteDTO()
-                        {
+                        FireEvent(new FishBiteDTO() {
                             Type = 2
                         });
                         break;
                 }
             }
-            else if (opcode == MatchaOpcode.MarketBoardItemListingCount)
-            {
-                if (message.Length != 48)
-                {
+            else if (opcode == MatchaOpcode.MarketBoardItemListingCount) {
+                if (!MessageLengthCheck(message, 48)) {
                     return false;
                 }
 
                 var itemId = BitConverter.ToUInt32(data, 0);
                 var count = data[0x0B];
 
-                FireEvent(new MarketBoardItemListingCountDTO()
-                {
+                FireEvent(new MarketBoardItemListingCountDTO() {
                     Item = (int)itemId,
                     Count = count,
                     World = State.Instance.WorldId
                 });
                 ThreadPool.QueueUserWorkItem(o => Universalis.Client.QueryItem(State.Instance.WorldId, itemId, FireEvent));
             }
-            else if (opcode == MatchaOpcode.MarketBoardItemListing)
-            {
-                if (message.Length != 1560)
-                {
+            else if (opcode == MatchaOpcode.MarketBoardItemListing) {
+                if (!MessageLengthCheck(message, 1560)) {
                     return false;
                 }
 
@@ -536,57 +449,47 @@ namespace Cafe.Matcha.Network
                 var items = new List<MarketBoardItemListingItem>();
 
                 const int LISTING_LENGTH = 152;
-                for (int i = 0; i < 10; i++)
-                {
+                for (int i = 0; i < 10; i++) {
                     var pricePerUnit = BitConverter.ToUInt32(data, 0x20 + (LISTING_LENGTH * i));
-                    if (pricePerUnit == 0)
-                    {
+                    if (pricePerUnit == 0) {
                         break;
                     }
 
                     var quantity = BitConverter.ToUInt32(data, 0x28 + (LISTING_LENGTH * i));
                     var hq = data[0x8c + (LISTING_LENGTH * i)];
-                    items.Add(new MarketBoardItemListingItem()
-                    {
+                    items.Add(new MarketBoardItemListingItem() {
                         Price = (int)(pricePerUnit * 1.05),
                         Quantity = (int)quantity,
                         HQ = hq != 0
                     });
                 }
 
-                FireEvent(new MarketBoardItemListingDTO()
-                {
+                FireEvent(new MarketBoardItemListingDTO() {
                     Item = itemId,
                     Data = items,
                     World = State.Instance.WorldId
                 });
             }
-            else if (opcode == MatchaOpcode.ItemInfo)
-            {
-                if (message.Length != 96)
-                {
+            else if (opcode == MatchaOpcode.ItemInfo) {
+                if (!MessageLengthCheck(message, 96)) {
                     return false;
                 }
 
                 // Filter out non-equipped items
                 var container = BitConverter.ToUInt16(data, 0x08);
-                if (container != 1000)
-                {
+                if (container != 1000) {
                     return true;
                 }
 
                 var materias = new List<Materia>();
-                for (int i = 0; i < 5; ++i)
-                {
-                    materias.Add(new Materia()
-                    {
+                for (int i = 0; i < 5; ++i) {
+                    materias.Add(new Materia() {
                         Type = BitConverter.ToUInt16(data, 0x2C + 2 * i),
                         Tier = data[0x36 + i]
                     });
                 }
 
-                FireEvent(new GearsetDTO()
-                {
+                FireEvent(new GearsetDTO() {
                     IsSelf = true,
                     Slot = BitConverter.ToUInt16(data, 0x0A),
                     Item = (int)BitConverter.ToUInt32(data, 0x10),
@@ -595,22 +498,18 @@ namespace Cafe.Matcha.Network
                     Materias = materias
                 });
             }
-            else if (opcode == MatchaOpcode.InventoryTransaction)
-            {
-                if (message.Length != 80)
-                {
+            else if (opcode == MatchaOpcode.InventoryTransaction) {
+                if (!MessageLengthCheck(message, 80)) {
                     return false;
                 }
 
                 // Filter out non-equipped items
                 var container = BitConverter.ToUInt16(data, 0x0c);
-                if (container != 1000)
-                {
+                if (container != 1000) {
                     return true;
                 }
 
-                FireEvent(new GearsetDTO()
-                {
+                FireEvent(new GearsetDTO() {
                     IsSelf = true,
                     Slot = BitConverter.ToUInt16(data, 0x10),
                     Item = 0,
@@ -619,31 +518,25 @@ namespace Cafe.Matcha.Network
                     Materias = new List<Materia>() { }
                 });
             }
-            else if (opcode == MatchaOpcode.Examine)
-            {
-                if (message.Length != 1016)
-                {
+            else if (opcode == MatchaOpcode.Examine) {
+                if (!MessageLengthCheck(message, 1016)) {
                     return false;
                 }
 
                 const int offset = 0x40;
                 const int length = 0x28;
-                for (int slot = 0; slot < 14; ++slot)
-                {
+                for (int slot = 0; slot < 14; ++slot) {
                     var detail = new List<int>();
 
                     var materias = new List<Materia>();
-                    for (int i = 0; i < 5; ++i)
-                    {
-                        materias.Add(new Materia()
-                        {
+                    for (int i = 0; i < 5; ++i) {
+                        materias.Add(new Materia() {
                             Type = BitConverter.ToUInt16(data, offset + slot * length + 18 + 4 * i),
                             Tier = BitConverter.ToUInt16(data, offset + slot * length + 20 + 4 * i)
                         });
                     }
 
-                    FireEvent(new GearsetDTO()
-                    {
+                    FireEvent(new GearsetDTO() {
                         IsSelf = false,
                         Slot = slot,
                         Item = (int)BitConverter.ToUInt32(data, offset + slot * length),
@@ -653,10 +546,8 @@ namespace Cafe.Matcha.Network
                     });
                 }
             }
-            else if (opcode == MatchaOpcode.CEDirector)
-            {
-                FireEvent(new DynamicEventDTO()
-                {
+            else if (opcode == MatchaOpcode.CEDirector) {
+                FireEvent(new DynamicEventDTO() {
                     NextStage = BitConverter.ToUInt32(data, 0),
                     Countdown = (int)BitConverter.ToUInt32(data, 4),
                     Zone = State.Instance.ZoneId,
@@ -666,23 +557,20 @@ namespace Cafe.Matcha.Network
                     Progress = data[12],
                 });
             }
-            else if (opcode == MatchaOpcode.PlayerSpawn)
-            {
+            else if (opcode == MatchaOpcode.PlayerSpawn) {
                 var isCurrentPlayer = source == target;
                 var currentWorldId = BitConverter.ToUInt16(data, 4);
 
                 State.Instance.HandleWorldId(currentWorldId, isCurrentPlayer);
             }
-            else
-            {
+            else {
                 return false;
             }
 
             return true;
         }
 
-        private bool IsSpecialNpcName(uint bNpcName)
-        {
+        private bool IsSpecialNpcName(uint bNpcName) {
             return (bNpcName >= 2919 && bNpcName <= 2969) ||
                    (bNpcName >= 4350 && bNpcName <= 4378) ||
                     bNpcName == 4380 ||
@@ -694,25 +582,35 @@ namespace Cafe.Matcha.Network
 
         public delegate void ExceptionHandler(Exception e);
         public event ExceptionHandler OnException;
-        private void FireException(Exception e)
-        {
+        private void FireException(Exception e) {
             OnException?.Invoke(e);
         }
 
         public delegate void EventHandler(BaseDTO args);
         public event EventHandler OnReceiveEvent;
-        private void FireEvent(BaseDTO args)
-        {
+        private void FireEvent(BaseDTO args) {
             OnReceiveEvent?.Invoke(args);
         }
 
-        public void HandleMessageSent(string connection, long epoch, byte[] message)
-        {
+        public void HandleMessageSent(string connection, long epoch, byte[] message) {
+        }
+
+        public bool MessageLengthCheck(byte[] message, int Length) {
+            if (Config.Instance.Logger.Deucalion) {
+                return true;
+            }
+            else {
+                if (message.Length != Length) {
+                    return false;
+                }
+                else {
+                    return true;
+                }
+            }
         }
 
 #if DEBUG
-        private void logIncorrectPacketSize(MatchaOpcode opcode, int size)
-        {
+        private void logIncorrectPacketSize(MatchaOpcode opcode, int size) {
             Log.Debug($"[network] {Enum.GetName(typeof(MatchaOpcode), opcode)} length {size}");
         }
 #endif

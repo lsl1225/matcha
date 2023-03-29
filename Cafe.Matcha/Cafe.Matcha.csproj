@@ -66,6 +66,10 @@
       <HintPath>..\..\..\FFXIV_ACT_Plugin_SDK\SDK\FFXIV_ACT_Plugin.Common.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="FFXIV_ACT_Plugin.Config">
+      <HintPath>..\..\..\FFXIV_ACT_Plugin_SDK\SDK\FFXIV_ACT_Plugin.Config.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="FFXIV_ACT_Plugin.Memory">
       <HintPath>..\..\..\FFXIV_ACT_Plugin_SDK\SDK\FFXIV_ACT_Plugin.Memory.dll</HintPath>
       <Private>False</Private>
@@ -105,6 +109,8 @@
     <Compile Include="Constant\FishEventBiteType.cs" />
     <Compile Include="Constant\FishEventType.cs" />
     <Compile Include="Constant\MatchaOpcode.cs" />
+    <Compile Include="Constant\PacketSize.cs" />
+    <Compile Include="Constant\PacketStructure.cs" />
     <Compile Include="Constant\Region.cs" />
     <Compile Include="Constant\RequestType.cs" />
     <Compile Include="Constant\Secret.cs" />

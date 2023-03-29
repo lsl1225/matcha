@@ -4,13 +4,15 @@
 namespace Cafe.Matcha.Network {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
     using System.Linq;
     using System.Numerics;
     using System.Threading;
     using Cafe.Matcha.Constant;
     using Cafe.Matcha.DTO;
-    using Cafe.Matcha.Models;
     using Cafe.Matcha.Utils;
+    using FFXIV_ACT_Plugin.Config;
+    using static Cafe.Matcha.Constant.PacketStructure;
 
     internal interface INetworkMonitor {
         void HandleMessageReceived(string connection, long epoch, byte[] message);
@@ -46,10 +48,10 @@ namespace Cafe.Matcha.Network {
         }
 
         private void HandleMessage(byte[] message) {
-
+            
             // 检查是否开启内存模式
             if (!Config.Instance.Logger.Deucalion) {
-                if (message.Length < 32 || message[12] != 3) {
+                if (message.Length < 32 || message[12] != (byte)FFXIVARR_SEGMENT_TYPE.SEGMENTTYPE_IPC) {
                     return;
                 }
             }
@@ -133,7 +135,7 @@ namespace Cafe.Matcha.Network {
             var data = message.Skip(32).ToArray();
 
             if (opcode == MatchaOpcode.DirectorStart) {
-                if (!MessageLengthCheck(message, 168)) {
+                if (message.Length != PacketSize.DirectorStart) {
                     return false;
                 }
 
@@ -148,7 +150,7 @@ namespace Cafe.Matcha.Network {
                 }
             }
             else if (opcode == MatchaOpcode.NpcSpawn) {
-                if (!MessageLengthCheck(message, 672)) {
+                if (message.Length != PacketSize.NpcSpawn) {
                     return false;
                 }
 
@@ -183,7 +185,7 @@ namespace Cafe.Matcha.Network {
                 }
             }
             else if (opcode == MatchaOpcode.ActorControl) {
-                if (!MessageLengthCheck(message, 56)) {
+                if (message.Length != PacketSize.ActorControl) {
                     return false;
                 }
 
@@ -200,7 +202,7 @@ namespace Cafe.Matcha.Network {
                 }
             }
             else if (opcode == MatchaOpcode.FateInfo) {
-                if (!MessageLengthCheck(message, 56)) {
+                if (message.Length != PacketSize.FateInfo) {
                     return false;
                 }
 
@@ -224,7 +226,7 @@ namespace Cafe.Matcha.Network {
                 });
             }
             else if (opcode == MatchaOpcode.ActorControlSelf) {
-                if (!MessageLengthCheck(message, 64)) {
+                if (message.Length != PacketSize.ActorControlSelf) {
                     return false;
                 }
 
@@ -303,8 +305,7 @@ namespace Cafe.Matcha.Network {
                 }
             }
             else if (opcode == MatchaOpcode.ContentFinderNotifyPop) {
-                if (!MessageLengthCheck(message, 72))
-                {
+                if (message.Length != PacketSize.ContentFinderNotifyPop) {
                     return false;
                 }
 
@@ -317,7 +318,7 @@ namespace Cafe.Matcha.Network {
                 });
             }
             else if (opcode == MatchaOpcode.CompanyAirshipStatus) {
-                if (!MessageLengthCheck(message, 176)) {
+                if (message.Length != PacketSize.CompanyAirshipStatus) {
                     return false;
                 }
 
@@ -344,7 +345,7 @@ namespace Cafe.Matcha.Network {
                 });
             }
             else if (opcode == MatchaOpcode.CompanySubmersibleStatus) {
-                if (!MessageLengthCheck(message, 176)) {
+                if (message.Length != PacketSize.CompanySubmersibleStatus) {
                     return false;
                 }
 
@@ -371,7 +372,7 @@ namespace Cafe.Matcha.Network {
                 });
             }
             else if (opcode == MatchaOpcode.InitZone) {
-                if (!MessageLengthCheck(message, 136)) {
+                if (message.Length != PacketSize.InitZone) {
                     return false;
                 }
 
@@ -387,7 +388,7 @@ namespace Cafe.Matcha.Network {
                 });
             }
             else if (opcode == MatchaOpcode.EventPlay) {
-                if (!MessageLengthCheck(message, 72)) {
+                if (message.Length != PacketSize.EventPlay) {
                     return false;
                 }
 
@@ -424,7 +425,7 @@ namespace Cafe.Matcha.Network {
                 }
             }
             else if (opcode == MatchaOpcode.MarketBoardItemListingCount) {
-                if (!MessageLengthCheck(message, 48)) {
+                if (message.Length != PacketSize.MarketBoardItemListingCount) {
                     return false;
                 }
 
@@ -439,7 +440,7 @@ namespace Cafe.Matcha.Network {
                 ThreadPool.QueueUserWorkItem(o => Universalis.Client.QueryItem(State.Instance.WorldId, itemId, FireEvent));
             }
             else if (opcode == MatchaOpcode.MarketBoardItemListing) {
-                if (!MessageLengthCheck(message, 1560)) {
+                if (message.Length != PacketSize.MarketBoardItemListing) {
                     return false;
                 }
 
@@ -471,7 +472,7 @@ namespace Cafe.Matcha.Network {
                 });
             }
             else if (opcode == MatchaOpcode.ItemInfo) {
-                if (!MessageLengthCheck(message, 96)) {
+                if (message.Length != PacketSize.ItemInfo) {
                     return false;
                 }
 
@@ -499,7 +500,7 @@ namespace Cafe.Matcha.Network {
                 });
             }
             else if (opcode == MatchaOpcode.InventoryTransaction) {
-                if (!MessageLengthCheck(message, 80)) {
+                if (message.Length != PacketSize.InventoryTransaction) {
                     return false;
                 }
 
@@ -519,7 +520,7 @@ namespace Cafe.Matcha.Network {
                 });
             }
             else if (opcode == MatchaOpcode.Examine) {
-                if (!MessageLengthCheck(message, 1016)) {
+                if (message.Length != PacketSize.Examine) {
                     return false;
                 }
 
@@ -593,20 +594,6 @@ namespace Cafe.Matcha.Network {
         }
 
         public void HandleMessageSent(string connection, long epoch, byte[] message) {
-        }
-
-        public bool MessageLengthCheck(byte[] message, int Length) {
-            if (Config.Instance.Logger.Deucalion) {
-                return true;
-            }
-            else {
-                if (message.Length != Length) {
-                    return false;
-                }
-                else {
-                    return true;
-                }
-            }
         }
 
 #if DEBUG

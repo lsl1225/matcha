@@ -3167,7 +3167,7 @@
   "238": {
     "name": {
       "chs": "漂流海域妖歌海",
-      "en": "The Sirensong Sea",
+      "en": "the Sirensong Sea",
       "ja": "漂流海域 セイレーン海",
       "de": "Sirenen-See",
       "fr": "la Mer du Chant des sirènes"
@@ -9479,21 +9479,6 @@
     "itemSync": 620,
     "memberType": 1
   },
-  "875": {
-    "name": {
-      "chs": "萨菲洛特幻巧战",
-      "en": "Containment Bay S1T7 (Unreal)",
-      "ja": "幻魔神セフィロト討滅戦",
-      "de": "Traumprüfung - Sephirot",
-      "fr": "Unité de contention S1P7 (irréel)"
-    },
-    "type": 4,
-    "level": 90,
-    "levelSync": 90,
-    "item": 560,
-    "itemSync": 565,
-    "memberType": 3
-  },
   "876": {
     "name": {
       "chs": "万魔殿 炼净之狱3",
@@ -9631,7 +9616,7 @@
   },
   "886": {
     "name": {
-      "chs": "Mount Ordeals",
+      "chs": "卢比坎特歼灭战",
       "en": "Mount Ordeals",
       "ja": "ルビカンテ討滅戦",
       "de": "Prophetie - Rubicante",
@@ -9661,7 +9646,7 @@
   },
   "897": {
     "name": {
-      "chs": "Eureka Orthos (Floors 1-10)",
+      "chs": "",
       "en": "Eureka Orthos (Floors 1-10)",
       "ja": "オルト・エウレカ B1～B10",
       "de": "Eureka Orthos (Ebenen 1-10)",
@@ -9676,7 +9661,7 @@
   },
   "898": {
     "name": {
-      "chs": "Eureka Orthos (Floors 11-20)",
+      "chs": "",
       "en": "Eureka Orthos (Floors 11-20)",
       "ja": "オルト・エウレカ B11～B20",
       "de": "Eureka Orthos (Ebenen 11-20)",
@@ -9691,7 +9676,7 @@
   },
   "899": {
     "name": {
-      "chs": "Eureka Orthos (Floors 21-30)",
+      "chs": "",
       "en": "Eureka Orthos (Floors 21-30)",
       "ja": "オルト・エウレカ B21～B30",
       "de": "Eureka Orthos (Ebenen 21-30)",
@@ -9706,7 +9691,7 @@
   },
   "900": {
     "name": {
-      "chs": "Eureka Orthos (Floors 31-40)",
+      "chs": "",
       "en": "Eureka Orthos (Floors 31-40)",
       "ja": "オルト・エウレカ B31～B40",
       "de": "Eureka Orthos (Ebenen 31-40)",
@@ -9721,7 +9706,7 @@
   },
   "901": {
     "name": {
-      "chs": "Eureka Orthos (Floors 41-50)",
+      "chs": "",
       "en": "Eureka Orthos (Floors 41-50)",
       "ja": "オルト・エウレカ B41～B50",
       "de": "Eureka Orthos (Ebenen 41-50)",
@@ -9736,7 +9721,7 @@
   },
   "902": {
     "name": {
-      "chs": "Eureka Orthos (Floors 51-60)",
+      "chs": "",
       "en": "Eureka Orthos (Floors 51-60)",
       "ja": "オルト・エウレカ B51～B60",
       "de": "Eureka Orthos (Ebenen 51-60)",
@@ -9751,7 +9736,7 @@
   },
   "903": {
     "name": {
-      "chs": "Eureka Orthos (Floors 61-70)",
+      "chs": "",
       "en": "Eureka Orthos (Floors 61-70)",
       "ja": "オルト・エウレカ B61～B70",
       "de": "Eureka Orthos (Ebenen 61-70)",
@@ -9766,7 +9751,7 @@
   },
   "904": {
     "name": {
-      "chs": "Eureka Orthos (Floors 71-80)",
+      "chs": "",
       "en": "Eureka Orthos (Floors 71-80)",
       "ja": "オルト・エウレカ B71～B80",
       "de": "Eureka Orthos (Ebenen 71-80)",
@@ -9781,7 +9766,7 @@
   },
   "905": {
     "name": {
-      "chs": "Eureka Orthos (Floors 81-90)",
+      "chs": "",
       "en": "Eureka Orthos (Floors 81-90)",
       "ja": "オルト・エウレカ B81～B90",
       "de": "Eureka Orthos (Ebenen 81-90)",
@@ -9796,7 +9781,7 @@
   },
   "906": {
     "name": {
-      "chs": "Eureka Orthos (Floors 91-100)",
+      "chs": "",
       "en": "Eureka Orthos (Floors 91-100)",
       "ja": "オルト・エウレカ B91～B100",
       "de": "Eureka Orthos (Ebenen 91-100)",
@@ -9811,7 +9796,7 @@
   },
   "907": {
     "name": {
-      "chs": "Generational Bonding",
+      "chs": "",
       "en": "Generational Bonding",
       "ja": "はつらつとした親子",
       "de": "Väterliche Liebe",
@@ -9826,7 +9811,7 @@
   },
   "908": {
     "name": {
-      "chs": "The Omega Protocol (Ultimate)",
+      "chs": "",
       "en": "The Omega Protocol (Ultimate)",
       "ja": "絶オメガ検証戦",
       "de": "Omega (fatal)",
@@ -9856,7 +9841,7 @@
   },
   "910": {
     "name": {
-      "chs": "An Unforeseen Bargain",
+      "chs": "未料想过的交易",
       "en": "An Unforeseen Bargain",
       "ja": "パンひとつと引き換えに",
       "de": "Der Wert einer Buuds",
@@ -10051,7 +10036,7 @@
   },
   "923": {
     "name": {
-      "chs": "Crystalline Conflict (Custom Match - The Clockwork Castletown)",
+      "chs": "水晶冲突（机关大殿：自定赛）",
       "en": "Crystalline Conflict (Custom Match - The Clockwork Castletown)",
       "ja": "クリスタルコンフリクト(東方絡繰御殿：カスタムマッチ)",
       "de": "Crystalline Conflict: Die Mechanische Menagerie (Schaukampf)",
@@ -10066,7 +10051,7 @@
   },
   "924": {
     "name": {
-      "chs": "Mount Ordeals (Extreme)",
+      "chs": "卢比坎特歼殛战",
       "en": "Mount Ordeals (Extreme)",
       "ja": "極ルビカンテ討滅戦",
       "de": "Eschatos - Rubicante",

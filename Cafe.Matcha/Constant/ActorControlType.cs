@@ -7,13 +7,8 @@ namespace Cafe.Matcha.Constant {
         DefeatMsg = 6,
         TreasureSpot = 84,
         DirectorUpdate = 109,
-        // CN
-        FateStart = 2357,
-        FateEnd = 2358,
-        FateProgress = 2366,
-        // Global
-        FateStartGlobal = 2370,
-        FateEndGlobal = 2357,
-        FateProgressGlobal = 2356
+        FateStart = 2370,
+        FateEnd = 2357,
+        FateProgress = 2364
     }
 }

@@ -231,6 +231,52 @@ namespace Cafe.Matcha.Network {
                 var type = (ActorControlType)BitConverter.ToUInt16(data, 0);
 
                 switch (type) {
+                    case ActorControlType.FateProgress: {
+                            var fateId = BitConverter.ToUInt16(data, 4);
+                            var progress = data[8];
+
+                            State.Instance.Fate.Update(fateId, (fate) => {
+                                if (fate.Progress != progress) {
+                                    fate.Progress = progress;
+
+                                    if (progress == 100) {
+                                        return true;
+                                    }
+                                }
+
+                                return false;
+                            });
+                            FireEvent(new FateDTO() {
+                                Type = "progress",
+                                Fate = fateId,
+                                Progress = progress
+                            });
+                            break;
+                        }
+
+                    case ActorControlType.FateEnd: {
+                            var fateId = BitConverter.ToUInt16(data, 4);
+
+                            State.Instance.Fate.Remove(fateId);
+                            FireEvent(new FateDTO() {
+                                Type = "end",
+                                Fate = fateId,
+                                Extra = BitConverter.ToUInt16(data, 28)
+                            });
+                            break;
+                        }
+
+                    case ActorControlType.FateStart: {
+                            var fateId = BitConverter.ToUInt16(data, 4);
+
+                            State.Instance.Fate.Update(fateId, (fate) => false);
+                            FireEvent(new FateDTO() {
+                                Type = "start",
+                                Fate = fateId
+                            });
+                            break;
+                        }
+
                     case ActorControlType.DirectorUpdate: {
                             var category = BitConverter.ToUInt32(data, 4);
                             var subCategory = BitConverter.ToUInt32(data, 8);
@@ -254,105 +300,6 @@ namespace Cafe.Matcha.Network {
                             });
                             break;
                         }
-                }
-
-                if (Config.Instance.Region == Region.Global) {
-                    switch (type) {
-                        case ActorControlType.FateStartGlobal: {
-                                var fateId = BitConverter.ToUInt16(data, 4);
-
-                                State.Instance.Fate.Update(fateId, (fate) => false);
-                                FireEvent(new FateDTO() {
-                                    Type = "start",
-                                    Fate = fateId
-                                });
-                                break;
-                            }
-
-                        case ActorControlType.FateEndGlobal: {
-                                var fateId = BitConverter.ToUInt16(data, 4);
-
-                                State.Instance.Fate.Remove(fateId);
-                                FireEvent(new FateDTO() {
-                                    Type = "end",
-                                    Fate = fateId,
-                                    Extra = BitConverter.ToUInt16(data, 28)
-                                });
-                                break;
-                            }
-
-                        case ActorControlType.FateProgressGlobal: {
-                                var fateId = BitConverter.ToUInt16(data, 4);
-                                var progress = data[8];
-
-                                State.Instance.Fate.Update(fateId, (fate) => {
-                                    if (fate.Progress != progress) {
-                                        fate.Progress = progress;
-
-                                        if (progress == 100) {
-                                            return true;
-                                        }
-                                    }
-
-                                    return false;
-                                });
-                                FireEvent(new FateDTO() {
-                                    Type = "progress",
-                                    Fate = fateId,
-                                    Progress = progress
-                                });
-                                break;
-                            }
-                    }
-                }
-                else {
-                    switch (type) {
-                        case ActorControlType.FateProgress: {
-                                var fateId = BitConverter.ToUInt16(data, 4);
-                                var progress = data[8];
-
-                                State.Instance.Fate.Update(fateId, (fate) => {
-                                    if (fate.Progress != progress) {
-                                        fate.Progress = progress;
-
-                                        if (progress == 100) {
-                                            return true;
-                                        }
-                                    }
-
-                                    return false;
-                                });
-                                FireEvent(new FateDTO() {
-                                    Type = "progress",
-                                    Fate = fateId,
-                                    Progress = progress
-                                });
-                                break;
-                            }
-
-                        case ActorControlType.FateEnd: {
-                                var fateId = BitConverter.ToUInt16(data, 4);
-
-                                State.Instance.Fate.Remove(fateId);
-                                FireEvent(new FateDTO() {
-                                    Type = "end",
-                                    Fate = fateId,
-                                    Extra = BitConverter.ToUInt16(data, 28)
-                                });
-                                break;
-                            }
-
-                        case ActorControlType.FateStart: {
-                                var fateId = BitConverter.ToUInt16(data, 4);
-
-                                State.Instance.Fate.Update(fateId, (fate) => false);
-                                FireEvent(new FateDTO() {
-                                    Type = "start",
-                                    Fate = fateId
-                                });
-                                break;
-                            }
-                    }
                 }
             }
             else if (opcode == MatchaOpcode.ContentFinderNotifyPop) {

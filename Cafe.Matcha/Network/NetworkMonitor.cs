@@ -9,6 +9,7 @@ namespace Cafe.Matcha.Network {
     using System.Collections.Generic;
     using System.Linq;
     using System.Numerics;
+    using System.Text;
     using System.Threading;
     using static Cafe.Matcha.Constant.PacketStructure;
 
@@ -46,12 +47,10 @@ namespace Cafe.Matcha.Network {
         }
 
         private void HandleMessage(byte[] message) {
-
-            // 检查是否开启内存模式
-            if (!Config.Instance.Logger.Deucalion) {
-                if (message.Length < 32 || message[12] != (byte)FFXIVARR_SEGMENT_TYPE.SEGMENTTYPE_IPC) {
-                    return;
-                }
+            var segmentType = message[12];
+            // Deucalion gives wrong type (0)
+            if (message.Length < 32 || (segmentType != 0 && segmentType != (byte)FFXIVARR_SEGMENT_TYPE.SEGMENTTYPE_IPC)) {
+                return;
             }
 
             var processed = HandleMessageByOpcode(message);
@@ -73,7 +72,8 @@ namespace Cafe.Matcha.Network {
                 var level = BitConverter.ToUInt32(data, 24);
                 if (
                     level == 7636061 || // G10 运河宝物库神殿
-                    level == 8508181 // G12 梦羽宝殿
+                    level == 8508181 || // G12 梦羽宝殿
+                    level == 0000000 // G15 育体宝殿
                 ) {
                     var result = (TreasureShiftingWheelResultType)data[40];
                     switch (result) {
@@ -229,7 +229,15 @@ namespace Cafe.Matcha.Network {
                 }
 
                 var type = (ActorControlType)BitConverter.ToUInt16(data, 0);
+#if DEBUG
+                var sb = new StringBuilder();
+                for (int i = 4; i < 32; i += 4) {
+                    sb.Append(BitConverter.ToUInt32(data, 4));
+                    sb.Append(' ');
+                }
 
+                Log.Debug(LogType.ActorControlSelf, $"type {type}, {sb}");
+#endif
                 switch (type) {
                     case ActorControlType.FateProgress: {
                             var fateId = BitConverter.ToUInt16(data, 4);
@@ -596,7 +604,7 @@ namespace Cafe.Matcha.Network {
 
 #if DEBUG
         private void logIncorrectPacketSize(MatchaOpcode opcode, int size) {
-            Log.Debug($"[network] {Enum.GetName(typeof(MatchaOpcode), opcode)} length {size}");
+            Log.Warn(LogType.InvalidPacket, $"{Enum.GetName(typeof(MatchaOpcode), opcode)} length {size}");
         }
 #endif
     }

@@ -108,6 +108,7 @@
     <Compile Include="Constant\EventType.cs" />
     <Compile Include="Constant\FishEventBiteType.cs" />
     <Compile Include="Constant\FishEventType.cs" />
+    <Compile Include="Constant\LogType.cs" />
     <Compile Include="Constant\MatchaOpcode.cs" />
     <Compile Include="Constant\PacketSize.cs" />
     <Compile Include="Constant\PacketStructure.cs" />

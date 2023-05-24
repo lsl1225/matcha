@@ -8864,6 +8864,21 @@
     "itemSync": 550,
     "memberType": 1
   },
+  "822": {
+    "name": {
+      "chs": "the Aetherfont",
+      "en": "the Aetherfont",
+      "ja": "星霊間欠 ハーム島",
+      "de": "Ätherborn",
+      "fr": "L'île de Haam"
+    },
+    "type": 2,
+    "level": 90,
+    "levelSync": 90,
+    "item": 605,
+    "itemSync": 0,
+    "memberType": 2
+  },
   "830": {
     "name": {
       "chs": "究极神兵破坏作战",

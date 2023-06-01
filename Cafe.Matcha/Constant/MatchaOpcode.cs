@@ -34,7 +34,7 @@ namespace Cafe.Matcha.Constant
         {
             { 0x0381, MatchaOpcode.ActorControl },
             { 0x014F, MatchaOpcode.ActorControlSelf },
-            { 0x00BC, MatchaOpcode.CEDirector },
+            { 0x01DA, MatchaOpcode.CEDirector },
             /* 
              * AirshipTimers & SubmarineTimers
              */

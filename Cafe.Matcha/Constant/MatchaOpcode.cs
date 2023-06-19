@@ -34,7 +34,7 @@ namespace Cafe.Matcha.Constant
         {
             { 0x03a0, MatchaOpcode.ActorControl },
             { 0x0286, MatchaOpcode.ActorControlSelf },
-            { 0x01DA, MatchaOpcode.CEDirector }, // unknown
+            { 0x036e, MatchaOpcode.CEDirector },
             /* 
              * AirshipTimers & SubmarineTimers
              */
@@ -44,10 +44,10 @@ namespace Cafe.Matcha.Constant
             /*
              * MiniCactpotInit
              */
-            { 0x03C6, MatchaOpcode.DirectorStart }, // unknown
+            { 0x0145, MatchaOpcode.DirectorStart },
             { 0x02d2, MatchaOpcode.EventPlay },
             { 0x0075, MatchaOpcode.Examine },
-            { 0x01E8, MatchaOpcode.FateInfo }, // unknown
+            { 0x018c, MatchaOpcode.FateInfo },
             { 0x02d0, MatchaOpcode.InitZone },
             { 0x02df, MatchaOpcode.InventoryTransaction },
             { 0x0103, MatchaOpcode.ItemInfo },

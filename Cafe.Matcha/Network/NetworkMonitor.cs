@@ -87,8 +87,7 @@ namespace Cafe.Matcha.Network
                 if (
                     level == 7636061 || // G10 运河宝物库神殿
                     level == 8508181 || // G12 梦羽宝殿
-                    level == 9413549 // G15 育体宝殿
-                )
+                    level == 9413549) // G15 育体宝殿
                 {
                     var result = (TreasureShiftingWheelResultType)data[40];
                     switch (result)

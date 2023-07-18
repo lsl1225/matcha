@@ -1,8 +1,10 @@
-﻿namespace Cafe.Matcha.Constant
+﻿// Copyright (c) FFCafe. All rights reserved.
+// Licensed under the AGPL-3.0 license. See LICENSE file in the project root for full license information.
+
+namespace Cafe.Matcha.Constant
 {
     public class PacketSize
     {
-
         public const int DirectorStart = 168;
         public const int NpcSpawn = 672;
         public const int ActorControl = 56;
@@ -18,6 +20,5 @@
         public const int ItemInfo = 96;
         public const int InventoryTransaction = 80;
         public const int Examine = 1016;
-
     }
 }

@@ -250,6 +250,7 @@ namespace Cafe.Matcha.Views
                             notifiedDynamicEvent.Remove(deDto.Event);
                             return false;
                     }
+
                 default:
                     return false;
             }
@@ -352,7 +353,6 @@ namespace Cafe.Matcha.Views
                 LogException(err);
             }
         }
-
 
         private void BSettingSetTemplate_Click(object sender, RoutedEventArgs e)
         {
@@ -541,7 +541,5 @@ namespace Cafe.Matcha.Views
         {
             ViewModel.LogPause = !ViewModel.LogPause;
         }
-
-        
     }
 }

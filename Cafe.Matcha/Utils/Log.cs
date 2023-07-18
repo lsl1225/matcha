@@ -1,10 +1,10 @@
 ﻿// Copyright (c) FFCafe. All rights reserved.
 // Licensed under the AGPL-3.0 license. See LICENSE file in the project root for full license information.
 
-using Cafe.Matcha.Constant;
-
 namespace Cafe.Matcha.Utils
 {
+    using Cafe.Matcha.Constant;
+
     internal class Log
     {
         public delegate void EventHandler(LogType type, char level, string message);

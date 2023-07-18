@@ -10349,6 +10349,66 @@
     "itemSync": 0,
     "memberType": 3
   },
+  "945": {
+    "name": {
+      "chs": "Mount Rokkon",
+      "en": "Mount Rokkon",
+      "ja": "ヴァリアントダンジョン 六根山",
+      "de": "Der Rokkon",
+      "fr": "Le mont Rokkon - Donjon à embranchements"
+    },
+    "type": 30,
+    "level": 90,
+    "levelSync": 90,
+    "item": 605,
+    "itemSync": 665,
+    "memberType": 11
+  },
+  "946": {
+    "name": {
+      "chs": "Another Mount Rokkon",
+      "en": "Another Mount Rokkon",
+      "ja": "アナザーダンジョン 異聞六根山",
+      "de": "Der kuriose Rokkon",
+      "fr": "Le mont Rokkon annexe - Donjon alternatif"
+    },
+    "type": 30,
+    "level": 90,
+    "levelSync": 90,
+    "item": 640,
+    "itemSync": 665,
+    "memberType": 31
+  },
+  "947": {
+    "name": {
+      "chs": "Another Mount Rokkon (Savage)",
+      "en": "Another Mount Rokkon (Savage)",
+      "ja": "アナザーダンジョン 異聞六根山 零式",
+      "de": "Der kuriose Rokkon (episch)",
+      "fr": "Le mont Rokkon annexe - Donjon alternatif (sadique)"
+    },
+    "type": 30,
+    "level": 90,
+    "levelSync": 90,
+    "item": 0,
+    "itemSync": 665,
+    "memberType": 2
+  },
+  "948": {
+    "name": {
+      "chs": "A Golden Opportunity",
+      "en": "A Golden Opportunity",
+      "ja": "黄金闘士「ゴールドル」",
+      "de": "Goldor der Güldene",
+      "fr": "Goldor, le mage doré"
+    },
+    "type": 27,
+    "level": 80,
+    "levelSync": 80,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 1
+  },
   "949": {
     "name": {
       "chs": "The Voidcast Dais",

@@ -104,6 +104,7 @@
     <Compile Include="Constant\FishEventType.cs" />
     <Compile Include="Constant\LogType.cs" />
     <Compile Include="Constant\MatchaOpcode.cs" />
+    <Compile Include="Constant\PacketSize.cs" />
     <Compile Include="Constant\Region.cs" />
     <Compile Include="Constant\RequestType.cs" />
     <Compile Include="Constant\Secret.cs" />

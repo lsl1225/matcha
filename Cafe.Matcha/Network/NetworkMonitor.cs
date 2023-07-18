@@ -161,7 +161,7 @@ namespace Cafe.Matcha.Network
 
             if (opcode == MatchaOpcode.DirectorStart)
             {
-                if (message.Length != 168)
+                if (message.Length != PacketSize.DirectorStart)
                 {
                     return false;
                 }
@@ -180,7 +180,7 @@ namespace Cafe.Matcha.Network
             }
             else if (opcode == MatchaOpcode.NpcSpawn)
             {
-                if (message.Length != 672)
+                if (message.Length != PacketSize.NpcSpawn)
                 {
                     return false;
                 }
@@ -220,7 +220,7 @@ namespace Cafe.Matcha.Network
             }
             else if (opcode == MatchaOpcode.ActorControl)
             {
-                if (message.Length != 56)
+                if (message.Length != PacketSize.ActorControl)
                 {
                     return false;
                 }
@@ -242,7 +242,7 @@ namespace Cafe.Matcha.Network
             }
             else if (opcode == MatchaOpcode.FateInfo)
             {
-                if (message.Length != 56)
+                if (message.Length != PacketSize.FateInfo)
                 {
                     return false;
                 }
@@ -271,7 +271,7 @@ namespace Cafe.Matcha.Network
             }
             else if (opcode == MatchaOpcode.ActorControlSelf)
             {
-                if (message.Length != 64)
+                if (message.Length != PacketSize.ActorControlSelf)
                 {
                     return false;
                 }
@@ -376,7 +376,7 @@ namespace Cafe.Matcha.Network
             }
             else if (opcode == MatchaOpcode.ContentFinderNotifyPop)
             {
-                if (message.Length != 72)
+                if (message.Length != PacketSize.ContentFinderNotifyPop)
                 {
                     return false;
                 }
@@ -392,7 +392,7 @@ namespace Cafe.Matcha.Network
             }
             else if (opcode == MatchaOpcode.CompanyAirshipStatus)
             {
-                if (message.Length != 176)
+                if (message.Length != PacketSize.CompanyAirshipStatus)
                 {
                     return false;
                 }
@@ -424,7 +424,7 @@ namespace Cafe.Matcha.Network
             }
             else if (opcode == MatchaOpcode.CompanySubmersibleStatus)
             {
-                if (message.Length != 176)
+                if (message.Length != PacketSize.CompanySubmersibleStatus)
                 {
                     return false;
                 }
@@ -456,7 +456,7 @@ namespace Cafe.Matcha.Network
             }
             else if (opcode == MatchaOpcode.InitZone)
             {
-                if (message.Length != 136)
+                if (message.Length != PacketSize.InitZone)
                 {
                     return false;
                 }
@@ -475,7 +475,7 @@ namespace Cafe.Matcha.Network
             }
             else if (opcode == MatchaOpcode.EventPlay)
             {
-                if (message.Length != 72)
+                if (message.Length != PacketSize.EventPlay)
                 {
                     return false;
                 }
@@ -520,7 +520,7 @@ namespace Cafe.Matcha.Network
             }
             else if (opcode == MatchaOpcode.MarketBoardItemListingCount)
             {
-                if (message.Length != 48)
+                if (message.Length != PacketSize.MarketBoardItemListingCount)
                 {
                     return false;
                 }
@@ -538,7 +538,7 @@ namespace Cafe.Matcha.Network
             }
             else if (opcode == MatchaOpcode.MarketBoardItemListing)
             {
-                if (message.Length != 1560)
+                if (message.Length != PacketSize.MarketBoardItemListing)
                 {
                     return false;
                 }
@@ -576,7 +576,7 @@ namespace Cafe.Matcha.Network
             }
             else if (opcode == MatchaOpcode.ItemInfo)
             {
-                if (message.Length != 96)
+                if (message.Length != PacketSize.ItemInfo)
                 {
                     return false;
                 }
@@ -610,7 +610,7 @@ namespace Cafe.Matcha.Network
             }
             else if (opcode == MatchaOpcode.InventoryTransaction)
             {
-                if (message.Length != 80)
+                if (message.Length != PacketSize.InventoryTransaction)
                 {
                     return false;
                 }
@@ -634,7 +634,7 @@ namespace Cafe.Matcha.Network
             }
             else if (opcode == MatchaOpcode.Examine)
             {
-                if (message.Length != 1016)
+                if (message.Length != PacketSize.Examine)
                 {
                     return false;
                 }

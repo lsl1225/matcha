@@ -298,6 +298,24 @@
                               ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto" RenderTransformOrigin="0.5,0.5" />
                 </DockPanel>
             </TabItem>
+            <TabItem Header="关于">
+                <GroupBox x:Name="gSettingAbout" Header="关于本插件" Height="200" Width="300" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0">
+                    <Grid Height="195">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Content="当前版本：" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="6,10,0,0"/>
+                        <Label x:Name="lbCurrentVer" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,10" Grid.Column="1"/>
+                        <Label Content="最新版本：" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="6,40,0,0"/>
+                        <Label x:Name="lbLatestVer" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,40,0,0" Grid.Column="1"/>
+
+                        <Button x:Name="btnCheckUpd" Click="BtnCheckUpd_Click" Content="检查更新" HorizontalAlignment="Left" VerticalAlignment="Center" Height="30" Width="100" Margin="40,20,0,0" Grid.Column="1" ></Button>
+                        <Button x:Name="btnOpenUpd" Click="BtnOpenUpd_Click" Content="打开下载页面" HorizontalAlignment="Left" VerticalAlignment="Center" Height="30" Width="100" Margin="40,100,0,0" Grid.Column="1" ></Button>
+                    </Grid>
+                </GroupBox>
+            </TabItem>
         </TabControl>
         <Image Source="/Cafe.Matcha;component/GitHub-Mark-32px.png" Stretch="Fill" Height="16" Width="16" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,3,6,0" Cursor="Hand" MouseDown="Image_MouseDown" />
     </Grid>

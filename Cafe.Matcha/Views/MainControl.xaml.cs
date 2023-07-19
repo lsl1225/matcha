@@ -9,6 +9,7 @@ namespace Cafe.Matcha.Views
     using System.ComponentModel;
     using System.Diagnostics;
     using System.Linq;
+    using System.Net.Http;
     using System.Windows;
     using System.Windows.Controls;
     using Advanced_Combat_Tracker;
@@ -18,6 +19,7 @@ namespace Cafe.Matcha.Views
     using Cafe.Matcha.Network.Universalis;
     using Cafe.Matcha.Utils;
     using Microsoft.Win32;
+    using Newtonsoft.Json.Linq;
     using RateLimiting;
 
     /// <summary>
@@ -30,6 +32,8 @@ namespace Cafe.Matcha.Views
             Config.Load();
             InitializeComponent();
             Init();
+            lbCurrentVer.Content = Data.Version;
+            lbLatestVer.Content = "从未检查";
         }
 
         private ViewModels.MainViewModel viewModel = null;
@@ -540,6 +544,59 @@ namespace Cafe.Matcha.Views
         private void BLogPause_Click(object sender, RoutedEventArgs e)
         {
             ViewModel.LogPause = !ViewModel.LogPause;
+        }
+
+        private void BtnCheckUpd_Click(object sender, RoutedEventArgs e)
+        {
+            GetVersion();
+        }
+
+        private void BtnOpenUpd_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo("https://github.com/lsl1225/matcha/releases/latest"));
+            e.Handled = true;
+        }
+
+        private async void GetVersion()
+        {
+            string apiPath = "https://api.github.com/repos/lsl1225/matcha/releases/latest";
+            string errMsg = "检查更新失败，请稍后再试！";
+
+            lbCurrentVer.Content = Data.Version;
+            lbLatestVer.Content = "正在检查更新...";
+            btnCheckUpd.IsEnabled = false;
+
+            HttpClient httpClient = new HttpClient();
+            httpClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+            httpClient.DefaultRequestHeaders.UserAgent.TryParseAdd("request");
+            var response = await httpClient.GetAsync(apiPath);
+            if (response.IsSuccessStatusCode)
+            {
+                try
+                {
+                    var str = await response.Content.ReadAsStringAsync();
+                    JObject jsonObj = JObject.Parse(str.ToString());
+                    jsonObj.TryGetValue("tag_name", out JToken token);
+                    if (token != null)
+                    {
+                        lbLatestVer.Content = token.ToString();
+                    }
+                    else
+                    {
+                        throw new Exception();
+                    }
+                }
+                catch (Exception)
+                {
+                    lbLatestVer.Content = errMsg;
+                }
+            }
+            else
+            {
+                lbLatestVer.Content = errMsg;
+            }
+
+            btnCheckUpd.IsEnabled = true;
         }
     }
 }

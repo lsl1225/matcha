@@ -311,8 +311,10 @@
                         <Label Content="最新版本：" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="6,40,0,0"/>
                         <Label x:Name="lbLatestVer" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,40,0,0" Grid.Column="1"/>
 
-                        <Button x:Name="btnCheckUpd" Click="BtnCheckUpd_Click" Content="检查更新" HorizontalAlignment="Left" VerticalAlignment="Center" Height="30" Width="100" Margin="40,20,0,0" Grid.Column="1" ></Button>
-                        <Button x:Name="btnOpenUpd" Click="BtnOpenUpd_Click" Content="打开下载页面" HorizontalAlignment="Left" VerticalAlignment="Center" Height="30" Width="100" Margin="40,100,0,0" Grid.Column="1" ></Button>
+                        <CheckBox Content="自动检查更新" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,80,0,0" IsChecked="{Binding Logger.CheckUpdate, Mode=TwoWay, Source={x:Static matcha:Config.Instance}}"/>
+                        
+                        <Button x:Name="btnCheckUpd" Click="BtnCheckUpd_Click" Content="检查更新" HorizontalAlignment="Left" VerticalAlignment="Center" Height="30" Width="100" Margin="46,30,0,0" Grid.Column="1" ></Button>
+                        <Button x:Name="btnOpenUpd" Click="BtnOpenUpd_Click" Content="打开下载页面" HorizontalAlignment="Left" VerticalAlignment="Center" Height="30" Width="100" Margin="46,110,0,0" Grid.Column="1" ></Button>
                     </Grid>
                 </GroupBox>
             </TabItem>

@@ -34,6 +34,10 @@ namespace Cafe.Matcha.Views
             Init();
             lbCurrentVer.Content = Data.Version;
             lbLatestVer.Content = "从未检查";
+            if (Config.Instance.Logger.CheckUpdate)
+            {
+                GetVersion();
+            }
         }
 
         private ViewModels.MainViewModel viewModel = null;

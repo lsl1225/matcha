@@ -228,5 +228,7 @@ namespace Cafe.Matcha.Models
         public bool Compat { get; set; }
         [JsonProperty("debug")]
         public bool Debug { get; set; }
+        [JsonProperty("checkUpdate")]
+        public bool CheckUpdate { get; set; }
     }
 }

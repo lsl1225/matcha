@@ -16,6 +16,7 @@ namespace Cafe.Matcha.Views
     using Cafe.Matcha.Constant;
     using Cafe.Matcha.DTO;
     using Cafe.Matcha.Network;
+    using Cafe.Matcha.Network.Universalis;
     using Cafe.Matcha.Utils;
     using Microsoft.Win32;
     using Newtonsoft.Json.Linq;

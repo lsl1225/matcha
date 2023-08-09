@@ -37,7 +37,6 @@ namespace Cafe.Matcha.Views
             if (Config.Instance.Logger.CheckUpdate)
             {
                 GetVersion();
-                isInitialCheck = false;
             }
         }
 
@@ -555,6 +554,7 @@ namespace Cafe.Matcha.Views
 
         private void BtnCheckUpd_Click(object sender, RoutedEventArgs e)
         {
+            isInitialCheck = false;
             GetVersion();
         }
 
@@ -601,6 +601,10 @@ namespace Cafe.Matcha.Views
                             if (!isInitialCheck)
                             {
                                 Output.SendToast(isLatestVersion);
+                            }
+                            else
+                            {
+                                isInitialCheck = false;
                             }
                         }
                     }

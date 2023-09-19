@@ -1006,18 +1006,18 @@
   },
   "69": {
     "name": {
-      "chs": "活动挑战1",
-      "en": "Special Event III",
-      "ja": "イベント用コンテンツ：3",
-      "de": "Event-Inhalt 3",
-      "fr": "Défi spécial III"
+      "chs": "",
+      "en": "The Gilded Araya",
+      "ja": "アスラ討滅戦",
+      "de": "Arayas Palast",
+      "fr": "Le temple doré d'Araya"
     },
     "type": 4,
-    "level": 50,
-    "levelSync": 50,
+    "level": 90,
+    "levelSync": 90,
     "item": 0,
     "itemSync": 0,
-    "memberType": 2
+    "memberType": 3
   },
   "70": {
     "name": {
@@ -8312,7 +8312,7 @@
   "784": {
     "name": {
       "chs": "电脑梦境斯提格玛四",
-      "en": "The Stigma Dreamscape",
+      "en": "the Stigma Dreamscape",
       "ja": "電脳夢想 スティグマ・フォー",
       "de": "Stigma-Holometrie",
       "fr": "Rêve électrique de Stigma-4"
@@ -8846,7 +8846,7 @@
     "level": 1,
     "levelSync": 90,
     "item": 0,
-    "itemSync": 630,
+    "itemSync": 635,
     "memberType": 3
   },
   "820": {
@@ -9416,7 +9416,7 @@
     "level": 90,
     "levelSync": 90,
     "item": 575,
-    "itemSync": 0,
+    "itemSync": 630,
     "memberType": 2
   },
   "870": {
@@ -9656,7 +9656,7 @@
     "level": 90,
     "levelSync": 90,
     "item": 590,
-    "itemSync": 0,
+    "itemSync": 630,
     "memberType": 2
   },
   "897": {
@@ -9836,7 +9836,7 @@
     "level": 90,
     "levelSync": 90,
     "item": 0,
-    "itemSync": 0,
+    "itemSync": 635,
     "memberType": 3
   },
   "909": {
@@ -9851,7 +9851,7 @@
     "level": 1,
     "levelSync": 90,
     "item": 0,
-    "itemSync": 0,
+    "itemSync": 635,
     "memberType": 3
   },
   "910": {
@@ -10077,21 +10077,6 @@
     "levelSync": 90,
     "item": 610,
     "itemSync": 0,
-    "memberType": 3
-  },
-  "926": {
-    "name": {
-      "chs": "索菲娅幻巧战",
-      "en": "Containment Bay P1T6 (Unreal)",
-      "ja": "幻女神ソフィア討滅戦",
-      "de": "Traumprüfung - Sophia",
-      "fr": "Unité de contention P1P6 (irréel)"
-    },
-    "type": 4,
-    "level": 90,
-    "levelSync": 90,
-    "item": 560,
-    "itemSync": 565,
     "memberType": 3
   },
   "927": {

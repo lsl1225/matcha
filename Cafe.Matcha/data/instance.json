@@ -10528,5 +10528,65 @@
     "item": 0,
     "itemSync": 0,
     "memberType": 25
+  },
+  "962": {
+    "name": {
+      "chs": "Thaleia",
+      "en": "Thaleia",
+      "ja": "華めく神域 タレイア",
+      "de": "Thaleia",
+      "fr": "Domaine divin - Thalie"
+    },
+    "type": 5,
+    "level": 90,
+    "levelSync": 90,
+    "item": 625,
+    "itemSync": 0,
+    "memberType": 4
+  },
+  "963": {
+    "name": {
+      "chs": "圆桌骑士幻巧战",
+      "en": "The Singularity Reactor (Unreal)",
+      "ja": "幻ナイツ・オブ・ラウンド討滅戦",
+      "de": "Traumprüfung - Singularitäts-Reaktor",
+      "fr": "Le Réacteur de singularité (irréel)"
+    },
+    "type": 4,
+    "level": 90,
+    "levelSync": 90,
+    "item": 560,
+    "itemSync": 565,
+    "memberType": 3
+  },
+  "964": {
+    "name": {
+      "chs": "The Abyssal Fracture",
+      "en": "The Abyssal Fracture",
+      "ja": "ゼロムス討滅戦",
+      "de": "Prophetie - Zeromus",
+      "fr": "La Fracture abyssale"
+    },
+    "type": 4,
+    "level": 90,
+    "levelSync": 90,
+    "item": 625,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "965": {
+    "name": {
+      "chs": "The Abyssal Fracture (Extreme)",
+      "en": "The Abyssal Fracture (Extreme)",
+      "ja": "極ゼロムス討滅戦",
+      "de": "Eschatos - Zeromus",
+      "fr": "La Fracture abyssale (extrême)"
+    },
+    "type": 4,
+    "level": 90,
+    "levelSync": 90,
+    "item": 640,
+    "itemSync": 0,
+    "memberType": 3
   }
 }

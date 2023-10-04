@@ -8879,6 +8879,21 @@
     "itemSync": 0,
     "memberType": 2
   },
+  "823": {
+    "name": {
+      "chs": "The Lunar Subterrane",
+      "en": "The Lunar Subterrane",
+      "ja": "深淵潜行 月の地下渓谷",
+      "de": "Monduntergrund",
+      "fr": "Le Souterrain lunaire"
+    },
+    "type": 2,
+    "level": 90,
+    "levelSync": 90,
+    "item": 620,
+    "itemSync": 0,
+    "memberType": 2
+  },
   "830": {
     "name": {
       "chs": "究极神兵破坏作战",

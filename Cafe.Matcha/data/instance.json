@@ -10544,6 +10544,36 @@
     "itemSync": 0,
     "memberType": 25
   },
+  "958": {
+    "name": {
+      "chs": "Blunderville",
+      "en": "Blunderville",
+      "ja": "ブランダーヴィル",
+      "de": "Stolperville",
+      "fr": "Blunderville"
+    },
+    "type": 19,
+    "level": 1,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 32
+  },
+  "961": {
+    "name": {
+      "chs": "Aloalo Island",
+      "en": "Aloalo Island",
+      "ja": "ヴァリアントダンジョン アロアロ島",
+      "de": "Aloalo",
+      "fr": "L'île d'Aloalo - Donjon à embranchements"
+    },
+    "type": 30,
+    "level": 90,
+    "levelSync": 90,
+    "item": 605,
+    "itemSync": 665,
+    "memberType": 11
+  },
   "962": {
     "name": {
       "chs": "Thaleia",
@@ -10603,5 +10633,215 @@
     "item": 640,
     "itemSync": 0,
     "memberType": 3
+  },
+  "967": {
+    "name": {
+      "chs": "The Red Sands",
+      "en": "The Red Sands",
+      "ja": "レッド・サンズ",
+      "de": "Die Roten Sande",
+      "fr": "Les Sables sanglants"
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "968": {
+    "name": {
+      "chs": "The Red Sands",
+      "en": "The Red Sands",
+      "ja": "レッド・サンズ",
+      "de": "Die Roten Sande",
+      "fr": "Les Sables sanglants"
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "969": {
+    "name": {
+      "chs": "The Red Sands",
+      "en": "The Red Sands",
+      "ja": "レッド・サンズ",
+      "de": "Die Roten Sande",
+      "fr": "Les Sables sanglants"
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "970": {
+    "name": {
+      "chs": "The Red Sands",
+      "en": "The Red Sands",
+      "ja": "レッド・サンズ",
+      "de": "Die Roten Sande",
+      "fr": "Les Sables sanglants"
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "971": {
+    "name": {
+      "chs": "The Red Sands",
+      "en": "The Red Sands",
+      "ja": "レッド・サンズ",
+      "de": "Die Roten Sande",
+      "fr": "Les Sables sanglants"
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "972": {
+    "name": {
+      "chs": "The Red Sands",
+      "en": "The Red Sands",
+      "ja": "レッド・サンズ",
+      "de": "Die Roten Sande",
+      "fr": "Les Sables sanglants"
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "973": {
+    "name": {
+      "chs": "The Red Sands",
+      "en": "The Red Sands",
+      "ja": "レッド・サンズ",
+      "de": "Die Roten Sande",
+      "fr": "Les Sables sanglants"
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "974": {
+    "name": {
+      "chs": "The Red Sands",
+      "en": "The Red Sands",
+      "ja": "レッド・サンズ",
+      "de": "Die Roten Sande",
+      "fr": "Les Sables sanglants"
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "975": {
+    "name": {
+      "chs": "The Red Sands",
+      "en": "The Red Sands",
+      "ja": "レッド・サンズ",
+      "de": "Die Roten Sande",
+      "fr": "Les Sables sanglants"
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "976": {
+    "name": {
+      "chs": "The Red Sands",
+      "en": "The Red Sands",
+      "ja": "レッド・サンズ",
+      "de": "Die Roten Sande",
+      "fr": "Les Sables sanglants"
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "977": {
+    "name": {
+      "chs": "The Red Sands",
+      "en": "The Red Sands",
+      "ja": "レッド・サンズ",
+      "de": "Die Roten Sande",
+      "fr": "Les Sables sanglants"
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 29
+  },
+  "978": {
+    "name": {
+      "chs": "Crystalline Conflict (Custom Match - The Red Sands)",
+      "en": "Crystalline Conflict (Custom Match - The Red Sands)",
+      "ja": "クリスタルコンフリクト(レッド・サンズ：カスタムマッチ)",
+      "de": "Crystalline Conflict: Die Roten Sande (Schaukampf)",
+      "fr": "Crystalline Conflict (partie personnalisée - Les Sables sanglants)"
+    },
+    "type": 6,
+    "level": 30,
+    "levelSync": 0,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 30
+  },
+  "979": {
+    "name": {
+      "chs": "Another Aloalo Island",
+      "en": "Another Aloalo Island",
+      "ja": "アナザーダンジョン 異聞アロアロ島",
+      "de": "Kurioses Aloalo",
+      "fr": "L'île d'Aloalo annexe - Donjon alternatif"
+    },
+    "type": 30,
+    "level": 90,
+    "levelSync": 90,
+    "item": 640,
+    "itemSync": 665,
+    "memberType": 31
+  },
+  "980": {
+    "name": {
+      "chs": "Another Aloalo Island (Savage)",
+      "en": "Another Aloalo Island (Savage)",
+      "ja": "アナザーダンジョン 異聞アロアロ島 零式",
+      "de": "Kurioses Aloalo (episch)",
+      "fr": "L'île d'Aloalo annexe - Donjon alternatif (sadique)"
+    },
+    "type": 30,
+    "level": 90,
+    "levelSync": 90,
+    "item": 0,
+    "itemSync": 665,
+    "memberType": 2
   }
 }

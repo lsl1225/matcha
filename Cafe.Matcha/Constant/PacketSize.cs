@@ -19,6 +19,6 @@ namespace Cafe.Matcha.Constant
         public const int MarketBoardItemListing = 1560;
         public const int ItemInfo = 96;
         public const int InventoryTransaction = 80;
-        public const int Examine = 1016;
+        public const int Examine = 1032;
     }
 }

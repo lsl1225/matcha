@@ -16,7 +16,7 @@ namespace Cafe.Matcha.Constant
         Telemetry,
         ActorControlSelf,
         InvalidPacket,
-
+        RawPacket,
         Debug1,
 #endif
     }

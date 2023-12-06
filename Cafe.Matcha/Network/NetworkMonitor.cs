@@ -70,6 +70,7 @@ namespace Cafe.Matcha.Network
                 if (ToMatchaOpcode(BitConverter.ToUInt16(message, 18), out var opcode))
                 {
                     LogIncorrectPacketSize(opcode, message.Length);
+                    Log.Packet(message);
                 }
 #endif
 
@@ -638,7 +639,7 @@ namespace Cafe.Matcha.Network
                     return false;
                 }
 
-                const int offset = 0x40;
+                const int offset = 0x50;
                 const int length = 0x28;
                 for (int slot = 0; slot < 14; ++slot)
                 {

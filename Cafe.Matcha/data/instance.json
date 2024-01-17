@@ -10349,6 +10349,21 @@
     "itemSync": 0,
     "memberType": 3
   },
+  "944": {
+    "name": {
+      "chs": "The Gilded Araya",
+      "en": "The Gilded Araya",
+      "ja": "アスラ討滅戦",
+      "de": "Prophetie - Asura",
+      "fr": "Le temple doré d'Araya"
+    },
+    "type": 4,
+    "level": 90,
+    "levelSync": 90,
+    "item": 625,
+    "itemSync": 0,
+    "memberType": 3
+  },
   "945": {
     "name": {
       "chs": "多变迷宫 六根山",
@@ -10558,6 +10573,21 @@
     "item": 0,
     "itemSync": 0,
     "memberType": 32
+  },
+  "960": {
+    "name": {
+      "chs": "The Game Is Afoot",
+      "en": "The Game Is Afoot",
+      "ja": "その瞳が見据えるもの",
+      "de": "Die Jagd ist eröffnet",
+      "fr": "Par-delà l'horizon"
+    },
+    "type": 7,
+    "level": 90,
+    "levelSync": 90,
+    "item": 0,
+    "itemSync": 660,
+    "memberType": 1
   },
   "961": {
     "name": {

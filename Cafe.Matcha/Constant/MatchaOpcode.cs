@@ -44,7 +44,7 @@ namespace Cafe.Matcha.Constant
             /*
              * MiniCactpotInit
              */
-            { 0x0338, MatchaOpcode.DirectorStart }, // unknown
+            { 0x0179, MatchaOpcode.DirectorStart },
             { 0x01A7, MatchaOpcode.EventPlay },
             { 0x035E, MatchaOpcode.Examine },
             { 0x032E, MatchaOpcode.FateInfo },

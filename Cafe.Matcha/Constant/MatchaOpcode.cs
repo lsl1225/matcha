@@ -49,8 +49,8 @@ namespace Cafe.Matcha.Constant
             { 0x035E, MatchaOpcode.Examine },
             { 0x032E, MatchaOpcode.FateInfo },
             { 0x0230, MatchaOpcode.InitZone },
-            { 0x021B, MatchaOpcode.InventoryTransaction }, // unknown
-            { 0x0270, MatchaOpcode.ItemInfo }, // unknown
+            { 0x00C4, MatchaOpcode.InventoryTransaction },
+            { 0x032A, MatchaOpcode.ItemInfo },
             { 0x0237, MatchaOpcode.MarketBoardItemListing },
             { 0x01FE, MatchaOpcode.MarketBoardItemListingCount },
             { 0x014A, MatchaOpcode.MarketBoardItemListingHistory },

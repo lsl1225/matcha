@@ -1009,7 +1009,7 @@
       "chs": "",
       "en": "The Gilded Araya",
       "ja": "アスラ討滅戦",
-      "de": "Arayas Palast",
+      "de": "Prophetie - Asura",
       "fr": "Le temple doré d'Araya"
     },
     "type": 4,
@@ -8501,7 +8501,7 @@
     "level": 90,
     "levelSync": 90,
     "item": 540,
-    "itemSync": 0,
+    "itemSync": 570,
     "memberType": 3
   },
   "797": {
@@ -8881,7 +8881,7 @@
   },
   "823": {
     "name": {
-      "chs": "The Lunar Subterrane",
+      "chs": "异界深渊月面地下溪谷",
       "en": "The Lunar Subterrane",
       "ja": "深淵潜行 月の地下渓谷",
       "de": "Monduntergrund",
@@ -10070,7 +10070,7 @@
       "en": "Crystalline Conflict (Custom Match - The Clockwork Castletown)",
       "ja": "クリスタルコンフリクト(東方絡繰御殿：カスタムマッチ)",
       "de": "Crystalline Conflict: Die Mechanische Menagerie (Schaukampf)",
-      "fr": "Crystalline Conflict (partie personnalisée - Le Traquenard oriental)"
+      "fr": "Crys. Conflict (partie perso. - Le Traquenard oriental)"
     },
     "type": 6,
     "level": 30,
@@ -10411,7 +10411,7 @@
   },
   "948": {
     "name": {
-      "chs": "黄金斗士金德尔",
+      "chs": "黄金斗士——金德尔",
       "en": "A Golden Opportunity",
       "ja": "黄金闘士「ゴールドル」",
       "de": "Goldor der Güldene",
@@ -10452,21 +10452,6 @@
     "levelSync": 90,
     "item": 630,
     "itemSync": 0,
-    "memberType": 3
-  },
-  "951": {
-    "name": {
-      "chs": "祖尔宛幻巧战",
-      "en": "Containment Bay Z1T9 (Unreal)",
-      "ja": "幻鬼神ズルワーン討滅戦",
-      "de": "Traumprüfung - Zurvan",
-      "fr": "Unité de contention Z1P9 (irréel)"
-    },
-    "type": 4,
-    "level": 90,
-    "levelSync": 90,
-    "item": 560,
-    "itemSync": 565,
     "memberType": 3
   },
   "952": {

@@ -3,62 +3,62 @@
 
 namespace Cafe.Matcha.Constant
 {
-    using System.Collections.Generic;
+  using System.Collections.Generic;
 
-    internal enum MatchaOpcode
-    {
-        ActorControl,
-        ActorControlSelf,
-        CEDirector,
-        CompanyAirshipStatus,
-        CompanySubmersibleStatus,
-        ContentFinderNotifyPop,
-        DirectorStart,
-        EventPlay,
-        Examine,
-        FateInfo,
-        InitZone,
-        InventoryTransaction,
-        ItemInfo,
-        MarketBoardItemListing,
-        MarketBoardItemListingCount,
-        MarketBoardItemListingHistory,
-        NpcSpawn,
-        PlayerSetup,
-        PlayerSpawn,
-    }
+  internal enum MatchaOpcode
+  {
+    ActorControl,
+    ActorControlSelf,
+    CEDirector,
+    CompanyAirshipStatus,
+    CompanySubmersibleStatus,
+    ContentFinderNotifyPop,
+    DirectorStart,
+    EventPlay,
+    Examine,
+    FateInfo,
+    InitZone,
+    InventoryTransaction,
+    ItemInfo,
+    MarketBoardItemListing,
+    MarketBoardItemListingCount,
+    MarketBoardItemListingHistory,
+    NpcSpawn,
+    PlayerSetup,
+    PlayerSpawn,
+  }
 
-    internal static class OpcodeStorage
-    {
-        public static Dictionary<ushort, MatchaOpcode> Global = new Dictionary<ushort, MatchaOpcode>
+  internal static class OpcodeStorage
+  {
+    public static Dictionary<ushort, MatchaOpcode> Global = new Dictionary<ushort, MatchaOpcode>
         {
-            { 0x0333, MatchaOpcode.ActorControl },
-            { 0x0111, MatchaOpcode.ActorControlSelf },
-            { 0x0383, MatchaOpcode.CEDirector },
+            { 0x0148, MatchaOpcode.ActorControl },
+            { 0x025D, MatchaOpcode.ActorControlSelf },
+            { 0x00D5, MatchaOpcode.CEDirector },
             /*
              * AirshipTimers & SubmarineTimers
              */
-            { 0x027A, MatchaOpcode.CompanyAirshipStatus },
-            { 0x020C, MatchaOpcode.CompanySubmersibleStatus },
-            { 0x0225, MatchaOpcode.ContentFinderNotifyPop },
+            { 0x0123, MatchaOpcode.CompanyAirshipStatus },
+            { 0x0185, MatchaOpcode.CompanySubmersibleStatus },
+            { 0x0279, MatchaOpcode.ContentFinderNotifyPop },
             /*
              * MiniCactpotInit
              */
-            { 0x00E2, MatchaOpcode.DirectorStart },
-            { 0x012A, MatchaOpcode.EventPlay },
-            { 0x02BF, MatchaOpcode.Examine },
-            { 0x00C9, MatchaOpcode.FateInfo },
-            { 0x031B, MatchaOpcode.InitZone },
-            { 0x0201, MatchaOpcode.InventoryTransaction },
-            { 0x0344, MatchaOpcode.ItemInfo },
-            { 0x03E5, MatchaOpcode.MarketBoardItemListing },
-            { 0x02ED, MatchaOpcode.MarketBoardItemListingCount },
-            { 0x0109, MatchaOpcode.MarketBoardItemListingHistory },
-            { 0x02BD, MatchaOpcode.NpcSpawn },
-            { 0x0216, MatchaOpcode.PlayerSetup },
-            { 0x00F6, MatchaOpcode.PlayerSpawn },
+            { 0x00E2, MatchaOpcode.DirectorStart }, // unknown
+            { 0x0155, MatchaOpcode.EventPlay },
+            { 0x02C0, MatchaOpcode.Examine },
+            { 0x007A, MatchaOpcode.FateInfo },
+            { 0x02D1, MatchaOpcode.InitZone },
+            { 0x02BD, MatchaOpcode.InventoryTransaction },
+            { 0x02F0, MatchaOpcode.ItemInfo },
+            { 0x03E3, MatchaOpcode.MarketBoardItemListing },
+            { 0x0286, MatchaOpcode.MarketBoardItemListingCount },
+            { 0x0229, MatchaOpcode.MarketBoardItemListingHistory },
+            { 0x00A7, MatchaOpcode.NpcSpawn },
+            { 0x035F, MatchaOpcode.PlayerSetup },
+            { 0x039C, MatchaOpcode.PlayerSpawn },
         };
-        public static Dictionary<ushort, MatchaOpcode> China = new Dictionary<ushort, MatchaOpcode>
+    public static Dictionary<ushort, MatchaOpcode> China = new Dictionary<ushort, MatchaOpcode>
         {
             { 0x030f, MatchaOpcode.ActorControl },
             { 0x01a2, MatchaOpcode.ActorControlSelf },
@@ -80,5 +80,5 @@ namespace Cafe.Matcha.Constant
             { 0x02c1, MatchaOpcode.PlayerSetup },
             { 0x031b, MatchaOpcode.PlayerSpawn },
         };
-    }
+  }
 }

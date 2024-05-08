@@ -3,34 +3,34 @@
 
 namespace Cafe.Matcha.Constant
 {
-  using System.Collections.Generic;
+    using System.Collections.Generic;
 
-  internal enum MatchaOpcode
-  {
-    ActorControl,
-    ActorControlSelf,
-    CEDirector,
-    CompanyAirshipStatus,
-    CompanySubmersibleStatus,
-    ContentFinderNotifyPop,
-    DirectorStart,
-    EventPlay,
-    Examine,
-    FateInfo,
-    InitZone,
-    InventoryTransaction,
-    ItemInfo,
-    MarketBoardItemListing,
-    MarketBoardItemListingCount,
-    MarketBoardItemListingHistory,
-    NpcSpawn,
-    PlayerSetup,
-    PlayerSpawn,
-  }
+    internal enum MatchaOpcode
+    {
+        ActorControl,
+        ActorControlSelf,
+        CEDirector,
+        CompanyAirshipStatus,
+        CompanySubmersibleStatus,
+        ContentFinderNotifyPop,
+        DirectorStart,
+        EventPlay,
+        Examine,
+        FateInfo,
+        InitZone,
+        InventoryTransaction,
+        ItemInfo,
+        MarketBoardItemListing,
+        MarketBoardItemListingCount,
+        MarketBoardItemListingHistory,
+        NpcSpawn,
+        PlayerSetup,
+        PlayerSpawn,
+    }
 
-  internal static class OpcodeStorage
-  {
-    public static Dictionary<ushort, MatchaOpcode> Global = new Dictionary<ushort, MatchaOpcode>
+    internal static class OpcodeStorage
+    {
+        public static Dictionary<ushort, MatchaOpcode> Global = new Dictionary<ushort, MatchaOpcode>
         {
             { 0x0148, MatchaOpcode.ActorControl },
             { 0x025D, MatchaOpcode.ActorControlSelf },
@@ -58,7 +58,7 @@ namespace Cafe.Matcha.Constant
             { 0x035F, MatchaOpcode.PlayerSetup },
             { 0x039C, MatchaOpcode.PlayerSpawn },
         };
-    public static Dictionary<ushort, MatchaOpcode> China = new Dictionary<ushort, MatchaOpcode>
+        public static Dictionary<ushort, MatchaOpcode> China = new Dictionary<ushort, MatchaOpcode>
         {
             { 0x030f, MatchaOpcode.ActorControl },
             { 0x01a2, MatchaOpcode.ActorControlSelf },
@@ -80,5 +80,5 @@ namespace Cafe.Matcha.Constant
             { 0x02c1, MatchaOpcode.PlayerSetup },
             { 0x031b, MatchaOpcode.PlayerSpawn },
         };
-  }
+    }
 }

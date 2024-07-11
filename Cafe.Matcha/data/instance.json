@@ -8894,6 +8894,96 @@
     "itemSync": 0,
     "memberType": 2
   },
+  "824": {
+    "name": {
+      "chs": "Worqor Zormor",
+      "en": "Worqor Zormor",
+      "ja": "山嶺登頂 ウォーコー・ゾーモー",
+      "de": "Worqor Zormor",
+      "fr": "Worqor Zormor"
+    },
+    "type": 2,
+    "level": 93,
+    "levelSync": 94,
+    "item": 635,
+    "itemSync": 0,
+    "memberType": 2
+  },
+  "825": {
+    "name": {
+      "chs": "Origenics",
+      "en": "Origenics",
+      "ja": "魂魄工廠 オリジェニクス",
+      "de": "Origenik",
+      "fr": "L'Origenèse"
+    },
+    "type": 2,
+    "level": 99,
+    "levelSync": 100,
+    "item": 650,
+    "itemSync": 680,
+    "memberType": 2
+  },
+  "826": {
+    "name": {
+      "chs": "Ihuykatumu",
+      "en": "Ihuykatumu",
+      "ja": "濁流遡上 イフイカ・トゥム",
+      "de": "Ihuykatumu",
+      "fr": "La Remontée de l'Ihuykatumu"
+    },
+    "type": 2,
+    "level": 91,
+    "levelSync": 92,
+    "item": 630,
+    "itemSync": 0,
+    "memberType": 2
+  },
+  "827": {
+    "name": {
+      "chs": "Alexandria",
+      "en": "Alexandria",
+      "ja": "記憶幻想 アレクサンドリア",
+      "de": "Alexandria",
+      "fr": "Alexandrie"
+    },
+    "type": 2,
+    "level": 100,
+    "levelSync": 100,
+    "item": 670,
+    "itemSync": 700,
+    "memberType": 2
+  },
+  "828": {
+    "name": {
+      "chs": "A Father First",
+      "en": "A Father First",
+      "ja": "王として、父として",
+      "de": "Des Vaters viele Sorgen",
+      "fr": "L'Aurarque et le père"
+    },
+    "type": 7,
+    "level": 92,
+    "levelSync": 92,
+    "item": 0,
+    "itemSync": 655,
+    "memberType": 1
+  },
+  "829": {
+    "name": {
+      "chs": "The Skydeep Cenote",
+      "en": "The Skydeep Cenote",
+      "ja": "遺産踏査 天深きセノーテ",
+      "de": "Himmelstiefer Cenote",
+      "fr": "Le cénote des Cieux infinis"
+    },
+    "type": 2,
+    "level": 95,
+    "levelSync": 96,
+    "item": 640,
+    "itemSync": 0,
+    "memberType": 2
+  },
   "830": {
     "name": {
       "chs": "究极神兵破坏作战",
@@ -8907,6 +8997,66 @@
     "levelSync": 50,
     "item": 42,
     "itemSync": 60,
+    "memberType": 2
+  },
+  "831": {
+    "name": {
+      "chs": "Vanguard",
+      "en": "Vanguard",
+      "ja": "外征前哨 ヴァンガード",
+      "de": "Der Außenposten",
+      "fr": "L'Avant-garde"
+    },
+    "type": 2,
+    "level": 97,
+    "levelSync": 98,
+    "item": 645,
+    "itemSync": 0,
+    "memberType": 2
+  },
+  "832": {
+    "name": {
+      "chs": "Worqor Lar Dor",
+      "en": "Worqor Lar Dor",
+      "ja": "ヴァリガルマンダ討滅戦",
+      "de": "Zel Tajaal - Valigarmanda",
+      "fr": "Worqor Lar Dor"
+    },
+    "type": 4,
+    "level": 93,
+    "levelSync": 94,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "833": {
+    "name": {
+      "chs": "Worqor Lar Dor (Extreme)",
+      "en": "Worqor Lar Dor (Extreme)",
+      "ja": "極ヴァリガルマンダ討滅戦",
+      "de": "Gok Tajaal - Valigarmanda",
+      "fr": "Worqor Lar Dor (extrême)"
+    },
+    "type": 4,
+    "level": 100,
+    "levelSync": 100,
+    "item": 690,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "834": {
+    "name": {
+      "chs": "Tender Valley",
+      "en": "Tender Valley",
+      "ja": "荒野秘境 サボテンダーバレー",
+      "de": "Kaktorsenke",
+      "fr": "La Vallée des Pampas"
+    },
+    "type": 2,
+    "level": 100,
+    "levelSync": 100,
+    "item": 670,
+    "itemSync": 0,
     "memberType": 2
   },
   "835": {
@@ -10858,5 +11008,215 @@
     "item": 0,
     "itemSync": 665,
     "memberType": 2
+  },
+  "981": {
+    "name": {
+      "chs": "The Strayborough Deadwalk",
+      "en": "The Strayborough Deadwalk",
+      "ja": "悪夢遊園 ストレイバロー",
+      "de": "Mahrlingen-Promenade",
+      "fr": "le Parc-aux-Errants"
+    },
+    "type": 2,
+    "level": 100,
+    "levelSync": 100,
+    "item": 670,
+    "itemSync": 0,
+    "memberType": 2
+  },
+  "982": {
+    "name": {
+      "chs": "The Feat of the Brotherhood",
+      "en": "The Feat of the Brotherhood",
+      "ja": "友の試練",
+      "de": "Von Schuld und Sühne",
+      "fr": "L'épreuve de l'amitié"
+    },
+    "type": 7,
+    "level": 95,
+    "levelSync": 95,
+    "item": 0,
+    "itemSync": 666,
+    "memberType": 1
+  },
+  "983": {
+    "name": {
+      "chs": "Taking a Stand",
+      "en": "Taking a Stand",
+      "ja": "笑顔を護るための戦い",
+      "de": "Mit scharfer Axt und leichtem Lächeln",
+      "fr": "Préserver la paix"
+    },
+    "type": 7,
+    "level": 94,
+    "levelSync": 94,
+    "item": 0,
+    "itemSync": 663,
+    "memberType": 1
+  },
+  "984": {
+    "name": {
+      "chs": "The Interphos",
+      "en": "The Interphos",
+      "ja": "エターナルクイーン討滅戦",
+      "de": "Zel Tajaal - Ewige Königin",
+      "fr": "Interphos"
+    },
+    "type": 4,
+    "level": 100,
+    "levelSync": 100,
+    "item": 670,
+    "itemSync": 700,
+    "memberType": 3
+  },
+  "994": {
+    "name": {
+      "chs": "An Antidote for Anarchy",
+      "en": "An Antidote for Anarchy",
+      "ja": "毒と癒やしの頂上決戦",
+      "de": "Heilkunst gegen Hexerei",
+      "fr": "Les deux faces du scorpion"
+    },
+    "type": 7,
+    "level": 100,
+    "levelSync": 100,
+    "item": 0,
+    "itemSync": 680,
+    "memberType": 1
+  },
+  "995": {
+    "name": {
+      "chs": "Everkeep",
+      "en": "Everkeep",
+      "ja": "ゾラージャ討滅戦",
+      "de": "Zel Tajaal - Zoraal Ja",
+      "fr": "Le Pinacle de l'Éternité"
+    },
+    "type": 4,
+    "level": 99,
+    "levelSync": 100,
+    "item": 0,
+    "itemSync": 680,
+    "memberType": 3
+  },
+  "996": {
+    "name": {
+      "chs": "Everkeep (Extreme)",
+      "en": "Everkeep (Extreme)",
+      "ja": "極ゾラージャ討滅戦",
+      "de": "Gok Tajaal - Zoraal Ja",
+      "fr": "Le Pinacle de l'Éternité (extrême)"
+    },
+    "type": 4,
+    "level": 100,
+    "levelSync": 100,
+    "item": 690,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "997": {
+    "name": {
+      "chs": "A Hunter True",
+      "en": "A Hunter True",
+      "ja": "一端の狩人",
+      "de": "Krönender Abschuss",
+      "fr": "Chasseuse à lunettes... chasseuse honnête"
+    },
+    "type": 7,
+    "level": 100,
+    "levelSync": 100,
+    "item": 0,
+    "itemSync": 680,
+    "memberType": 1
+  },
+  "998": {
+    "name": {
+      "chs": "The Protector and the Destroyer",
+      "en": "The Protector and the Destroyer",
+      "ja": "護る者、壊す者",
+      "de": "Schützer des Volkes, Schlächter des Volkes",
+      "fr": "Protecteurs et destructeurs"
+    },
+    "type": 7,
+    "level": 98,
+    "levelSync": 98,
+    "item": 0,
+    "itemSync": 675,
+    "memberType": 1
+  },
+  "999": {
+    "name": {
+      "chs": "The Mightiest Shield",
+      "en": "The Mightiest Shield",
+      "ja": "打倒！ シャルトフィット盗賊団",
+      "de": "Der mächtigste Schild",
+      "fr": "Mauvais cru pour Chalteaufite"
+    },
+    "type": 7,
+    "level": 100,
+    "levelSync": 100,
+    "item": 0,
+    "itemSync": 680,
+    "memberType": 1
+  },
+  "1000": {
+    "name": {
+      "chs": "Mind over Manor",
+      "en": "Mind over Manor",
+      "ja": "旅する画家は森都を征く",
+      "de": "Nächtliche Ruhestörung",
+      "fr": "Tapage nocturne"
+    },
+    "type": 7,
+    "level": 80,
+    "levelSync": 80,
+    "item": 0,
+    "itemSync": 525,
+    "memberType": 1
+  },
+  "1001": {
+    "name": {
+      "chs": "Heroes and Pretenders",
+      "en": "Heroes and Pretenders",
+      "ja": "祭器と作られた虚像",
+      "de": "Ein Mythos in Trümmern",
+      "fr": "Le château de cartes s'effondre"
+    },
+    "type": 7,
+    "level": 100,
+    "levelSync": 100,
+    "item": 0,
+    "itemSync": 680,
+    "memberType": 1
+  },
+  "1002": {
+    "name": {
+      "chs": "Vengeance of the Viper",
+      "en": "Vengeance of the Viper",
+      "ja": "トラルヴィドラールを狩る者",
+      "de": "Der Wille der Natur",
+      "fr": "Le fléau des Tural vidraal"
+    },
+    "type": 7,
+    "level": 90,
+    "levelSync": 90,
+    "item": 0,
+    "itemSync": 655,
+    "memberType": 1
+  },
+  "1003": {
+    "name": {
+      "chs": "Dreams of a New Day",
+      "en": "Dreams of a New Day",
+      "ja": "寝ても覚めても",
+      "de": "Neue Bande der Freundschaft",
+      "fr": "Rêves éveillés"
+    },
+    "type": 7,
+    "level": 100,
+    "levelSync": 100,
+    "item": 0,
+    "itemSync": 680,
+    "memberType": 1
   }
 }

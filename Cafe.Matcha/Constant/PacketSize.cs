@@ -15,10 +15,10 @@ namespace Cafe.Matcha.Constant
         public const int CompanySubmersibleStatus = 176;
         public const int InitZone = 136;
         public const int EventPlay = 72;
-        public const int MarketBoardItemListingCount = 48;
-        public const int MarketBoardItemListing = 1560;
+        public const int MarketBoardItemListingCount = 40;
+        public const int MarketBoardItemListing = 1480;
         public const int ItemInfo = 96;
         public const int InventoryTransaction = 80;
-        public const int Examine = 960;
+        public const int Examine = 976;
     }
 }

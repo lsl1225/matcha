@@ -1,13 +1,13 @@
 {
   "1": {
-    "chs": "随机任务：练级",
+    "chs": "随机任务：练级迷宫",
     "en": "Duty Roulette: Leveling",
     "ja": "コンテンツルーレット：レべリング",
     "de": "Zufallsinhalt: Stufensteigerung",
     "fr": "Mission aléatoire : gain de niveaux"
   },
   "2": {
-    "chs": "Duty Roulette: High-level Dungeons",
+    "chs": "随机任务：拾级迷宫",
     "en": "Duty Roulette: High-level Dungeons",
     "ja": "コンテンツルーレット：ハイレベリング",
     "de": "Zufallsinhalt: Hohe Stufen",
@@ -28,7 +28,7 @@
     "fr": "Mission aléatoire : opérations de guilde"
   },
   "5": {
-    "chs": "随机任务：高难度",
+    "chs": "随机任务：顶级迷宫",
     "en": "Duty Roulette: Expert",
     "ja": "コンテンツルーレット：エキスパート",
     "de": "Zufallsinhalt: Experte",
@@ -49,7 +49,7 @@
     "fr": "Challenge quotidien : Front"
   },
   "8": {
-    "chs": "Duty Roulette: Level Cap Dungeons",
+    "chs": "随机任务：满级迷宫",
     "en": "Duty Roulette: Level Cap Dungeons",
     "ja": "コンテンツルーレット：レベルキャップダンジョン",
     "de": "Zufallsinhalt: Höchststufe",

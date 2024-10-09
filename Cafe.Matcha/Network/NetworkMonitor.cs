@@ -5,14 +5,12 @@ namespace Cafe.Matcha.Network
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
     using System.Numerics;
     using System.Text;
     using System.Threading;
     using Cafe.Matcha.Constant;
     using Cafe.Matcha.DTO;
-    using Cafe.Matcha.Models;
-    using Cafe.Matcha.Network.Universalis;
+    using Cafe.Matcha.Network.Structures;
     using Cafe.Matcha.Utils;
 
     internal interface INetworkMonitor
@@ -23,11 +21,29 @@ namespace Cafe.Matcha.Network
 
     internal class NetworkMonitor : INetworkMonitor
     {
+        private uint marketQueryItemId = 0;
+
         public void HandleMessageReceived(string connection, long epoch, byte[] message)
         {
             try
             {
-                HandleMessage(new Packet(message));
+                HandleMessage(new Packet(Packet.PacketSender.Server, message));
+            }
+            catch (Exception e)
+            {
+                try
+                {
+                    FireException(e);
+                }
+                catch { }
+            }
+        }
+
+        public void HandleMessageSent(string connection, long epoch, byte[] message)
+        {
+            try
+            {
+                HandleMessage(new Packet(Packet.PacketSender.Client, message));
             }
             catch (Exception e)
             {
@@ -57,11 +73,14 @@ namespace Cafe.Matcha.Network
                 }
 #endif
 
-                TryHandleMessage(packet);
+                if (packet.Sender == Packet.PacketSender.Server)
+                {
+                    TryHandleServerMessage(packet);
+                }
             }
         }
 
-        private void TryHandleMessage(Packet packet)
+        private void TryHandleServerMessage(Packet packet)
         {
             // Treasure Shifting Wheel Result
             if (packet.DataLength == 88)
@@ -505,7 +524,42 @@ namespace Cafe.Matcha.Network
             }
             else if (opcode == MatchaOpcode.MarketBoardItemListingCount)
             {
-                // Useless as ItemId is removed in 7.0
+                if (packet.DataLength != 8)
+                {
+                    return false;
+                }
+
+                var status = BitConverter.ToUInt32(data, 0);
+                var count = BitConverter.ToUInt32(data, 4);
+                var itemId = marketQueryItemId;
+
+                if (status == 0 && itemId != 0) // OK
+                {
+                    ThreadPool.QueueUserWorkItem(o => Universalis.Client.QueryItem(State.Instance.WorldId, itemId, FireEvent));
+                    FireEvent(new MarketBoardItemListingCountDTO()
+                    {
+                        Item = (int)itemId,
+                        Count = (int)count,
+                        World = State.Instance.WorldId
+                    });
+                }
+
+                marketQueryItemId = 0;
+                return true;
+            }
+            else if (opcode == MatchaOpcode.MarketBoardRequestItemListingInfo)
+            {
+                if (packet.DataLength != 8)
+                {
+                    return false;
+                }
+
+                var itemId = BitConverter.ToUInt32(data, 0);
+                if (itemId != 0)
+                {
+                    marketQueryItemId = itemId;
+                }
+
                 return true;
             }
             else if (opcode == MatchaOpcode.MarketBoardItemListing)
@@ -684,10 +738,6 @@ namespace Cafe.Matcha.Network
         private void FireEvent(BaseDTO args)
         {
             OnReceiveEvent?.Invoke(args);
-        }
-
-        public void HandleMessageSent(string connection, long epoch, byte[] message)
-        {
         }
 
 #if DEBUG

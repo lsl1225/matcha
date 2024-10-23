@@ -5,7 +5,7 @@ namespace Cafe.Matcha.Constant
 {
     public class PacketSize
     {
-        public const int DirectorStart = 168;
+        public const int ResumeEventScene32 = 168;
         public const int NpcSpawn = 680;
         public const int ActorControl = 56;
         public const int FateInfo = 56;

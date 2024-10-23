@@ -161,7 +161,7 @@ namespace Cafe.Matcha.Network
             var data = packet.GetRawData();
             if (opcode == MatchaOpcode.ResumeEventScene32)
             {
-                if (packet.Length != PacketSize.DirectorStart)
+                if (packet.Length != PacketSize.ResumeEventScene32)
                 {
                     return false;
                 }

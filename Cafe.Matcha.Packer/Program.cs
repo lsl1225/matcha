@@ -1,7 +1,5 @@
-﻿// <copyright file="Program.cs" company="FFCafe">
-// Copyright (c) FFCafe. All rights reserved.
+﻿// Copyright (c) FFCafe. All rights reserved.
 // Licensed under the AGPL-3.0 license. See LICENSE file in the project root for full license information.
-// </copyright>
 
 namespace Cafe.Matcha.Packer
 {
@@ -17,7 +15,10 @@ namespace Cafe.Matcha.Packer
             string version = DateTime.UtcNow.ToString("yy.M.d.Hmm");
 
             var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\Cafe.Matcha\AssemblyCopyright.cs");
-            var template = @"using System.Reflection;
+            var template = @"// Copyright (c) FFCafe. All rights reserved.
+// Licensed under the AGPL-3.0 license. See LICENSE file in the project root for full license information.
+
+using System.Reflection;
 
 [assembly: AssemblyTitle(""Cafe.Matcha"")]
 [assembly: AssemblyDescription(""Cafe.Matcha"")]
@@ -27,7 +28,8 @@ namespace Cafe.Matcha.Packer
 
 namespace Cafe.Matcha
 {
-    partial class Data {
+    public partial class Data
+    {
         public const string Version = ""{0}"";
     }
 }

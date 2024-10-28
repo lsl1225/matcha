@@ -1,6 +1,5 @@
-import { readCsv } from './csv.mjs'
-import { formatOpcode, parseOpcode } from './opcode.mjs'
-import fetch from 'node-fetch'
+import { readCsv } from './lib/csv.mjs'
+import { formatOpcode, parseOpcode } from './lib/opcode.mjs'
 import { join } from 'path'
 import { fileURLToPath } from 'url'
 import { writeFileSync } from 'fs'

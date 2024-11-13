@@ -33,30 +33,30 @@ namespace Cafe.Matcha.Constant
     {
         public static Dictionary<ushort, MatchaOpcode> Global = new Dictionary<ushort, MatchaOpcode>
         {
-            { 0x0178, MatchaOpcode.ActorControl },
-            { 0x02a7, MatchaOpcode.ActorControlSelf },
-            { 0x0262, MatchaOpcode.CEDirector },
+            { 0x0212, MatchaOpcode.ActorControl },
+            { 0x00AF, MatchaOpcode.ActorControlSelf },
+            { 0x008C, MatchaOpcode.CEDirector },
             /*
              * AirshipTimers & SubmarineTimers
              */
-            { 0x0371, MatchaOpcode.CompanyAirshipStatus },
-            { 0x00f8, MatchaOpcode.CompanySubmersibleStatus },
-            { 0x014f, MatchaOpcode.ContentFinderNotifyPop },
+            { 0x01E5, MatchaOpcode.CompanyAirshipStatus },
+            { 0x00F3, MatchaOpcode.CompanySubmersibleStatus },
+            { 0x01C4, MatchaOpcode.ContentFinderNotifyPop },
             /*
              * MiniCactpotInit
              */
-            { 0x0083, MatchaOpcode.ResumeEventScene32 },
-            { 0x026d, MatchaOpcode.EventPlay },
-            { 0x0326, MatchaOpcode.Examine },
-            { 0x020a, MatchaOpcode.FateInfo },
-            { 0x01f1, MatchaOpcode.InitZone },
-            { 0x00e8, MatchaOpcode.InventoryTransaction },
-            { 0x0236, MatchaOpcode.ItemInfo },
-            { 0x01c3, MatchaOpcode.MarketBoardItemListing },
-            { 0x00a0, MatchaOpcode.MarketBoardItemListingCount },
-            { 0x0102, MatchaOpcode.MarketBoardItemListingHistory },
-            { 0xf010, MatchaOpcode.MarketBoardRequestItemListingInfo },
-            { 0x039a, MatchaOpcode.NpcSpawn },
+            { 0x00E0, MatchaOpcode.ResumeEventScene32 },
+            { 0x03CA, MatchaOpcode.EventPlay },
+            { 0x03AE, MatchaOpcode.Examine },
+            { 0x01D4, MatchaOpcode.FateInfo },
+            { 0x016C, MatchaOpcode.InitZone },
+            { 0x02FC, MatchaOpcode.InventoryTransaction },
+            { 0x0310, MatchaOpcode.ItemInfo },
+            { 0x00F2, MatchaOpcode.MarketBoardItemListing },
+            { 0x02D2, MatchaOpcode.MarketBoardItemListingCount },
+            { 0x03D7, MatchaOpcode.MarketBoardItemListingHistory },
+            { 0x024F, MatchaOpcode.MarketBoardRequestItemListingInfo },
+            { 0x039A, MatchaOpcode.NpcSpawn },
             { 0x0226, MatchaOpcode.PlayerSetup },
             { 0x0171, MatchaOpcode.PlayerSpawn },
         };

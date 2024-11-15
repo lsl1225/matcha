@@ -11389,7 +11389,7 @@
       "chs": "白虎幻巧战",
       "en": "The Jade Stoa (Unreal)"
     },
-    "type": 7,
+    "type": 4,
     "level": 100,
     "levelSync": 100,
     "item": 690,
@@ -11401,7 +11401,7 @@
       "chs": "Yuweyawata Field Station",
       "en": "Yuweyawata Field Station"
     },
-    "type": 7,
+    "type": 2,
     "level": 100,
     "levelSync": 100,
     "item": 690,
@@ -11425,7 +11425,7 @@
       "chs": "React to Attack Markers",
       "en": "React to Attack Markers"
     },
-    "type": 7,
+    "type": 20,
     "level": 49,
     "levelSync": 49,
     "item": 0,
@@ -11437,7 +11437,7 @@
       "chs": "React to Floor Markers",
       "en": "React to Floor Markers"
     },
-    "type": 7,
+    "type": 20,
     "level": 49,
     "levelSync": 49,
     "item": 0,
@@ -11449,7 +11449,7 @@
       "chs": "React to Advanced Visual Indicators",
       "en": "React to Advanced Visual Indicators"
     },
-    "type": 7,
+    "type": 20,
     "level": 49,
     "levelSync": 49,
     "item": 0,
@@ -11461,7 +11461,7 @@
       "chs": "Jeuno: The First Walk",
       "en": "Jeuno: The First Walk"
     },
-    "type": 7,
+    "type": 5,
     "level": 100,
     "levelSync": 100,
     "item": 695,
@@ -11473,7 +11473,7 @@
       "chs": "永恒女王歼殛战",
       "en": "The Minstrel’s Ballad: Sphene's Burden"
     },
-    "type": 7,
+    "type": 4,
     "level": 100,
     "levelSync": 100,
     "item": 710,

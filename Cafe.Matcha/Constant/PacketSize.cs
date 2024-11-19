@@ -13,7 +13,7 @@ namespace Cafe.Matcha.Constant
         public const int ContentFinderNotifyPop = 72;
         public const int CompanyAirshipStatus = 176;
         public const int CompanySubmersibleStatus = 176;
-        public const int InitZone = 136;
+        public const int InitZone = 144; // 7.1 Fix (original: 136)
         public const int EventPlay = 72;
         public const int MarketBoardItemListingCount = 40;
         public const int MarketBoardItemListing = 1480;

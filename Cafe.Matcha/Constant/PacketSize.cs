@@ -20,5 +20,8 @@ namespace Cafe.Matcha.Constant
         public const int ItemInfo = 96;
         public const int InventoryTransaction = 80;
         public const int Examine = 976;
+        // 挖宝的数据包大小是 ActorControl -> EObjAnimation
+        public const int TreasureShiftingWheel = ActorControl;
+        public const int TreasureResult = ActorControlSelf;
     }
 }

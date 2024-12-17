@@ -11432,6 +11432,18 @@
     "itemSync": 730,
     "memberType": 1
   },
+  "1010": {
+    "name": {
+      "chs": "The Cloud of Darkness (Chaotic)",
+      "en": "The Cloud of Darkness (Chaotic)"
+    },
+    "type": 37,
+    "level": 100,
+    "levelSync": 100,
+    "item": 710,
+    "itemSync": 735,
+    "memberType": 33
+  },
   "1012": {
     "name": {
       "chs": "React to Attack Markers",

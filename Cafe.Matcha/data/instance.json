@@ -11492,6 +11492,18 @@
     "itemSync": 0,
     "memberType": 4
   },
+  "1016": {
+    "name": {
+      "chs": "Bar the Passage",
+      "en": "Bar the Passage"
+    },
+    "type": 7,
+    "level": 100,
+    "levelSync": 100,
+    "item": 0,
+    "itemSync": 730,
+    "memberType": 1
+  },
   "1017": {
     "name": {
       "chs": "永恒女王歼殛战",

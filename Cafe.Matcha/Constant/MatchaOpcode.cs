@@ -45,7 +45,7 @@ namespace Cafe.Matcha.Constant
             /*
              * MiniCactpotInit
              */
-            { 0x0280, MatchaOpcode.ResumeEventScene32 }, // unknown
+            { 0x35B, MatchaOpcode.ResumeEventScene32 },
             { 0x0159, MatchaOpcode.EventPlay },
             { 0x1B3, MatchaOpcode.Examine },
             { 0x1C0, MatchaOpcode.FateInfo },
@@ -55,7 +55,7 @@ namespace Cafe.Matcha.Constant
             { 0x1DE, MatchaOpcode.MarketBoardItemListing },
             { 0x27B, MatchaOpcode.MarketBoardItemListingCount },
             { 0xBF, MatchaOpcode.MarketBoardItemListingHistory },
-            { 0x023C, MatchaOpcode.MarketBoardRequestItemListingInfo }, // unknown
+            { 0x166, MatchaOpcode.MarketBoardRequestItemListingInfo },
             { 0x39A, MatchaOpcode.NpcSpawn },
             { 0x36A, MatchaOpcode.PlayerSetup },
             { 0x325, MatchaOpcode.PlayerSpawn },

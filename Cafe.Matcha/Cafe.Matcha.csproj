@@ -26,8 +26,14 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup>
-	<RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Properties\**" />
+    <EmbeddedResource Remove="Properties\**" />
+    <None Remove="Properties\**" />
+    <Page Remove="Properties\**" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="Advanced Combat Tracker">
       <HintPath Condition="Exists('..\thirdparty\ACT\Advanced Combat Tracker.dll')">..\thirdparty\ACT\Advanced Combat Tracker.dll</HintPath>
@@ -58,6 +64,7 @@
       <HintPath Condition="Exists('C:\Program Files (x86)\Windows Kits\10\References\10.0.19041.0\Windows.Foundation.UniversalApiContract\10.0.0.0\Windows.Foundation.UniversalApiContract.winmd')">C:\Program Files (x86)\Windows Kits\10\References\10.0.19041.0\Windows.Foundation.UniversalApiContract\10.0.0.0\Windows.Foundation.UniversalApiContract.winmd</HintPath>
       <HintPath Condition="Exists('C:\Program Files (x86)\Windows Kits\10\References\10.0.18362.0\Windows.Foundation.UniversalApiContract\8.0.0.0\Windows.Foundation.UniversalApiContract.winmd')">C:\Program Files (x86)\Windows Kits\10\References\10.0.18362.0\Windows.Foundation.UniversalApiContract\8.0.0.0\Windows.Foundation.UniversalApiContract.winmd</HintPath>
       <HintPath Condition="Exists('C:\Program Files (x86)\Windows Kits\10\References\10.0.17763.0\Windows.Foundation.UniversalApiContract\7.0.0.0\Windows.Foundation.UniversalApiContract.winmd')">C:\Program Files (x86)\Windows Kits\10\References\10.0.17763.0\Windows.Foundation.UniversalApiContract\7.0.0.0\Windows.Foundation.UniversalApiContract.winmd</HintPath>
+      <HintPath Condition="Exists('G:\Program Files (x86)\Windows Kits\10\References\10.0.19041.0\Windows.Foundation.UniversalApiContract\10.0.0.0\Windows.Foundation.UniversalApiContract.winmd')">G:\Program Files (x86)\Windows Kits\10\References\10.0.19041.0\Windows.Foundation.UniversalApiContract\10.0.0.0\Windows.Foundation.UniversalApiContract.winmd</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -92,14 +99,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-	<Folder Include="Properties\" />
+    <Content Include="FodyWeavers.xml" />
+    <Resource Include="GitHub-Mark-32px.png" />
   </ItemGroup>
   <ItemGroup>
-	<Content Include="FodyWeavers.xml" />
-	<Resource Include="GitHub-Mark-32px.png" />
-  </ItemGroup>
-  <ItemGroup>
-	<Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Confuser.MSBuild">

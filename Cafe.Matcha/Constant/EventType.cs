@@ -24,5 +24,7 @@ namespace Cafe.Matcha.Constant
 
         DynamicEvent,
         FateWatchListChanged,
+        Queue,
+        FishCast
     }
 }

@@ -6,20 +6,26 @@ namespace Cafe.Matcha.DTO
     using Cafe.Matcha.Constant;
     using Newtonsoft.Json;
 
-    internal class FishBiteDTO : BaseDTO
+    internal class QueueDTO : BaseDTO
     {
         public override EventType EventType
         {
             get
             {
-                return EventType.FishBite;
+                return EventType.Queue;
             }
         }
 
         [JsonProperty("type")]
-        public int Type;
+        public string Type;
+
+        [JsonProperty("stage")]
+        public string Stage;
+
+        [JsonProperty("order")]
+        public uint Order = 0;
 
         [JsonProperty("time")]
-        public long Time;
+        public uint Time = 0;
     }
 }

@@ -19,7 +19,7 @@ namespace Cafe.Matcha.Network.Handler
             // Bite
             if (packet.MatchaOpcode == MatchaOpcode.EventPlay)
             {
-                if (packet.Length != 72)
+                if (packet.Length != PacketSize.EventPlay)
                 {
                     return false;
                 }

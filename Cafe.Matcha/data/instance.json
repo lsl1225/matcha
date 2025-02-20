@@ -11410,7 +11410,7 @@
   },
   "1008": {
     "name": {
-      "chs": "Yuweyawata Field Station",
+      "chs": "废弃据点玉韦亚瓦塔实验站",
       "en": "Yuweyawata Field Station"
     },
     "type": 2,
@@ -11422,7 +11422,7 @@
   },
   "1009": {
     "name": {
-      "chs": "The Warmth of Family",
+      "chs": "家人的温暖",
       "en": "The Warmth of Family"
     },
     "type": 7,
@@ -11446,7 +11446,7 @@
   },
   "1012": {
     "name": {
-      "chs": "React to Attack Markers",
+      "chs": "处理显示标记的攻击",
       "en": "React to Attack Markers"
     },
     "type": 20,
@@ -11458,7 +11458,7 @@
   },
   "1013": {
     "name": {
-      "chs": "React to Floor Markers",
+      "chs": "处理在地面显示预兆的攻击",
       "en": "React to Floor Markers"
     },
     "type": 20,
@@ -11470,7 +11470,7 @@
   },
   "1014": {
     "name": {
-      "chs": "React to Advanced Visual Indicators",
+      "chs": "处理各种攻击",
       "en": "React to Advanced Visual Indicators"
     },
     "type": 20,
@@ -11482,7 +11482,7 @@
   },
   "1015": {
     "name": {
-      "chs": "Jeuno: The First Walk",
+      "chs": "朱诺：第一巡行",
       "en": "Jeuno: The First Walk"
     },
     "type": 5,
@@ -11506,8 +11506,8 @@
   },
   "1017": {
     "name": {
-      "chs": "永恒女王歼殛战",
-      "en": "The Minstrel’s Ballad: Sphene's Burden"
+      "chs": "永恒女王忆想歼灭战",
+      "en": "The Minstrel's Ballad: Sphene's Burden"
     },
     "type": 4,
     "level": 100,

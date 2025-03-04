@@ -47,7 +47,7 @@ namespace Cafe.Matcha.Constant
             /*
              * MiniCactpotInit
              */
-            { 0xA7, MatchaOpcode.ResumeEventScene32 }, // unknown
+            { 0x207, MatchaOpcode.ResumeEventScene32 },
             { 0x85, MatchaOpcode.EventPlay },
             { 0x1B4, MatchaOpcode.EventStart },
             { 0x2FD, MatchaOpcode.Examine },

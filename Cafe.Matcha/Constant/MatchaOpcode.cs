@@ -48,21 +48,21 @@ namespace Cafe.Matcha.Constant
              * MiniCactpotInit
              */
             { 0xA7, MatchaOpcode.ResumeEventScene32 }, // unknown
-            { 0x6C, MatchaOpcode.EventPlay }, // unknown
+            { 0x85, MatchaOpcode.EventPlay },
             { 0x1B4, MatchaOpcode.EventStart },
             { 0x2FD, MatchaOpcode.Examine },
             { 0x2E1, MatchaOpcode.FateInfo },
             { 0x311, MatchaOpcode.InitZone },
             { 0x327, MatchaOpcode.InventoryTransaction },
-            { 0x1D7, MatchaOpcode.ItemInfo }, // unknown
+            { 0x3AA, MatchaOpcode.ItemInfo },
             { 0xB6, MatchaOpcode.MarketBoardItemListing },
             { 0x3CB, MatchaOpcode.MarketBoardItemListingCount },
             { 0x302, MatchaOpcode.MarketBoardItemListingHistory },
-            { 0x182, MatchaOpcode.MarketBoardRequestItemListingInfo }, // unknown
+            { 0x222, MatchaOpcode.MarketBoardRequestItemListingInfo },
             { 0x100, MatchaOpcode.NpcSpawn },
             { 0x6B, MatchaOpcode.PlayerSetup },
             { 0x1AB, MatchaOpcode.PlayerSpawn },
-            { 0x1B7, MatchaOpcode.WorldVisitQueue }, // unknown
+            { 0x240, MatchaOpcode.WorldVisitQueue },
         };
         public static Dictionary<ushort, MatchaOpcode> China = new Dictionary<ushort, MatchaOpcode>
         {

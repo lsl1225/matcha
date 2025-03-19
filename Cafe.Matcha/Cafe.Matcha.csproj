@@ -141,4 +141,7 @@
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Exec Command="del $(OutDir) /F&#xD;&#xA;xcopy &quot;$(OutDir)confused\*.*&quot; &quot;$(OutDir)&quot; /E /Y /C&#xD;&#xA;$(OutDir)..\Cafe.Matcha.Packer $(ConfigurationName)" />
   </Target>
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>..\StyleCop.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
 </Project>

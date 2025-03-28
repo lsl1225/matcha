@@ -138,8 +138,11 @@
       <Version>6.0.1</Version>
     </PackageReference>
   </ItemGroup>
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(Configuration)'=='Release'">
     <Exec Command="del $(OutDir) /F&#xD;&#xA;xcopy &quot;$(OutDir)confused\*.*&quot; &quot;$(OutDir)&quot; /E /Y /C&#xD;&#xA;$(OutDir)..\Cafe.Matcha.Packer $(ConfigurationName)" />
+  </Target>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(Configuration)'=='Debug'">
+    <Exec Command="$(OutDir)..\Cafe.Matcha.Packer $(ConfigurationName)" />
   </Target>
   <PropertyGroup>
     <CodeAnalysisRuleSet>..\StyleCop.ruleset</CodeAnalysisRuleSet>

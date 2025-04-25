@@ -7132,6 +7132,13 @@
     "de": "Südliches Thanalan",
     "fr": "Thanalan méridional"
   },
+  "1237": {
+    "chs": "Sinus Ardorum",
+    "en": "Sinus Ardorum",
+    "ja": "焦がれの入江",
+    "de": "Sinus Ardorum",
+    "fr": "Sinus Ardorum"
+  },
   "1238": {
     "chs": "另一个未来",
     "en": "A Future Rewritten",
@@ -7145,6 +7152,13 @@
     "ja": "白帝の竹林",
     "de": "Jadelichtung",
     "fr": "Clairière de Jade"
+  },
+  "1241": {
+    "chs": "暗黑领域",
+    "en": "Sphere of Naught",
+    "ja": "暗闇の領域",
+    "de": "Sphäre der Leere",
+    "fr": "Sphère de l'absence"
   },
   "1242": {
     "chs": "玉韦亚瓦塔",
@@ -7174,6 +7188,13 @@
     "de": "Halatali",
     "fr": "Halatali"
   },
+  "1246": {
+    "chs": "佐戈永结桥",
+    "en": "Zorgor the Boundless",
+    "ja": "ゾーゴー永結橋",
+    "de": "Zorgor die Weite",
+    "fr": "Traverse de Zorgor"
+  },
   "1247": {
     "chs": "星芒市场",
     "en": "Starlight Stalls",
@@ -7202,6 +7223,69 @@
     "de": "Yuweyawata",
     "fr": "Yuweyawata"
   },
+  "1255": {
+    "chs": "临时面试会场",
+    "en": "Hall of the Unbound",
+    "ja": "仮設オーディション会場",
+    "de": "Audienzsaal",
+    "fr": "Salle d'audition des Affranchis"
+  },
+  "1256": {
+    "chs": "Groovy Ring",
+    "en": "Groovy Ring",
+    "ja": "リング・オブ・ダンス",
+    "de": "Tanzring",
+    "fr": "Ring des Chorégraphies endiablées"
+  },
+  "1257": {
+    "chs": "Groovy Ring",
+    "en": "Groovy Ring",
+    "ja": "リング・オブ・ダンス",
+    "de": "Tanzring",
+    "fr": "Ring des Chorégraphies endiablées"
+  },
+  "1258": {
+    "chs": "Rebel Ring",
+    "en": "Rebel Ring",
+    "ja": "リング・オブ・アート",
+    "de": "Kunstring",
+    "fr": "Ring de l'Inspiration artistique"
+  },
+  "1259": {
+    "chs": "Rebel Ring",
+    "en": "Rebel Ring",
+    "ja": "リング・オブ・アート",
+    "de": "Kunstring",
+    "fr": "Ring de l'Inspiration artistique"
+  },
+  "1260": {
+    "chs": "Demolition Site",
+    "en": "Demolition Site",
+    "ja": "第八層建設区域",
+    "de": "Neubaugebiet der achten Ebene",
+    "fr": "Site de construction du huitième étage"
+  },
+  "1261": {
+    "chs": "Demolition Site",
+    "en": "Demolition Site",
+    "ja": "第八層建設区域",
+    "de": "Neubaugebiet der achten Ebene",
+    "fr": "Site de construction du huitième étage"
+  },
+  "1262": {
+    "chs": "Hunter's Ring",
+    "en": "Hunter's Ring",
+    "ja": "リング・オブ・ウルフ",
+    "de": "Wolfsring",
+    "fr": "Ring du Champion lupin"
+  },
+  "1263": {
+    "chs": "Hunter's Ring",
+    "en": "Hunter's Ring",
+    "ja": "リング・オブ・ウルフ",
+    "de": "Wolfsring",
+    "fr": "Ring du Champion lupin"
+  },
   "1264": {
     "chs": "朱诺下层",
     "en": "Lower Jeuno",
@@ -7215,5 +7299,75 @@
     "ja": "ジュノ下層",
     "de": "Unter-Jeuno",
     "fr": "Bas Jeuno"
+  },
+  "1266": {
+    "chs": "The Underkeep",
+    "en": "The Underkeep",
+    "ja": "アンダーキープ",
+    "de": "Unterfried",
+    "fr": "Gardienne de l'Immémorial"
+  },
+  "1267": {
+    "chs": "喀恩埋没圣堂",
+    "en": "The Sunken Temple of Qarn",
+    "ja": "カルン埋没寺院",
+    "de": "Versunkener Tempel von Qarn",
+    "fr": "Temple enseveli de Qarn"
+  },
+  "1268": {
+    "chs": "Break Room",
+    "en": "Break Room",
+    "ja": "仮眠室",
+    "de": "Ruheraum",
+    "fr": "Salle de repos"
+  },
+  "1270": {
+    "chs": "Recollection",
+    "en": "Recollection",
+    "ja": "玉座の間",
+    "de": "Audienzhalle",
+    "fr": "Salle du trône séculaire"
+  },
+  "1271": {
+    "chs": "Recollection",
+    "en": "Recollection",
+    "ja": "玉座の間",
+    "de": "Audienzhalle",
+    "fr": "Salle du trône séculaire"
+  },
+  "1272": {
+    "chs": "狱之底",
+    "en": "Hells' Kier",
+    "ja": "獄之底",
+    "de": "Höllengrund",
+    "fr": "Fond des enfers"
+  },
+  "1273": {
+    "chs": "加尔提诺平原周边遗迹群",
+    "en": "Carteneau Flats: Borderland Ruins",
+    "ja": "カルテノー平原：外縁遺跡群",
+    "de": "Äußere Ruinen",
+    "fr": "Ruines frontalières"
+  },
+  "1274": {
+    "chs": "Throne Room",
+    "en": "Throne Room",
+    "ja": "玉座の間",
+    "de": "Audienzhalle",
+    "fr": "Salle du trône séculaire"
+  },
+  "1275": {
+    "chs": "Recollection",
+    "en": "Recollection",
+    "ja": "玉座の間",
+    "de": "Audienzhalle",
+    "fr": "Salle du trône séculaire"
+  },
+  "1276": {
+    "chs": "Demolition Site",
+    "en": "Demolition Site",
+    "ja": "第八層建設区域",
+    "de": "Neubaugebiet der achten Ebene",
+    "fr": "Site de construction du huitième étage"
   }
 }

@@ -8972,7 +8972,7 @@
   "829": {
     "name": {
       "chs": "神圣禁地深空天坑",
-      "en": "The Skydeep Cenote",
+      "en": "the Skydeep Cenote",
       "ja": "遺産踏査 天深きセノーテ",
       "de": "Himmelstiefer Cenote",
       "fr": "Le cénote des Cieux infinis"
@@ -9056,7 +9056,7 @@
     "level": 100,
     "levelSync": 100,
     "item": 670,
-    "itemSync": 0,
+    "itemSync": 730,
     "memberType": 2
   },
   "835": {
@@ -11051,7 +11051,7 @@
     "level": 100,
     "levelSync": 100,
     "item": 670,
-    "itemSync": 0,
+    "itemSync": 730,
     "memberType": 2
   },
   "982": {
@@ -11396,7 +11396,7 @@
     "level": 100,
     "levelSync": 100,
     "item": 0,
-    "itemSync": 0,
+    "itemSync": 735,
     "memberType": 3
   },
   "1007": {
@@ -11426,7 +11426,7 @@
     "level": 100,
     "levelSync": 100,
     "item": 690,
-    "itemSync": 0,
+    "itemSync": 730,
     "memberType": 2
   },
   "1009": {
@@ -11446,8 +11446,11 @@
   },
   "1010": {
     "name": {
-      "chs": "The Cloud of Darkness (Chaotic)",
-      "en": "The Cloud of Darkness (Chaotic)"
+      "chs": "暗黑之云诛灭战",
+      "en": "The Cloud of Darkness (Chaotic)",
+      "ja": "滅暗闇の雲激闘戦",
+      "de": "Die Wolke der Dunkelheit (chaotisch)",
+      "fr": "La Tour de Ténèbres (chaotique)"
     },
     "type": 37,
     "level": 100,
@@ -11518,8 +11521,11 @@
   },
   "1016": {
     "name": {
-      "chs": "Bar the Passage",
-      "en": "Bar the Passage"
+      "chs": "决战！佐戈永结桥",
+      "en": "Bar the Passage",
+      "ja": "決戦、ゾーゴー永結橋",
+      "de": "Kampf an Zorgor der Weiten",
+      "fr": "Pour s'affranchir de la tyrannie, tout s'appelle vertu"
     },
     "type": 7,
     "level": 100,
@@ -11546,7 +11552,10 @@
   "1019": {
     "name": {
       "chs": "AAC Cruiserweight M1",
-      "en": "AAC Cruiserweight M1"
+      "en": "AAC Cruiserweight M1",
+      "ja": "至天の座アルカディア：クルーザー級1",
+      "de": "Arkadion - Schwergewicht R1",
+      "fr": "Poids lourds-légers CCA - match 1"
     },
     "type": 5,
     "level": 100,
@@ -11558,7 +11567,10 @@
   "1020": {
     "name": {
       "chs": "AAC Cruiserweight M1 (Savage)",
-      "en": "AAC Cruiserweight M1 (Savage)"
+      "en": "AAC Cruiserweight M1 (Savage)",
+      "ja": "至天の座アルカディア零式：クルーザー級1",
+      "de": "Arkadion - Schwergewicht R1 (episch)",
+      "fr": "Poids lourds-légers CCA - match 1 (sadique)"
     },
     "type": 5,
     "level": 100,
@@ -11570,7 +11582,10 @@
   "1021": {
     "name": {
       "chs": "AAC Cruiserweight M2",
-      "en": "AAC Cruiserweight M2"
+      "en": "AAC Cruiserweight M2",
+      "ja": "至天の座アルカディア：クルーザー級2",
+      "de": "Arkadion - Schwergewicht R2",
+      "fr": "Poids lourds-légers CCA - match 2"
     },
     "type": 5,
     "level": 100,
@@ -11582,7 +11597,10 @@
   "1022": {
     "name": {
       "chs": "AAC Cruiserweight M2 (Savage)",
-      "en": "AAC Cruiserweight M2 (Savage)"
+      "en": "AAC Cruiserweight M2 (Savage)",
+      "ja": "至天の座アルカディア零式：クルーザー級2",
+      "de": "Arkadion - Schwergewicht R2 (episch)",
+      "fr": "Poids lourds-légers CCA - match 2 (sadique)"
     },
     "type": 5,
     "level": 100,
@@ -11594,7 +11612,10 @@
   "1023": {
     "name": {
       "chs": "AAC Cruiserweight M3",
-      "en": "AAC Cruiserweight M3"
+      "en": "AAC Cruiserweight M3",
+      "ja": "至天の座アルカディア：クルーザー級3",
+      "de": "Arkadion - Schwergewicht R3",
+      "fr": "Poids lourds-légers CCA - match 3"
     },
     "type": 5,
     "level": 100,
@@ -11606,7 +11627,10 @@
   "1024": {
     "name": {
       "chs": "AAC Cruiserweight M3 (Savage)",
-      "en": "AAC Cruiserweight M3 (Savage)"
+      "en": "AAC Cruiserweight M3 (Savage)",
+      "ja": "至天の座アルカディア零式：クルーザー級3",
+      "de": "Arkadion - Schwergewicht R3 (episch)",
+      "fr": "Poids lourds-légers CCA - match 3 (sadique)"
     },
     "type": 5,
     "level": 100,
@@ -11618,7 +11642,10 @@
   "1025": {
     "name": {
       "chs": "AAC Cruiserweight M4",
-      "en": "AAC Cruiserweight M4"
+      "en": "AAC Cruiserweight M4",
+      "ja": "至天の座アルカディア：クルーザー級4",
+      "de": "Arkadion - Schwergewicht R4",
+      "fr": "Poids lourds-légers CCA - match 4"
     },
     "type": 5,
     "level": 100,
@@ -11630,7 +11657,10 @@
   "1026": {
     "name": {
       "chs": "AAC Cruiserweight M4 (Savage)",
-      "en": "AAC Cruiserweight M4 (Savage)"
+      "en": "AAC Cruiserweight M4 (Savage)",
+      "ja": "至天の座アルカディア零式：クルーザー級4",
+      "de": "Arkadion - Schwergewicht R4 (episch)",
+      "fr": "Poids lourds-légers CCA - match 4 (sadique)"
     },
     "type": 5,
     "level": 100,
@@ -11642,7 +11672,10 @@
   "1027": {
     "name": {
       "chs": "the Underkeep",
-      "en": "the Underkeep"
+      "en": "the Underkeep",
+      "ja": "王城旧跡 アンダーキープ",
+      "de": "Unterfried-Ruinen",
+      "fr": "La Gardienne de l'Immémorial"
     },
     "type": 2,
     "level": 100,
@@ -11654,7 +11687,10 @@
   "1029": {
     "name": {
       "chs": "朱雀幻巧战",
-      "en": "Hells' Kier (Unreal)"
+      "en": "Hells' Kier (Unreal)",
+      "ja": "幻朱雀征魂戦",
+      "de": "Traumprüfung - Suzaku",
+      "fr": "Le Nid des Lamentations (irréel)"
     },
     "type": 4,
     "level": 100,
@@ -11666,7 +11702,10 @@
   "1030": {
     "name": {
       "chs": "Recollection",
-      "en": "Recollection"
+      "en": "Recollection",
+      "ja": "ゼレニア討滅戦",
+      "de": "Zel Tajaal - Zelenia",
+      "fr": "Le Sanctuaire du Serment"
     },
     "type": 4,
     "level": 100,
@@ -11678,7 +11717,10 @@
   "1031": {
     "name": {
       "chs": "Recollection (Extreme)",
-      "en": "Recollection (Extreme)"
+      "en": "Recollection (Extreme)",
+      "ja": "極ゼレニア討滅戦",
+      "de": "Gok Tajaal - Zelenia",
+      "fr": "Le Sanctuaire du Serment (extrême)"
     },
     "type": 4,
     "level": 100,

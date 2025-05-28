@@ -7209,6 +7209,13 @@
     "de": "Jeuno: Die erste Etappe",
     "fr": "Jeuno - La première perambulation"
   },
+  "1252": {
+    "chs": "South Horn",
+    "en": "South Horn",
+    "ja": "三日月島南部",
+    "de": "Südliches Kreszentia",
+    "fr": "Île de Lunule méridionale"
+  },
   "1253": {
     "chs": "星芒市场",
     "en": "Starlight Stalls",
@@ -7321,6 +7328,13 @@
     "de": "Ruheraum",
     "fr": "Salle de repos"
   },
+  "1269": {
+    "chs": "Phantom Village",
+    "en": "Phantom Village",
+    "ja": "蜃気楼の町",
+    "de": "Trugstadt",
+    "fr": "Ville fantôme"
+  },
   "1270": {
     "chs": "Recollection",
     "en": "Recollection",
@@ -7369,5 +7383,19 @@
     "ja": "第八層建設区域",
     "de": "Neubaugebiet der achten Ebene",
     "fr": "Site de construction du huitième étage"
+  },
+  "1277": {
+    "chs": "Main Deck",
+    "en": "Main Deck",
+    "ja": "大洋の船上",
+    "de": "Auf hoher See",
+    "fr": "Pont du navire"
+  },
+  "1278": {
+    "chs": "Phantom Village",
+    "en": "Phantom Village",
+    "ja": "蜃気楼の町",
+    "de": "Trugstadt",
+    "fr": "Ville fantôme"
   }
 }

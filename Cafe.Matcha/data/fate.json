@@ -15514,5 +15514,161 @@
     "level": 98,
     "patch": 7,
     "location": 1191
+  },
+  "1962": {
+    "name": {
+      "chs": "Rough Waters",
+      "en": "Rough Waters",
+      "ja": "波起こしの海魔「ナンム」",
+      "de": "Die Wogen glätten",
+      "fr": "Défi: pas de vagues"
+    },
+    "level": 1,
+    "patch": 7,
+    "location": 1252
+  },
+  "1963": {
+    "name": {
+      "chs": "The Golden Guardian",
+      "en": "The Golden Guardian",
+      "ja": "金色の怪石「ゴールデンブロックス」",
+      "de": "Brocken statt Barren",
+      "fr": "Défi: tombe vingt-quatre carats"
+    },
+    "level": 1,
+    "patch": 7,
+    "location": 1252
+  },
+  "1964": {
+    "name": {
+      "chs": "King of the Crescent",
+      "en": "King of the Crescent",
+      "ja": "悲鳴の蒐集者「ロプロス」",
+      "de": "Geißel Kreszentias",
+      "fr": "Défi: la bête sadique"
+    },
+    "level": 1,
+    "patch": 7,
+    "location": 1252
+  },
+  "1965": {
+    "name": {
+      "chs": "The Winged Terror",
+      "en": "The Winged Terror",
+      "ja": "甲板の掃除人「巨大鳥」",
+      "de": "Dämonenvogel am Spieß",
+      "fr": "Défi: je fus zu"
+    },
+    "level": 1,
+    "patch": 7,
+    "location": 1252
+  },
+  "1966": {
+    "name": {
+      "chs": "An Unending Duty",
+      "en": "An Unending Duty",
+      "ja": "神罰の石獣「シジフォス」",
+      "de": "Los, Sisyphos, Donnerblitz!",
+      "fr": "Défi: pierre de tonnerre"
+    },
+    "level": 1,
+    "patch": 7,
+    "location": 1252
+  },
+  "1967": {
+    "name": {
+      "chs": "Brain Drain",
+      "en": "Brain Drain",
+      "ja": "進化せし怪蛇「アドバンスドエイビス」",
+      "de": "Aspho ... asphy ... scheintot!",
+      "fr": "Défi: le poison de l'évolution"
+    },
+    "level": 1,
+    "patch": 7,
+    "location": 1252
+  },
+  "1968": {
+    "name": {
+      "chs": "A Delicate Balance",
+      "en": "A Delicate Balance",
+      "ja": "湿度の狩手「ディヒューミディファイア」",
+      "de": "Kampf um Leben und Schweiß",
+      "fr": "Défi: humidité zéro"
+    },
+    "level": 1,
+    "patch": 7,
+    "location": 1252
+  },
+  "1969": {
+    "name": {
+      "chs": "Sworn to Soil",
+      "en": "Sworn to Soil",
+      "ja": "土壌の守り手「マッドマッド」",
+      "de": "Kampf um Leben und Boden unter den Füßen",
+      "fr": "Défi: rester de boue"
+    },
+    "level": 1,
+    "patch": 7,
+    "location": 1252
+  },
+  "1970": {
+    "name": {
+      "chs": "A Prying Eye",
+      "en": "A Prying Eye",
+      "ja": "監視の瞳「アイルオブザーバー」",
+      "de": "Wächter des Lebens",
+      "fr": "Défi: un œil sur l'île"
+    },
+    "level": 1,
+    "patch": 7,
+    "location": 1252
+  },
+  "1971": {
+    "name": {
+      "chs": "Fatal Allure",
+      "en": "Fatal Allure",
+      "ja": "美しき呪殺者「イグゼクレーター」",
+      "de": "Tückische Schönheit",
+      "fr": "Défi: la belle mort"
+    },
+    "level": 1,
+    "patch": 7,
+    "location": 1252
+  },
+  "1972": {
+    "name": {
+      "chs": "Serving Darkness",
+      "en": "Serving Darkness",
+      "ja": "命の収奪者「ライフギャザラー」",
+      "de": "Seelen sammeln für den bösen Zweck",
+      "fr": "Défi: collecte mortelle"
+    },
+    "level": 1,
+    "patch": 7,
+    "location": 1252
+  },
+  "1976": {
+    "name": {
+      "chs": "Persistent Pots",
+      "en": "Persistent Pots",
+      "ja": "しあわせのマジックポット",
+      "de": "Freude im Pott",
+      "fr": "Pas de pot pour les pots"
+    },
+    "level": 1,
+    "patch": 7,
+    "location": 1252
+  },
+  "1977": {
+    "name": {
+      "chs": "Pleading Pots",
+      "en": "Pleading Pots",
+      "ja": "カチカチのマジックポット",
+      "de": "Wunder im Pott",
+      "fr": "Mauvais œil pour les pots"
+    },
+    "level": 1,
+    "patch": 7,
+    "location": 1252
   }
 }

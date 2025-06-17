@@ -62,7 +62,7 @@ namespace Cafe.Matcha.Constant
             { 0x3BF, MatchaOpcode.NpcSpawn },
             { 0x31D, MatchaOpcode.PlayerSetup },
             { 0x266, MatchaOpcode.PlayerSpawn },
-            { 0x2EF, MatchaOpcode.WorldVisitQueue }, // unk
+            { 0x358, MatchaOpcode.WorldVisitQueue },
         };
         public static Dictionary<ushort, MatchaOpcode> China = new Dictionary<ushort, MatchaOpcode>
         {

@@ -5431,7 +5431,7 @@
   },
   "572": {
     "name": {
-      "chs": "第21关：贤者的试炼",
+      "chs": "第21关：贤人的试炼",
       "en": "Stage 21: Wise Words",
       "ja": "第21節：賢人ルイゾワの試練",
       "de": "Stufe 21: Die Leveilleurs",
@@ -11397,21 +11397,6 @@
     "levelSync": 100,
     "item": 0,
     "itemSync": 735,
-    "memberType": 3
-  },
-  "1007": {
-    "name": {
-      "chs": "白虎幻巧战",
-      "en": "The Jade Stoa (Unreal)",
-      "ja": "幻白虎征魂戦",
-      "de": "Traumprüfung - Byakko",
-      "fr": "La Clairière de Jade (irréel)"
-    },
-    "type": 4,
-    "level": 100,
-    "levelSync": 100,
-    "item": 690,
-    "itemSync": 695,
     "memberType": 3
   },
   "1008": {

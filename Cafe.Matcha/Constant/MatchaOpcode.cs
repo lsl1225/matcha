@@ -48,13 +48,13 @@ namespace Cafe.Matcha.Constant
              * MiniCactpotInit
              */
             { 0x3A2, MatchaOpcode.ResumeEventScene32 }, // unk
-            { 0x1E0, MatchaOpcode.EventPlay }, // unk
+            { 0x206, MatchaOpcode.EventPlay },
             { 0x1C7, MatchaOpcode.EventStart },
             { 0x278, MatchaOpcode.Examine },
             { 0x15F, MatchaOpcode.FateInfo },
             { 0x332, MatchaOpcode.InitZone },
             { 0x353, MatchaOpcode.InventoryTransaction },
-            { 0x38E, MatchaOpcode.ItemInfo }, // unk
+            { 0x1E7, MatchaOpcode.ItemInfo },
             { 0xAC, MatchaOpcode.MarketBoardItemListing },
             { 0x39F, MatchaOpcode.MarketBoardItemListingCount },
             { 0x3C1, MatchaOpcode.MarketBoardItemListingHistory },

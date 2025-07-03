@@ -58,11 +58,11 @@ namespace Cafe.Matcha.Constant
             { 0xAC, MatchaOpcode.MarketBoardItemListing },
             { 0x39F, MatchaOpcode.MarketBoardItemListingCount },
             { 0x3C1, MatchaOpcode.MarketBoardItemListingHistory },
-            { 0x343, MatchaOpcode.MarketBoardRequestItemListingInfo }, // unk
+            { 0x34A, MatchaOpcode.MarketBoardRequestItemListingInfo },
             { 0x99, MatchaOpcode.NpcSpawn },
             { 0x77, MatchaOpcode.PlayerSetup },
             { 0x1D5, MatchaOpcode.PlayerSpawn },
-            { 0x355, MatchaOpcode.WorldVisitQueue }, // unk
+            { 0x21B, MatchaOpcode.WorldVisitQueue },
         };
         public static Dictionary<ushort, MatchaOpcode> China = new Dictionary<ushort, MatchaOpcode>
         {

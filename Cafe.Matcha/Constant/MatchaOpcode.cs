@@ -51,14 +51,14 @@ namespace Cafe.Matcha.Constant
             { 0x0191, MatchaOpcode.EventPlay },
             { 0x0095, MatchaOpcode.EventStart },
             { 0x01f6, MatchaOpcode.Examine },
-            { 0x15F, MatchaOpcode.FateInfo }, // unk
+            { 0x022e, MatchaOpcode.FateInfo },
             { 0x016c, MatchaOpcode.InitZone },
             { 0x0222, MatchaOpcode.InventoryTransaction },
             { 0x0283, MatchaOpcode.ItemInfo },
             { 0x0381, MatchaOpcode.MarketBoardItemListing },
             { 0x0303, MatchaOpcode.MarketBoardItemListingCount },
             { 0x02bc, MatchaOpcode.MarketBoardItemListingHistory },
-            { 0x34A, MatchaOpcode.MarketBoardRequestItemListingInfo }, // unk
+            { 0x0259, MatchaOpcode.MarketBoardRequestItemListingInfo },
             { 0x022d, MatchaOpcode.NpcSpawn },
             { 0x037d, MatchaOpcode.PlayerSetup },
             { 0x01d0, MatchaOpcode.PlayerSpawn },

@@ -7320,5 +7320,96 @@
     "ja": "蜃気楼の町",
     "de": "Trugstadt",
     "fr": "Ville fantôme"
+  },
+  "1279": {
+    "chs": "Vault Oneiron",
+    "en": "Vault Oneiron",
+    "ja": "ボルト・オネイロン",
+    "de": "Tresor Oneiron",
+    "fr": "Coffre d'Oneiron"
+  },
+  "1292": {
+    "chs": "The Meso Terminal",
+    "en": "The Meso Terminal",
+    "ja": "メインターミナル",
+    "de": "Meso-System",
+    "fr": "Mésoterminal"
+  },
+  "1293": {
+    "chs": "The Bayside Battleground",
+    "en": "The Bayside Battleground",
+    "ja": "ベイサイド・バトルグラウンド",
+    "de": "Der Küstenkampf",
+    "fr": "Le Rivage redoutable"
+  },
+  "1294": {
+    "chs": "The Bayside Battleground",
+    "en": "The Bayside Battleground",
+    "ja": "ベイサイド・バトルグラウンド",
+    "de": "Der Küstenkampf",
+    "fr": "Le Rivage redoutable"
+  },
+  "1295": {
+    "chs": "The Ageless Necropolis",
+    "en": "The Ageless Necropolis",
+    "ja": "死の満ちる地",
+    "de": "Fülle des Todes",
+    "fr": "Nécropole intemporelle"
+  },
+  "1296": {
+    "chs": "The Ageless Necropolis",
+    "en": "The Ageless Necropolis",
+    "ja": "死の満ちる地",
+    "de": "Fülle des Todes",
+    "fr": "Nécropole intemporelle"
+  },
+  "1299": {
+    "chs": "Containment Complex 10-29",
+    "en": "Containment Complex 10-29",
+    "ja": "格納殻10-29",
+    "de": "Lagerhülle 10-29",
+    "fr": "Division d'entreposage 10-29"
+  },
+  "1302": {
+    "chs": "蛇神大社",
+    "en": "The Wreath of Snakes",
+    "ja": "蛇神大社",
+    "de": "Heiligtum der Schlange",
+    "fr": "Sanctuaire du Grand Serpent"
+  },
+  "1303": {
+    "chs": "樵鸣洞",
+    "en": "Cutter's Cry",
+    "ja": "カッターズクライ",
+    "de": "Sägerschrei",
+    "fr": "Gouffre hurlant"
+  },
+  "1304": {
+    "chs": "San d'Oria: The Second Walk",
+    "en": "San d'Oria: The Second Walk",
+    "ja": "サンドリア：ザ・セカンドウォーク",
+    "de": "San d'Oria: Die zweite Etappe",
+    "fr": "San d'Oria - La deuxième perambulation"
+  },
+  "1305": {
+    "chs": "亡灵府邸闹鬼庄园",
+    "en": "Haunted Manor",
+    "ja": "亡霊屋敷 ホーンテッドマナー",
+    "de": "Geisterschloss",
+    "fr": "Manoir hanté"
+  },
+  "1309": {
+    "chs": "星芒市场",
+    "en": "Starlight Stalls",
+    "ja": "星芒マーケット",
+    "de": "Sternenlicht-Stände",
+    "fr": "Marché des étoiles"
+  },
+  "1312": {
+    "chs": "The Ageless Necropolis",
+    "en": "The Ageless Necropolis",
+    "ja": "死の満ちる地",
+    "de": "Fülle des Todes",
+    "fr": "Nécropole intemporelle"
   }
 }

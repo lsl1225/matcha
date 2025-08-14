@@ -261,6 +261,52 @@ namespace Cafe.Matcha.Network
 
                             break;
                         }
+
+                    case ActorControlType.HypnoslotResult:
+                        {
+                            var result = (HypnoslotResultType)data[4];
+                            switch (result)
+                            {
+                                case HypnoslotResultType.Low:
+                                    FireEvent(new TreasureResultDTO()
+                                    {
+                                        Value = "wheel-low"
+                                    });
+                                    break;
+                                case HypnoslotResultType.Medium:
+                                    FireEvent(new TreasureResultDTO()
+                                    {
+                                        Value = "wheel-medium"
+                                    });
+                                    break;
+                                case HypnoslotResultType.High:
+                                    FireEvent(new TreasureResultDTO()
+                                    {
+                                        Value = "wheel-high"
+                                    });
+                                    break;
+                                case HypnoslotResultType.Shift:
+                                    FireEvent(new TreasureResultDTO()
+                                    {
+                                        Value = "wheel-shift"
+                                    });
+                                    break;
+                                case HypnoslotResultType.Special:
+                                    FireEvent(new TreasureResultDTO()
+                                    {
+                                        Value = "wheel-special"
+                                    });
+                                    break;
+                                case HypnoslotResultType.End:
+                                    FireEvent(new TreasureResultDTO()
+                                    {
+                                        Value = "wheel-end"
+                                    });
+                                    break;
+                            }
+
+                            break;
+                        }
                 }
             }
             else if (opcode == MatchaOpcode.FateInfo)

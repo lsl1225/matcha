@@ -267,34 +267,12 @@ namespace Cafe.Matcha.Network
                             var result = (HypnoslotResultType)data[4];
                             switch (result)
                             {
-                                case HypnoslotResultType.Low:
+                                case HypnoslotResultType.AllDiff:
+                                case HypnoslotResultType.AllSame:
+                                case HypnoslotResultType.Reroll:
                                     FireEvent(new TreasureResultDTO()
                                     {
-                                        Value = "wheel-low"
-                                    });
-                                    break;
-                                case HypnoslotResultType.Medium:
-                                    FireEvent(new TreasureResultDTO()
-                                    {
-                                        Value = "wheel-medium"
-                                    });
-                                    break;
-                                case HypnoslotResultType.High:
-                                    FireEvent(new TreasureResultDTO()
-                                    {
-                                        Value = "wheel-high"
-                                    });
-                                    break;
-                                case HypnoslotResultType.Shift:
-                                    FireEvent(new TreasureResultDTO()
-                                    {
-                                        Value = "wheel-shift"
-                                    });
-                                    break;
-                                case HypnoslotResultType.Special:
-                                    FireEvent(new TreasureResultDTO()
-                                    {
-                                        Value = "wheel-special"
+                                        Value = "gate-open"
                                     });
                                     break;
                                 case HypnoslotResultType.End:

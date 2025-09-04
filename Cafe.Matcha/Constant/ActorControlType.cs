@@ -10,6 +10,7 @@ namespace Cafe.Matcha.Constant
         TreasureSpot = 84,
         DirectorUpdate = 109,
         FishingBaitChange = 325,
+        HypnoslotResult = 407,
         FateStart = 2370,
         FateEnd = 2357,
         FateProgress = 2364

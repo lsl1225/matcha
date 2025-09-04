@@ -261,6 +261,30 @@ namespace Cafe.Matcha.Network
 
                             break;
                         }
+
+                    case ActorControlType.HypnoslotResult:
+                        {
+                            var result = (HypnoslotResultType)data[4];
+                            switch (result)
+                            {
+                                case HypnoslotResultType.AllDiff:
+                                case HypnoslotResultType.AllSame:
+                                case HypnoslotResultType.Reroll:
+                                    FireEvent(new TreasureResultDTO()
+                                    {
+                                        Value = "wheel-open"
+                                    });
+                                    break;
+                                case HypnoslotResultType.End:
+                                    FireEvent(new TreasureResultDTO()
+                                    {
+                                        Value = "wheel-end"
+                                    });
+                                    break;
+                            }
+
+                            break;
+                        }
                 }
             }
             else if (opcode == MatchaOpcode.FateInfo)

@@ -170,6 +170,8 @@ namespace Cafe.Matcha.Utils
                     return "下级召唤";
                 case "wheel-end":
                     return "召唤失败";
+                case "wheel-open":
+                    return "成功";
                 case "gate-open":
                     return "开门";
                 case "gate-fail":

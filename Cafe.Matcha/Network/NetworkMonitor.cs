@@ -272,7 +272,7 @@ namespace Cafe.Matcha.Network
                                 case HypnoslotResultType.Reroll:
                                     FireEvent(new TreasureResultDTO()
                                     {
-                                        Value = "gate-open"
+                                        Value = "wheel-open"
                                     });
                                     break;
                                 case HypnoslotResultType.End:

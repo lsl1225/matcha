@@ -209,13 +209,6 @@
     "de": "Ruinen von Amdapor",
     "fr": "Château d'Amdapor"
   },
-  "170": {
-    "chs": "樵鸣洞",
-    "en": "Cutter's Cry",
-    "ja": "カッターズクライ",
-    "de": "Sägerschrei",
-    "fr": "Gouffre hurlant"
-  },
   "171": {
     "chs": "泽梅尔要塞",
     "en": "Dzemael Darkhold",
@@ -7272,13 +7265,6 @@
     "de": "Audienzhalle",
     "fr": "Salle du trône séculaire"
   },
-  "1272": {
-    "chs": "狱之底",
-    "en": "Hells' Kier",
-    "ja": "獄之底",
-    "de": "Höllengrund",
-    "fr": "Fond des enfers"
-  },
   "1273": {
     "chs": "加尔提诺平原周边遗迹群",
     "en": "Carteneau Flats: Borderland Ruins",
@@ -7322,56 +7308,56 @@
     "fr": "Ville fantôme"
   },
   "1279": {
-    "chs": "Vault Oneiron",
+    "chs": "巡梦金库",
     "en": "Vault Oneiron",
     "ja": "ボルト・オネイロン",
     "de": "Tresor Oneiron",
     "fr": "Coffre d'Oneiron"
   },
   "1291": {
-    "chs": "Phaenna",
+    "chs": "法恩娜行星",
     "en": "Phaenna",
     "ja": "惑星パエンナ",
     "de": "Phaenna",
     "fr": "Phaenna"
   },
   "1292": {
-    "chs": "The Meso Terminal",
+    "chs": "中央终端",
     "en": "The Meso Terminal",
     "ja": "メインターミナル",
     "de": "Meso-System",
     "fr": "Mésoterminal"
   },
   "1293": {
-    "chs": "The Bayside Battleground",
+    "chs": "海岸斗场",
     "en": "The Bayside Battleground",
     "ja": "ベイサイド・バトルグラウンド",
     "de": "Der Küstenkampf",
     "fr": "Le Rivage redoutable"
   },
   "1294": {
-    "chs": "The Bayside Battleground",
+    "chs": "海岸斗场",
     "en": "The Bayside Battleground",
     "ja": "ベイサイド・バトルグラウンド",
     "de": "Der Küstenkampf",
     "fr": "Le Rivage redoutable"
   },
   "1295": {
-    "chs": "The Ageless Necropolis",
+    "chs": "死亡满溢之地",
     "en": "The Ageless Necropolis",
     "ja": "死の満ちる地",
     "de": "Fülle des Todes",
     "fr": "Nécropole intemporelle"
   },
   "1296": {
-    "chs": "The Ageless Necropolis",
+    "chs": "死亡满溢之地",
     "en": "The Ageless Necropolis",
     "ja": "死の満ちる地",
     "de": "Fülle des Todes",
     "fr": "Nécropole intemporelle"
   },
   "1299": {
-    "chs": "Containment Complex 10-29",
+    "chs": "仓库栋10-29",
     "en": "Containment Complex 10-29",
     "ja": "格納殻10-29",
     "de": "Lagerhülle 10-29",
@@ -7392,7 +7378,7 @@
     "fr": "Gouffre hurlant"
   },
   "1304": {
-    "chs": "San d'Oria: The Second Walk",
+    "chs": "桑多利亚：第二巡行",
     "en": "San d'Oria: The Second Walk",
     "ja": "サンドリア：ザ・セカンドウォーク",
     "de": "San d'Oria: Die zweite Etappe",
@@ -7413,7 +7399,7 @@
     "fr": "Marché des étoiles"
   },
   "1312": {
-    "chs": "The Ageless Necropolis",
+    "chs": "死亡满溢之地",
     "en": "The Ageless Necropolis",
     "ja": "死の満ちる地",
     "de": "Fülle des Todes",

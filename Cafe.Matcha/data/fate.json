@@ -16033,7 +16033,7 @@
   },
   "2008": {
     "name": {
-      "chs": "Beacon Camp Alpha Expansion",
+      "chs": "第一次基地扩建工程",
       "en": "Beacon Camp Alpha Expansion",
       "ja": "第一次基地拡張計画",
       "de": "Glasbläser-Basis: Erweiterung I",
@@ -16045,7 +16045,7 @@
   },
   "2009": {
     "name": {
-      "chs": "Cosmoliner Alpha Construction Support",
+      "chs": "第一次宇宙飞线铺设工程支援行动",
       "en": "Cosmoliner Alpha Construction Support",
       "ja": "第一次コスモライナー敷設支援",
       "de": "Kosmozapper: Bauunterstützung I",
@@ -16057,7 +16057,7 @@
   },
   "2010": {
     "name": {
-      "chs": "Habitation Module Construction Support",
+      "chs": "居住舱安装工程支援行动",
       "en": "Habitation Module Construction Support",
       "ja": "居住モジュール設置支援",
       "de": "Habitationsmodul: Bauunterstützung I",
@@ -16069,7 +16069,7 @@
   },
   "2011": {
     "name": {
-      "chs": "Energization Station Construction Support",
+      "chs": "能源设施建设工程支援行动",
       "en": "Energization Station Construction Support",
       "ja": "エネルギー設備建設支援",
       "de": "Energisierungswerke: Bauunterstützung",
@@ -16081,7 +16081,7 @@
   },
   "2012": {
     "name": {
-      "chs": "Hydrofication Station Construction Support",
+      "chs": "供水设施建设工程支援行动",
       "en": "Hydrofication Station Construction Support",
       "ja": "給水設備建設支援",
       "de": "Hydrofizierungswerke: Bauunterstützung",
@@ -16093,7 +16093,7 @@
   },
   "2013": {
     "name": {
-      "chs": "Mech Hangar Alpha Expansion",
+      "chs": "第一次机甲库扩建工程",
       "en": "Mech Hangar Alpha Expansion",
       "ja": "第一次ハンガー拡張計画",
       "de": "Sternenhangar: Erweiterung I",
@@ -16105,7 +16105,7 @@
   },
   "2014": {
     "name": {
-      "chs": "Upper Crane Construction",
+      "chs": "第一次升降机建设工程",
       "en": "Upper Crane Construction",
       "ja": "第一次降下クレーン建設工事",
       "de": "Applike-Kräne: Bauunterstützung I",
@@ -16117,7 +16117,7 @@
   },
   "2015": {
     "name": {
-      "chs": "Lower Crane Construction",
+      "chs": "第二次升降机建设工程",
       "en": "Lower Crane Construction",
       "ja": "第二次降下クレーン建設工事",
       "de": "Applike-Kräne: Bauunterstützung II",
@@ -16129,7 +16129,7 @@
   },
   "2016": {
     "name": {
-      "chs": "Beacon Camp Beta Expansion",
+      "chs": "第二次基地扩建工程",
       "en": "Beacon Camp Beta Expansion",
       "ja": "第二次基地拡張計画",
       "de": "Glasbläser-Basis: Erweiterung II",
@@ -16141,7 +16141,7 @@
   },
   "2017": {
     "name": {
-      "chs": "Mech Hangar Beta Expansion",
+      "chs": "第二次机甲库扩建工程",
       "en": "Mech Hangar Beta Expansion",
       "ja": "第二次ハンガー拡張計画",
       "de": "Sternenhangar: Erweiterung II",
@@ -16153,7 +16153,7 @@
   },
   "2018": {
     "name": {
-      "chs": "Cosmoport Maintenance Support",
+      "chs": "宇宙港建设工程支援行动",
       "en": "Cosmoport Maintenance Support",
       "ja": "コスモポート整備支援",
       "de": "Kosmoport: Renovierung",
@@ -16165,7 +16165,7 @@
   },
   "2019": {
     "name": {
-      "chs": "Power Procurement",
+      "chs": "第一次能量集散设施建设工程",
       "en": "Power Procurement",
       "ja": "第一次エネルギー集積施設工事",
       "de": "Energiespeicheranlage: Bauunterstützung I",
@@ -16177,7 +16177,7 @@
   },
   "2020": {
     "name": {
-      "chs": "Additional Power Procurement",
+      "chs": "第二次能量集散设施建设工程",
       "en": "Additional Power Procurement",
       "ja": "第二次エネルギー集積施設工事",
       "de": "Energiespeicheranlage: Bauunterstützung II",
@@ -16189,7 +16189,7 @@
   },
   "2021": {
     "name": {
-      "chs": "Mobilization Station Construction",
+      "chs": "冷却无人机据点建设工程",
       "en": "Mobilization Station Construction",
       "ja": "冷却ドローン拠点建設工事",
       "de": "Kühldrohnenstation: Bauunterstützung",
@@ -16201,7 +16201,7 @@
   },
   "2022": {
     "name": {
-      "chs": "Operation Chilling-a-Way: Phase One",
+      "chs": "第一次冷却熔融玻璃大作战",
       "en": "Operation Chilling-a-Way: Phase One",
       "ja": "第一次溶融ガラス冷却作戦",
       "de": "Magmaglaskühlung: Phase I",
@@ -16213,7 +16213,7 @@
   },
   "2023": {
     "name": {
-      "chs": "Operation Chilling-a-Way: Phase Two",
+      "chs": "第二次冷却熔融玻璃大作战",
       "en": "Operation Chilling-a-Way: Phase Two",
       "ja": "第二次溶融ガラス冷却作戦",
       "de": "Magmaglaskühlung: Phase II",
@@ -16225,7 +16225,7 @@
   },
   "2024": {
     "name": {
-      "chs": "Beacon Camp Facility Expansion",
+      "chs": "基地综合设施扩建工程",
       "en": "Beacon Camp Facility Expansion",
       "ja": "基地総合設備拡張工事",
       "de": "Expansion der Basisstrukturen",
@@ -16237,7 +16237,7 @@
   },
   "2025": {
     "name": {
-      "chs": "Beacon Camp Alpha Expansion",
+      "chs": "第一次基地扩建工程",
       "en": "Beacon Camp Alpha Expansion",
       "ja": "第一次基地拡張計画",
       "de": "Glasbläser-Basis: Erweiterung I",
@@ -16249,7 +16249,7 @@
   },
   "2026": {
     "name": {
-      "chs": "Cosmoliner Alpha Construction Support",
+      "chs": "第一次宇宙飞线铺设工程支援行动",
       "en": "Cosmoliner Alpha Construction Support",
       "ja": "第一次コスモライナー敷設支援",
       "de": "Kosmozapper: Bauunterstützung I",
@@ -16261,7 +16261,7 @@
   },
   "2027": {
     "name": {
-      "chs": "Habitation Module Construction Support",
+      "chs": "居住舱安装工程支援行动",
       "en": "Habitation Module Construction Support",
       "ja": "居住モジュール設置支援",
       "de": "Habitationsmodul: Bauunterstützung",
@@ -16273,7 +16273,7 @@
   },
   "2028": {
     "name": {
-      "chs": "Energization Station Construction Support",
+      "chs": "能源设施建设工程支援行动",
       "en": "Energization Station Construction Support",
       "ja": "エネルギー設備建設支援",
       "de": "Energisierungswerke: Bauunterstützung",
@@ -16285,7 +16285,7 @@
   },
   "2029": {
     "name": {
-      "chs": "Hydrofication Station Construction Support",
+      "chs": "供水设施建设工程支援行动",
       "en": "Hydrofication Station Construction Support",
       "ja": "給水設備建設支援",
       "de": "Hydrofizierungswerke: Bauunterstützung",
@@ -16297,7 +16297,7 @@
   },
   "2030": {
     "name": {
-      "chs": "Mech Hangar Alpha Expansion",
+      "chs": "第一次机甲库扩建工程",
       "en": "Mech Hangar Alpha Expansion",
       "ja": "第一次ハンガー拡張計画",
       "de": "Sternenhangar: Erweiterung I",
@@ -16309,7 +16309,7 @@
   },
   "2031": {
     "name": {
-      "chs": "Upper Crane Construction",
+      "chs": "第一次升降机建设工程",
       "en": "Upper Crane Construction",
       "ja": "第一次降下クレーン建設工事",
       "de": "Applike-Kräne: Bauunterstützung I",
@@ -16321,7 +16321,7 @@
   },
   "2032": {
     "name": {
-      "chs": "Lower Crane Construction",
+      "chs": "第二次升降机建设工程",
       "en": "Lower Crane Construction",
       "ja": "第二次降下クレーン建設工事",
       "de": "Applike-Kräne: Bauunterstützung II",
@@ -16333,7 +16333,7 @@
   },
   "2033": {
     "name": {
-      "chs": "Beacon Camp Beta Expansion",
+      "chs": "第二次基地扩建工程",
       "en": "Beacon Camp Beta Expansion",
       "ja": "第二次基地拡張計画",
       "de": "Glasbläser-Basis: Erweiterung II",
@@ -16345,7 +16345,7 @@
   },
   "2034": {
     "name": {
-      "chs": "Mech Hangar Beta Expansion",
+      "chs": "第二次机甲库扩建工程",
       "en": "Mech Hangar Beta Expansion",
       "ja": "第二次ハンガー拡張計画",
       "de": "Sternenhangar: Erweiterung II",
@@ -16357,7 +16357,7 @@
   },
   "2035": {
     "name": {
-      "chs": "Cosmoport Maintenance Support",
+      "chs": "宇宙港建设工程支援行动",
       "en": "Cosmoport Maintenance Support",
       "ja": "コスモポート整備支援",
       "de": "Kosmoport: Renovierung",
@@ -16369,7 +16369,7 @@
   },
   "2036": {
     "name": {
-      "chs": "Power Procurement",
+      "chs": "第一次能量集散设施建设工程",
       "en": "Power Procurement",
       "ja": "第一次エネルギー集積施設工事",
       "de": "Energiespeicheranlage: Bauunterstützung I",
@@ -16381,7 +16381,7 @@
   },
   "2037": {
     "name": {
-      "chs": "Additional Power Procurement",
+      "chs": "第二次能量集散设施建设工程",
       "en": "Additional Power Procurement",
       "ja": "第二次エネルギー集積施設工事",
       "de": "Energiespeicheranlage: Bauunterstützung II",
@@ -16393,7 +16393,7 @@
   },
   "2038": {
     "name": {
-      "chs": "Mobilization Station Construction",
+      "chs": "冷却无人机据点建设工程",
       "en": "Mobilization Station Construction",
       "ja": "冷却ドローン拠点建設工事",
       "de": "Kühldrohnenstation: Bauunterstützung",
@@ -16405,7 +16405,7 @@
   },
   "2039": {
     "name": {
-      "chs": "Operation Chilling-a-Way: Phase One",
+      "chs": "第一次冷却熔融玻璃大作战",
       "en": "Operation Chilling-a-Way: Phase One",
       "ja": "第一次溶融ガラス冷却作戦",
       "de": "Magmaglaskühlung: Phase I",
@@ -16417,7 +16417,7 @@
   },
   "2040": {
     "name": {
-      "chs": "Operation Chilling-a-Way: Phase Two",
+      "chs": "第二次冷却熔融玻璃大作战",
       "en": "Operation Chilling-a-Way: Phase Two",
       "ja": "第二次溶融ガラス冷却作戦",
       "de": "Magmaglaskühlung: Phase II",
@@ -16429,7 +16429,7 @@
   },
   "2041": {
     "name": {
-      "chs": "Beacon Camp Facility Expansion",
+      "chs": "基地综合设施扩建工程",
       "en": "Beacon Camp Facility Expansion",
       "ja": "基地総合設備拡張工事",
       "de": "Expansion der Basisstrukturen",

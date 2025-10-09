@@ -7314,6 +7314,83 @@
     "de": "Tresor Oneiron",
     "fr": "Coffre d'Oneiron"
   },
+  "1280": {
+    "chs": "Pilgrim's Traverse",
+    "en": "Pilgrim's Traverse",
+    "ja": "ピルグリム・トラバース",
+    "de": "Pilgers Pfad",
+    "fr": "Sanctuaire des pèlerins"
+  },
+  "1281": {
+    "chs": "Pilgrim's Traverse",
+    "en": "Pilgrim's Traverse",
+    "ja": "ピルグリム・トラバース",
+    "de": "Pilgers Pfad",
+    "fr": "Sanctuaire des pèlerins"
+  },
+  "1282": {
+    "chs": "Pilgrim's Traverse",
+    "en": "Pilgrim's Traverse",
+    "ja": "ピルグリム・トラバース",
+    "de": "Pilgers Pfad",
+    "fr": "Sanctuaire des pèlerins"
+  },
+  "1283": {
+    "chs": "Pilgrim's Traverse",
+    "en": "Pilgrim's Traverse",
+    "ja": "ピルグリム・トラバース",
+    "de": "Pilgers Pfad",
+    "fr": "Sanctuaire des pèlerins"
+  },
+  "1284": {
+    "chs": "Pilgrim's Traverse",
+    "en": "Pilgrim's Traverse",
+    "ja": "ピルグリム・トラバース",
+    "de": "Pilgers Pfad",
+    "fr": "Sanctuaire des pèlerins"
+  },
+  "1285": {
+    "chs": "Pilgrim's Traverse",
+    "en": "Pilgrim's Traverse",
+    "ja": "ピルグリム・トラバース",
+    "de": "Pilgers Pfad",
+    "fr": "Sanctuaire des pèlerins"
+  },
+  "1286": {
+    "chs": "Pilgrim's Traverse",
+    "en": "Pilgrim's Traverse",
+    "ja": "ピルグリム・トラバース",
+    "de": "Pilgers Pfad",
+    "fr": "Sanctuaire des pèlerins"
+  },
+  "1287": {
+    "chs": "Pilgrim's Traverse",
+    "en": "Pilgrim's Traverse",
+    "ja": "ピルグリム・トラバース",
+    "de": "Pilgers Pfad",
+    "fr": "Sanctuaire des pèlerins"
+  },
+  "1288": {
+    "chs": "Pilgrim's Traverse",
+    "en": "Pilgrim's Traverse",
+    "ja": "ピルグリム・トラバース",
+    "de": "Pilgers Pfad",
+    "fr": "Sanctuaire des pèlerins"
+  },
+  "1289": {
+    "chs": "Pilgrim's Traverse",
+    "en": "Pilgrim's Traverse",
+    "ja": "ピルグリム・トラバース",
+    "de": "Pilgers Pfad",
+    "fr": "Sanctuaire des pèlerins"
+  },
+  "1290": {
+    "chs": "Pilgrim's Traverse",
+    "en": "Pilgrim's Traverse",
+    "ja": "ピルグリム・トラバース",
+    "de": "Pilgers Pfad",
+    "fr": "Sanctuaire des pèlerins"
+  },
   "1291": {
     "chs": "法恩娜行星",
     "en": "Phaenna",
@@ -7356,12 +7433,33 @@
     "de": "Fülle des Todes",
     "fr": "Nécropole intemporelle"
   },
+  "1297": {
+    "chs": "Zirgorteh the Open-armed",
+    "en": "Zirgorteh the Open-armed",
+    "ja": "ジィゴーテー拝壇",
+    "de": "Zirgorteh der Grüßende",
+    "fr": "Autel de Zirgorteh"
+  },
   "1299": {
     "chs": "仓库栋10-29",
     "en": "Containment Complex 10-29",
     "ja": "格納殻10-29",
     "de": "Lagerhülle 10-29",
     "fr": "Division d'entreposage 10-29"
+  },
+  "1300": {
+    "chs": "The Windward Wilds",
+    "en": "The Windward Wilds",
+    "ja": "隔ての荒地",
+    "de": "Wildebene",
+    "fr": "Plaines venteuses"
+  },
+  "1301": {
+    "chs": "The Windward Wilds",
+    "en": "The Windward Wilds",
+    "ja": "隔ての荒地",
+    "de": "Wildebene",
+    "fr": "Plaines venteuses"
   },
   "1302": {
     "chs": "蛇神大社",
@@ -7391,6 +7489,13 @@
     "de": "Geisterschloss",
     "fr": "Manoir hanté"
   },
+  "1306": {
+    "chs": "The Windward Wilds",
+    "en": "The Windward Wilds",
+    "ja": "隔ての荒地",
+    "de": "Wildebene",
+    "fr": "Plaines venteuses"
+  },
   "1309": {
     "chs": "星芒市场",
     "en": "Starlight Stalls",
@@ -7398,11 +7503,25 @@
     "de": "Sternenlicht-Stände",
     "fr": "Marché des étoiles"
   },
+  "1311": {
+    "chs": "Pilgrim's Traverse",
+    "en": "Pilgrim's Traverse",
+    "ja": "ピルグリム・トラバース",
+    "de": "Pilgers Pfad",
+    "fr": "Sanctuaire des pèlerins"
+  },
   "1312": {
     "chs": "死亡满溢之地",
     "en": "The Ageless Necropolis",
     "ja": "死の満ちる地",
     "de": "Fülle des Todes",
     "fr": "Nécropole intemporelle"
+  },
+  "1333": {
+    "chs": "Pilgrim's Traverse",
+    "en": "Pilgrim's Traverse",
+    "ja": "ピルグリム・トラバース",
+    "de": "Pilgers Pfad",
+    "fr": "Sanctuaire des pèlerins"
   }
 }

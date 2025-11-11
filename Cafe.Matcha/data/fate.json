@@ -141,7 +141,7 @@
     },
     "level": 13,
     "patch": 2,
-    "location": 154
+    "location": 148
   },
   "138": {
     "name": {
@@ -3142,6 +3142,90 @@
     "level": 44,
     "patch": 2,
     "location": 156
+  },
+  "532": {
+    "name": {
+      "chs": "大炎兽归来",
+      "en": "Return of the King",
+      "ja": "帰ってきた大炎獣「キングボンバード」",
+      "de": "Comeback mit Knall",
+      "fr": "Le retour d'un roi"
+    },
+    "level": 32,
+    "patch": 2,
+    "location": 137
+  },
+  "533": {
+    "name": {
+      "chs": "大炎兽归来",
+      "en": "Return of the King",
+      "ja": "帰ってきた大炎獣「キングボンバード」",
+      "de": "Comeback mit Knall",
+      "fr": "Le retour d'un roi"
+    },
+    "level": 5,
+    "patch": 2,
+    "location": 134
+  },
+  "534": {
+    "name": {
+      "chs": "大炎兽归来",
+      "en": "Return of the King",
+      "ja": "帰ってきた大炎獣「キングボンバード」",
+      "de": "Comeback mit Knall",
+      "fr": "Le retour d'un roi"
+    },
+    "level": 13,
+    "patch": 2,
+    "location": 135
+  },
+  "535": {
+    "name": {
+      "chs": "大炎兽归来",
+      "en": "Return of the King",
+      "ja": "帰ってきた大炎獣「キングボンバード」",
+      "de": "Comeback mit Knall",
+      "fr": "Le retour d'un roi"
+    },
+    "level": 5,
+    "patch": 2,
+    "location": 141
+  },
+  "536": {
+    "name": {
+      "chs": "大炎兽归来",
+      "en": "Return of the King",
+      "ja": "帰ってきた大炎獣「キングボンバード」",
+      "de": "Comeback mit Knall",
+      "fr": "Le retour d'un roi"
+    },
+    "level": 15,
+    "patch": 2,
+    "location": 145
+  },
+  "537": {
+    "name": {
+      "chs": "大炎兽归来",
+      "en": "Return of the King",
+      "ja": "帰ってきた大炎獣「キングボンバード」",
+      "de": "Comeback mit Knall",
+      "fr": "Le retour d'un roi"
+    },
+    "level": 11,
+    "patch": 2,
+    "location": 148
+  },
+  "538": {
+    "name": {
+      "chs": "大炎兽归来",
+      "en": "Return of the King",
+      "ja": "帰ってきた大炎獣「キングボンバード」",
+      "de": "Comeback mit Knall",
+      "fr": "Le retour d'un roi"
+    },
+    "level": 6,
+    "patch": 2,
+    "location": 154
   },
   "540": {
     "name": {
@@ -14909,7 +14993,7 @@
       "en": "Moths Are Tough",
       "ja": "深き森の霊蛾「ゴーストモス」",
       "de": "Doktor Motte",
-      "fr": "Défi : S.O.S phalène fantôme"
+      "fr": "Défi : S.O.S. phalène fantôme"
     },
     "level": 94,
     "patch": 7,
@@ -15137,7 +15221,7 @@
       "en": "Reeds in Need",
       "ja": "野性と葦",
       "de": "Zu Schilfe!",
-      "fr": "SOS roseaux"
+      "fr": "S.O.S. roseaux"
     },
     "level": 90,
     "patch": 7,

@@ -35,34 +35,34 @@ namespace Cafe.Matcha.Constant
     {
         public static Dictionary<ushort, MatchaOpcode> Global = new Dictionary<ushort, MatchaOpcode>
         {
-            { 0x113, MatchaOpcode.ActorControl },
-            { 0x254, MatchaOpcode.ActorControlSelf },
-            { 0x39D, MatchaOpcode.CEDirector },
+            { 0x013C, MatchaOpcode.ActorControl },
+            { 0x01D8, MatchaOpcode.ActorControlSelf },
+            { 0x03C9, MatchaOpcode.CEDirector },
             /*
              * AirshipTimers & SubmarineTimers
              */
-            { 0x2F4, MatchaOpcode.CompanyAirshipStatus },
-            { 0x229, MatchaOpcode.CompanySubmersibleStatus },
-            { 0xFC, MatchaOpcode.ContentFinderNotifyPop },
+            { 0x01A3, MatchaOpcode.CompanyAirshipStatus },
+            { 0x01C0, MatchaOpcode.CompanySubmersibleStatus },
+            { 0x029D, MatchaOpcode.ContentFinderNotifyPop },
             /*
              * MiniCactpotInit
              */
-            { 0xF4, MatchaOpcode.ResumeEventScene32 },
-            { 0x1B1, MatchaOpcode.EventPlay },
-            { 0x343, MatchaOpcode.EventStart },
-            { 0x13A, MatchaOpcode.Examine },
-            { 0x1C9, MatchaOpcode.FateInfo },
-            { 0x2B1, MatchaOpcode.InitZone },
-            { 0x117, MatchaOpcode.InventoryTransaction },
-            { 0x1E7, MatchaOpcode.ItemInfo },
-            { 0x241, MatchaOpcode.MarketBoardItemListing },
-            { 0x104, MatchaOpcode.MarketBoardItemListingCount },
-            { 0x1FB, MatchaOpcode.MarketBoardItemListingHistory },
-            { 0x1F3, MatchaOpcode.MarketBoardRequestItemListingInfo },
-            { 0x2C9, MatchaOpcode.NpcSpawn },
-            { 0x39A, MatchaOpcode.PlayerSetup },
-            { 0x270, MatchaOpcode.PlayerSpawn },
-            { 0x15F, MatchaOpcode.WorldVisitQueue },
+            { 0x033C, MatchaOpcode.ResumeEventScene32 },
+            { 0x01B8, MatchaOpcode.EventPlay },
+            { 0x021C, MatchaOpcode.EventStart },
+            { 0x01FF, MatchaOpcode.Examine },
+            { 0x025A, MatchaOpcode.FateInfo },
+            { 0x0175, MatchaOpcode.InitZone },
+            { 0x02DC, MatchaOpcode.InventoryTransaction },
+            { 0x0215, MatchaOpcode.ItemInfo },
+            { 0x0067, MatchaOpcode.MarketBoardItemListing },
+            { 0x0146, MatchaOpcode.MarketBoardItemListingCount },
+            { 0x0332, MatchaOpcode.MarketBoardItemListingHistory },
+            { 0x0320, MatchaOpcode.MarketBoardRequestItemListingInfo },
+            { 0x02FC, MatchaOpcode.NpcSpawn },
+            { 0x0090, MatchaOpcode.PlayerSetup },
+            { 0x0107, MatchaOpcode.PlayerSpawn },
+            { 0x0320, MatchaOpcode.WorldVisitQueue },
         };
         public static Dictionary<ushort, MatchaOpcode> China = new Dictionary<ushort, MatchaOpcode>
         {

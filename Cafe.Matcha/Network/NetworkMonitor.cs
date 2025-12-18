@@ -264,6 +264,19 @@ namespace Cafe.Matcha.Network
 
                     case ActorControlType.HypnoslotResult:
                         {
+                            if (ParsePlugin.Instance == null)
+                            {
+                                break;
+                            }
+
+                            // 需要限制所在区域，否则会出现误报
+                            var currentTerritoryId = (ushort)ParsePlugin.Instance.GetCurrentTerritoryID();
+                            // 巡梦金库 TerritoryType 1279
+                            if (currentTerritoryId != 1279)
+                            {
+                                break;
+                            }
+
                             var result = (HypnoslotResultType)data[4];
                             switch (result)
                             {

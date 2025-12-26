@@ -16532,8 +16532,8 @@
       "fr": "Des spectacles inoubliables"
     },
     "level": 5,
-    "patch": 6,
-    "location": 0
+    "patch": 7,
+    "location": 130
   },
   "2043": {
     "name": {
@@ -16544,8 +16544,8 @@
       "fr": "Des spectacles inoubliables"
     },
     "level": 5,
-    "patch": 6,
-    "location": 0
+    "patch": 7,
+    "location": 130
   },
   "2044": {
     "name": {
@@ -16556,8 +16556,8 @@
       "fr": "Des spectacles inoubliables"
     },
     "level": 5,
-    "patch": 6,
-    "location": 0
+    "patch": 7,
+    "location": 130
   },
   "2045": {
     "name": {
@@ -16568,7 +16568,7 @@
       "fr": "Des spectacles inoubliables"
     },
     "level": 5,
-    "patch": 6,
-    "location": 0
+    "patch": 7,
+    "location": 130
   }
 }

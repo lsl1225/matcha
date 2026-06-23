@@ -13,7 +13,7 @@ namespace Cafe.Matcha.Network.Handler
     {
         private const int SubmarineCount = 4;
         private const int CompanySubmersibleItemLength = 36;
-        private const int CompanySubmersiblePacketLength = 176;
+        private const int CompanySubmersiblePacketLength = PacketSize.CompanySubmersibleStatus;
         private const int SubmarineStatusItemLength = 60;
         private const int SubmarineStatusPacketDataLength = SubmarineStatusItemLength * SubmarineCount;
 

@@ -26,7 +26,7 @@ namespace Cafe.Matcha.Network.Handler
             }
 
             // Treasure shifting wheel result.
-            if (packet.DataLength == 56)
+            if (packet.DataLength == PacketSize.TreasureShiftingWheel)
             {
                 var data = packet.GetRawData();
                 var level = BitConverter.ToUInt32(data, 24);
@@ -79,7 +79,7 @@ namespace Cafe.Matcha.Network.Handler
                     return true;
                 }
             }
-            else if (packet.DataLength == 64)
+            else if (packet.DataLength == PacketSize.TreasureResult)
             {
                 var data = packet.GetRawData();
                 var flag = BitConverter.ToUInt32(data, 16);
@@ -99,7 +99,7 @@ namespace Cafe.Matcha.Network.Handler
 
         private bool HandleActorControlSelf(Packet packet)
         {
-            if (packet.Length != 72)
+            if (packet.Length != PacketSize.ActorControlSelf)
             {
                 return false;
             }

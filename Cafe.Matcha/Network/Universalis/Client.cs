@@ -11,7 +11,7 @@
     {
         public PacketProcessor UniversalisProcessor = new PacketProcessor(Secret.UniversalisKey);
 
-        private bool Enabled => Config.Instance.Overlay.Universalis;
+        private bool Enabled => Config.Instance.Overlay.Universalis && !string.IsNullOrWhiteSpace(Secret.UniversalisKey);
         private object objLock = new object();
 
         public Client(Action<BaseDTO> fireEvent) : base(fireEvent)

@@ -28,6 +28,7 @@ namespace Cafe.Matcha.Constant
         NpcSpawn,
         PlayerSetup,
         PlayerSpawn,
+        SubmarineStatusList,
         WorldVisitQueue,
     }
 

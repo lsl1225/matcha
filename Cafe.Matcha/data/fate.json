@@ -16893,7 +16893,7 @@
     },
     "level": 1,
     "patch": 7,
-    "location": 1237
+    "location": 1319
   },
   "2086": {
     "name": {
@@ -16904,8 +16904,8 @@
       "fr": "Expansion des infrastructures énergétiques"
     },
     "level": 1,
-    "patch": 6,
-    "location": 1291
+    "patch": 7,
+    "location": 1319
   },
   "2087": {
     "name": {
@@ -16916,8 +16916,8 @@
       "fr": "Expansion des infrastructures de distribution d'eau"
     },
     "level": 1,
-    "patch": 6,
-    "location": 1291
+    "patch": 7,
+    "location": 1319
   },
   "2088": {
     "name": {
@@ -16928,8 +16928,8 @@
       "fr": "Restauration de la Pousse épanouie"
     },
     "level": 1,
-    "patch": 6,
-    "location": 0
+    "patch": 7,
+    "location": 1319
   },
   "2089": {
     "name": {
@@ -16940,8 +16940,8 @@
       "fr": "Maintenance de la station du Havre forestier"
     },
     "level": 1,
-    "patch": 6,
-    "location": 0
+    "patch": 7,
+    "location": 1319
   },
   "2090": {
     "name": {
@@ -16952,8 +16952,8 @@
       "fr": "Accès aux Bibliothèques sylvestres"
     },
     "level": 1,
-    "patch": 6,
-    "location": 0
+    "patch": 7,
+    "location": 1319
   },
   "2091": {
     "name": {
@@ -16964,8 +16964,8 @@
       "fr": "Restauration de la Pousse fleurie"
     },
     "level": 1,
-    "patch": 6,
-    "location": 0
+    "patch": 7,
+    "location": 1319
   },
   "2092": {
     "name": {
@@ -16976,8 +16976,8 @@
       "fr": "Support à l'aménagement du cosmoport"
     },
     "level": 1,
-    "patch": 6,
-    "location": 1291
+    "patch": 7,
+    "location": 1319
   },
   "2093": {
     "name": {
@@ -16988,8 +16988,8 @@
       "fr": "Accès à la Pousse vivace"
     },
     "level": 1,
-    "patch": 6,
-    "location": 0
+    "patch": 7,
+    "location": 1319
   },
   "2094": {
     "name": {
@@ -17000,8 +17000,8 @@
       "fr": "Restauration de la Pousse vivace"
     },
     "level": 1,
-    "patch": 6,
-    "location": 0
+    "patch": 7,
+    "location": 1319
   },
   "2095": {
     "name": {
@@ -17012,8 +17012,8 @@
       "fr": "Agrandissement des hangars"
     },
     "level": 1,
-    "patch": 6,
-    "location": 0
+    "patch": 7,
+    "location": 1319
   },
   "2096": {
     "name": {
@@ -17024,8 +17024,8 @@
       "fr": "Aménagement de l'Écosystème central"
     },
     "level": 1,
-    "patch": 6,
-    "location": 0
+    "patch": 7,
+    "location": 1319
   },
   "2097": {
     "name": {
@@ -17036,8 +17036,8 @@
       "fr": "Réactivation du Laurier-Mère"
     },
     "level": 1,
-    "patch": 6,
-    "location": 0
+    "patch": 7,
+    "location": 1319
   },
   "2098": {
     "name": {
@@ -17049,7 +17049,7 @@
     },
     "level": 1,
     "patch": 7,
-    "location": 1237
+    "location": 1319
   },
   "2099": {
     "name": {
@@ -17060,8 +17060,8 @@
       "fr": "Expansion des infrastructures énergétiques"
     },
     "level": 1,
-    "patch": 6,
-    "location": 1291
+    "patch": 7,
+    "location": 1319
   },
   "2100": {
     "name": {
@@ -17072,8 +17072,8 @@
       "fr": "Expansion des infrastructures de distribution d'eau"
     },
     "level": 1,
-    "patch": 6,
-    "location": 1291
+    "patch": 7,
+    "location": 1319
   },
   "2101": {
     "name": {
@@ -17084,8 +17084,8 @@
       "fr": "Restauration de la Pousse épanouie"
     },
     "level": 1,
-    "patch": 6,
-    "location": 0
+    "patch": 7,
+    "location": 1319
   },
   "2102": {
     "name": {
@@ -17096,8 +17096,8 @@
       "fr": "Maintenance de la station du Havre forestier"
     },
     "level": 1,
-    "patch": 6,
-    "location": 0
+    "patch": 7,
+    "location": 1319
   },
   "2103": {
     "name": {
@@ -17108,8 +17108,8 @@
       "fr": "Accès aux Bibliothèques sylvestres"
     },
     "level": 1,
-    "patch": 6,
-    "location": 0
+    "patch": 7,
+    "location": 1319
   },
   "2104": {
     "name": {
@@ -17120,8 +17120,8 @@
       "fr": "Restauration de la Pousse fleurie"
     },
     "level": 1,
-    "patch": 6,
-    "location": 0
+    "patch": 7,
+    "location": 1319
   },
   "2105": {
     "name": {
@@ -17132,8 +17132,8 @@
       "fr": "Support à l'aménagement du cosmoport"
     },
     "level": 1,
-    "patch": 6,
-    "location": 1291
+    "patch": 7,
+    "location": 1319
   },
   "2106": {
     "name": {
@@ -17144,8 +17144,8 @@
       "fr": "Accès à la Pousse vivace"
     },
     "level": 1,
-    "patch": 6,
-    "location": 0
+    "patch": 7,
+    "location": 1319
   },
   "2107": {
     "name": {
@@ -17156,8 +17156,8 @@
       "fr": "Restauration de la Pousse vivace"
     },
     "level": 1,
-    "patch": 6,
-    "location": 0
+    "patch": 7,
+    "location": 1319
   },
   "2108": {
     "name": {
@@ -17168,8 +17168,8 @@
       "fr": "Agrandissement des hangars"
     },
     "level": 1,
-    "patch": 6,
-    "location": 0
+    "patch": 7,
+    "location": 1319
   },
   "2109": {
     "name": {
@@ -17180,8 +17180,8 @@
       "fr": "Aménagement de l'Écosystème central"
     },
     "level": 1,
-    "patch": 6,
-    "location": 0
+    "patch": 7,
+    "location": 1319
   },
   "2110": {
     "name": {
@@ -17192,7 +17192,7 @@
       "fr": "Réactivation du Laurier-Mère"
     },
     "level": 1,
-    "patch": 6,
-    "location": 0
+    "patch": 7,
+    "location": 1319
   }
 }

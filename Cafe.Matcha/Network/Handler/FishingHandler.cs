@@ -43,7 +43,7 @@ namespace Cafe.Matcha.Network.Handler
 
             if (packet.MatchaOpcode == MatchaOpcode.InitZone)
             {
-                if (packet.Length != 168)
+                if (packet.Length != PacketSize.InitZone)
                 {
                     return false;
                 }
@@ -60,7 +60,7 @@ namespace Cafe.Matcha.Network.Handler
 
             if (packet.Sender == Packet.PacketSender.Client)
             {
-                if (packet.MatchaOpcode != MatchaOpcode.ClientTrigger || packet.DataLength < PacketSize.ClientTrigger || packet.ReadUInt32(0) != 0x2bd)
+                if (packet.MatchaOpcode != MatchaOpcode.ClientTrigger || packet.DataLength < PacketDataSize.ClientTrigger || packet.ReadUInt32(0) != 0x2bd)
                 {
                     return false;
                 }
@@ -72,7 +72,7 @@ namespace Cafe.Matcha.Network.Handler
 
             if (packet.MatchaOpcode == MatchaOpcode.ActorControlSelf)
             {
-                if (packet.Length != 72 || packet.ReadUInt16(0) != (uint)ActorControlType.FishingBaitChange)
+                if (packet.Length != PacketSize.ActorControlSelf || packet.ReadUInt16(0) != (uint)ActorControlType.FishingBaitChange)
                 {
                     return false;
                 }
@@ -86,7 +86,7 @@ namespace Cafe.Matcha.Network.Handler
 
             if (packet.MatchaOpcode == MatchaOpcode.StatusEffectList)
             {
-                if (packet.DataLength != 384 || packet.Source != packet.Target)
+                if (packet.DataLength != PacketDataSize.StatusEffectList || packet.Source != packet.Target)
                 {
                     return false;
                 }
@@ -108,7 +108,7 @@ namespace Cafe.Matcha.Network.Handler
 
             if (packet.MatchaOpcode == MatchaOpcode.ActorControl)
             {
-                if (packet.Length != 56 || packet.Source != actorId)
+                if (packet.Length != PacketSize.ActorControl || packet.Source != actorId)
                 {
                     return false;
                 }
@@ -130,7 +130,7 @@ namespace Cafe.Matcha.Network.Handler
 
             if (packet.MatchaOpcode == MatchaOpcode.SystemLogMessage)
             {
-                if (packet.DataLength != 24 || packet.ReadUInt32(0) != FishingEventId)
+                if (packet.DataLength != PacketDataSize.SystemLogMessage || packet.ReadUInt32(0) != FishingEventId)
                 {
                     return false;
                 }
@@ -183,7 +183,7 @@ namespace Cafe.Matcha.Network.Handler
 
             if (packet.MatchaOpcode == MatchaOpcode.FishCaught)
             {
-                if (packet.DataLength != 16 || packet.Target != actorId || cast == null || (phase != "reel" && phase != "hook"))
+                if (packet.DataLength != PacketDataSize.FishCaught || packet.Target != actorId || cast == null || (phase != "reel" && phase != "hook"))
                 {
                     return false;
                 }
@@ -205,7 +205,7 @@ namespace Cafe.Matcha.Network.Handler
                 return false;
             }
 
-            var expectedLength = packet.MatchaOpcode == MatchaOpcode.EventPlay ? 72 : 80;
+            var expectedLength = packet.MatchaOpcode == MatchaOpcode.EventPlay ? PacketSize.EventPlay : PacketSize.EventPlay4;
             if (packet.Length != expectedLength || packet.ReadUInt32(8) != FishingEventId)
             {
                 return false;

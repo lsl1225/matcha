@@ -60,7 +60,7 @@ namespace Cafe.Matcha.Network.Handler
 
             if (packet.Sender == Packet.PacketSender.Client)
             {
-                if (packet.MatchaOpcode != MatchaOpcode.ClientTrigger || packet.DataLength < 12 || packet.ReadUInt32(0) != 0x2bd)
+                if (packet.MatchaOpcode != MatchaOpcode.ClientTrigger || packet.DataLength < PacketSize.ClientTrigger || packet.ReadUInt32(0) != 0x2bd)
                 {
                     return false;
                 }

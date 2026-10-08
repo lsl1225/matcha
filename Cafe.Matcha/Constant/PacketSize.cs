@@ -23,5 +23,6 @@ namespace Cafe.Matcha.Constant
         // 挖宝的数据包大小是 ActorControl -> EObjAnimation
         public const int TreasureShiftingWheel = ActorControl;
         public const int TreasureResult = ActorControlSelf;
+        public const int ClientTrigger = 12;
     }
 }

@@ -30,6 +30,11 @@ namespace Cafe.Matcha.Constant
         PlayerSpawn,
         SubmarineStatusList,
         WorldVisitQueue,
+        EventPlay4,
+        SystemLogMessage,
+        FishCaught,
+        StatusEffectList,
+        ClientTrigger,
     }
 
     internal static class OpcodeStorage

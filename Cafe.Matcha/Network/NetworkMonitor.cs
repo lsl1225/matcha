@@ -24,6 +24,9 @@ namespace Cafe.Matcha.Network
         private List<AbstractHandler> handlers = new List<AbstractHandler>();
         public NetworkMonitor()
         {
+            var session = InitialDataStore.Instance.BeginSession();
+            handlers.Add(new PlayerSetupHandler(FireEvent, InitialDataStore.Instance,
+                () => Data.Instance.FishingNotebook, session));
             AddHandler<FishingHandler>();
             AddHandler<MarketBoardHandler>();
             AddHandler<TreasureHandler>();
@@ -35,7 +38,7 @@ namespace Cafe.Matcha.Network
         {
             try
             {
-                HandleMessage(new Packet(Packet.PacketSender.Server, message));
+                HandleMessage(new Packet(Packet.PacketSender.Server, message, epoch));
             }
             catch (Exception e)
             {
@@ -51,7 +54,7 @@ namespace Cafe.Matcha.Network
         {
             try
             {
-                HandleMessage(new Packet(Packet.PacketSender.Client, message));
+                HandleMessage(new Packet(Packet.PacketSender.Client, message, epoch));
             }
             catch (Exception e)
             {
@@ -105,6 +108,11 @@ namespace Cafe.Matcha.Network
             if (!packet.Known)
             {
                 return false;
+            }
+
+            if (packet.MatchaOpcode == MatchaOpcode.PlayerSetup)
+            {
+                return true;
             }
 
             // TODO: Move all parsing logic to Handler

@@ -6,7 +6,6 @@ namespace Cafe.Matcha.Constant
     public class PacketDataSize
     {
         public const int ClientTrigger = 12;
-        public const int StatusEffectList = 384;
         public const int SystemLogMessage = 24;
         public const int FishCaught = 16;
     }

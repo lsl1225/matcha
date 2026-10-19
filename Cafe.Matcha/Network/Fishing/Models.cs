@@ -26,7 +26,11 @@ namespace Cafe.Matcha.Network.Fishing
     // Local-only protocol state. Never serialize this object through the overlay event channel.
     internal sealed class FishingCapture
     {
+        // Uploads use the last complete buff list; an unobserved buff is absent.
+        // Keep the overlay DTO nullable so local records retain their uncertainty.
+        public uint[] UploadStatuses;
         public long? ServerCastTime;
+        public long? EndTime;
         public int? Hook;
         public int? Size;
         public int? Quantity;
@@ -44,7 +48,8 @@ namespace Cafe.Matcha.Network.Fishing
         public bool LureTarget;
         public long[] LureTimes = Array.Empty<long>();
         public FishingCapture Copy() => new FishingCapture {
-            ServerCastTime = ServerCastTime, Hook = Hook, Size = Size, Quantity = Quantity,
+            UploadStatuses = (uint[])UploadStatuses?.Clone(),
+            ServerCastTime = ServerCastTime, EndTime = EndTime, Hook = Hook, Size = Size, Quantity = Quantity,
             Large = Large, GatheringFailed = GatheringFailed, Unsupported = Unsupported,
             Terminal = Terminal, PatiencePrecision = PatiencePrecision, PatienceSuccess = PatienceSuccess,
             Slap = Slap, Identical = Identical, Hidden = Hidden, HiddenStack = HiddenStack,
